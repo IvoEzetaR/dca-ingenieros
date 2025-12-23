@@ -6,7 +6,7 @@ import { Building2, Menu, X } from "lucide-react";
 const navItems = [
   { label: "Inicio", href: "/", isRoute: true },
   { label: "Nosotros", href: "/nosotros", isRoute: true },
-  { label: "Servicios", href: "/#servicios", isRoute: false },
+  { label: "Servicios", href: "/servicios", isRoute: true },
   { label: "Proyectos", href: "/#proyectos", isRoute: false },
   { label: "Clientes", href: "/#clientes", isRoute: false },
   { label: "Contacto", href: "/#contacto", isRoute: false },
