@@ -1,4 +1,5 @@
 import { Building, Hammer, Wrench, Settings } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -6,6 +7,7 @@ const services = [
     title: "Ingeniería y Construcción",
     description:
       "Diseño, Gerencia de Proyectos y Construcción para sectores Retail, Industrial y Oficinas.",
+    href: "/servicios/ingenieria-construccion",
   },
   {
     icon: Hammer,
@@ -64,15 +66,27 @@ export const ServicesSection = () => {
                 {service.description}
               </p>
               <div className="mt-6 pt-6 border-t border-border">
-                <a
-                  href="#contacto"
-                  className="text-sm font-semibold text-primary hover:text-accent transition-colors inline-flex items-center gap-2"
-                >
-                  Más información
-                  <span className="group-hover:translate-x-1 transition-transform">
-                    →
-                  </span>
-                </a>
+                {service.href ? (
+                  <Link
+                    to={service.href}
+                    className="text-sm font-semibold text-primary hover:text-accent transition-colors inline-flex items-center gap-2"
+                  >
+                    Más información
+                    <span className="group-hover:translate-x-1 transition-transform">
+                      →
+                    </span>
+                  </Link>
+                ) : (
+                  <a
+                    href="#contacto"
+                    className="text-sm font-semibold text-primary hover:text-accent transition-colors inline-flex items-center gap-2"
+                  >
+                    Más información
+                    <span className="group-hover:translate-x-1 transition-transform">
+                      →
+                    </span>
+                  </a>
+                )}
               </div>
             </div>
           ))}

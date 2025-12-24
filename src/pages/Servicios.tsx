@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { Link } from "react-router-dom";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import {
@@ -36,6 +37,7 @@ const services = [
     title: "Ingeniería y Construcción",
     description: "Gerencia de proyectos, obras civiles, estructuras metálicas y edificaciones nuevas.",
     color: "primary",
+    href: "/servicios/ingenieria-construccion",
   },
   {
     icon: PaintBucket,
@@ -158,12 +160,12 @@ const Servicios = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center pt-20">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${serviciosHero})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary-dark/90" />
-        
+
         <div className="section-container relative z-10 py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -175,15 +177,15 @@ const Servicios = () => {
               <Settings className="w-4 h-4" />
               Nuestros Servicios
             </span>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
               Soluciones Integrales
               <br />
               <span className="text-accent-light">de Ingeniería.</span>
             </h1>
-            
+
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
-              Ejecución de proyectos <strong className="text-primary-foreground">"Llave en Mano"</strong> y mantenimiento especializado 
+              Ejecución de proyectos <strong className="text-primary-foreground">"Llave en Mano"</strong> y mantenimiento especializado
               para el sector Retail, Industrial y Corporativo.
             </p>
           </motion.div>
@@ -213,47 +215,42 @@ const Servicios = () => {
               <motion.div
                 key={service.title}
                 variants={cardVariants}
-                whileHover={{ 
-                  y: -8, 
+                whileHover={{
+                  y: -8,
                   scale: 1.02,
                   transition: { duration: 0.2 }
                 }}
                 className="group relative bg-card rounded-2xl p-8 border border-border hover:border-primary/30 hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden"
               >
                 {/* Background Gradient on Hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${
-                  service.color === 'primary' 
-                    ? 'from-primary/5 to-transparent' 
-                    : 'from-accent/5 to-transparent'
-                } opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
-                
+                <div className={`absolute inset-0 bg-gradient-to-br ${service.color === 'primary'
+                  ? 'from-primary/5 to-transparent'
+                  : 'from-accent/5 to-transparent'
+                  } opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+
                 <div className="relative z-10">
                   {/* Icons */}
                   <div className="flex items-center gap-3 mb-6">
-                    <div className={`p-3 rounded-xl ${
-                      service.color === 'primary' 
-                        ? 'bg-primary/10 group-hover:bg-primary/20' 
-                        : 'bg-accent/10 group-hover:bg-accent/20'
-                    } transition-colors`}>
-                      <service.icon className={`w-6 h-6 ${
-                        service.color === 'primary' ? 'text-primary' : 'text-accent'
-                      }`} />
+                    <div className={`p-3 rounded-xl ${service.color === 'primary'
+                      ? 'bg-primary/10 group-hover:bg-primary/20'
+                      : 'bg-accent/10 group-hover:bg-accent/20'
+                      } transition-colors`}>
+                      <service.icon className={`w-6 h-6 ${service.color === 'primary' ? 'text-primary' : 'text-accent'
+                        }`} />
                     </div>
-                    <div className={`p-2 rounded-lg ${
-                      service.color === 'primary' 
-                        ? 'bg-primary/5' 
-                        : 'bg-accent/5'
-                    }`}>
-                      <service.secondaryIcon className={`w-4 h-4 ${
-                        service.color === 'primary' ? 'text-primary/60' : 'text-accent/60'
-                      }`} />
+                    <div className={`p-2 rounded-lg ${service.color === 'primary'
+                      ? 'bg-primary/5'
+                      : 'bg-accent/5'
+                      }`}>
+                      <service.secondaryIcon className={`w-4 h-4 ${service.color === 'primary' ? 'text-primary/60' : 'text-accent/60'
+                        }`} />
                     </div>
                   </div>
 
                   <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
-                  
+
                   <p className="text-muted-foreground leading-relaxed">
                     {service.description}
                   </p>
@@ -283,7 +280,7 @@ const Servicios = () => {
                 Desglose Técnico por Especialidad
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                Contamos con <strong className="text-foreground">equipos especializados</strong> en cada área de la construcción, 
+                Contamos con <strong className="text-foreground">equipos especializados</strong> en cada área de la construcción,
                 garantizando la excelencia técnica en todos los aspectos de su proyecto.
               </p>
 
@@ -346,7 +343,7 @@ const Servicios = () => {
           <div className="relative">
             {/* Connecting Line - Desktop */}
             <div className="hidden lg:block absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent" />
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
               {processSteps.map((step, index) => (
                 <motion.div
@@ -386,7 +383,7 @@ const Servicios = () => {
       {/* Sectors Section */}
       <section className="py-16 bg-gradient-to-br from-primary via-primary to-primary-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAzMHYySDI0di0yaDEyek0zNiAyNnYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
-        
+
         <div className="section-container relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
             <div>
@@ -433,11 +430,11 @@ const Servicios = () => {
               Solicite una visita técnica
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              Nuestro equipo de ingenieros evaluará su proyecto en sitio y le brindará una 
+              Nuestro equipo de ingenieros evaluará su proyecto en sitio y le brindará una
               <strong className="text-foreground"> propuesta personalizada sin compromiso</strong>.
             </p>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-primary hover:bg-primary-light text-primary-foreground font-semibold px-8 py-6 text-base rounded-xl shadow-lg hover:shadow-xl transition-all"
             >
               Contactar Ahora

@@ -6,8 +6,8 @@ import { Building2, Menu, X } from "lucide-react";
 const navItems = [
   { label: "Inicio", href: "/", isRoute: true },
   { label: "Nosotros", href: "/nosotros", isRoute: true },
-  { label: "Servicios", href: "/servicios", isRoute: true },
-  { label: "Proyectos", href: "/#proyectos", isRoute: false },
+  { label: "Servicios", href: "/#servicios", isRoute: false },
+  { label: "Proyectos", href: "/proyectos", isRoute: true },
   { label: "Clientes", href: "/#clientes", isRoute: false },
   { label: "Contacto", href: "/#contacto", isRoute: false },
 ];
@@ -34,11 +34,10 @@ export const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-md"
-          : "bg-background"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? "bg-background/95 backdrop-blur-md shadow-md"
+        : "bg-background"
+        }`}
     >
       <div className="section-container">
         <div className="flex items-center justify-between h-20">
@@ -59,11 +58,10 @@ export const Header = () => {
                 <Link
                   key={item.label}
                   to={item.href}
-                  className={`text-sm font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full ${
-                    isActive(item.href, item.isRoute) 
-                      ? "text-primary after:w-full" 
-                      : "text-muted-foreground hover:text-primary"
-                  }`}
+                  className={`text-sm font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full ${isActive(item.href, item.isRoute)
+                    ? "text-primary after:w-full"
+                    : "text-muted-foreground hover:text-primary"
+                    }`}
                 >
                   {item.label}
                 </Link>
@@ -109,11 +107,10 @@ export const Header = () => {
                   <Link
                     key={item.label}
                     to={item.href}
-                    className={`text-base font-medium transition-colors py-2 ${
-                      isActive(item.href, item.isRoute) 
-                        ? "text-primary" 
-                        : "text-muted-foreground hover:text-primary"
-                    }`}
+                    className={`text-base font-medium transition-colors py-2 ${isActive(item.href, item.isRoute)
+                      ? "text-primary"
+                      : "text-muted-foreground hover:text-primary"
+                      }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
