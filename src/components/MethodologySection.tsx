@@ -10,6 +10,8 @@ import {
     ArrowRight,
 } from "lucide-react";
 
+import { RevealOnScroll } from "./RevealOnScroll";
+
 const processSteps = [
     {
         number: "01",
@@ -26,7 +28,8 @@ const processSteps = [
     {
         number: "03",
         title: "Ejecución ISO",
-        description: "Construcción bajo estándares de calidad y seguridad certificados.",
+        description:
+            "Construcción bajo estándares de calidad y seguridad certificados.",
         icon: HardHat,
     },
     {
@@ -38,25 +41,40 @@ const processSteps = [
 ];
 
 const sectors = [
-    { icon: Store, label: "Retail", description: "Tiendas y centros comerciales" },
-    { icon: Factory, label: "Industrial", description: "Plantas y almacenes" },
-    { icon: Building2, label: "Corporativo", description: "Oficinas y edificios" },
+    {
+        icon: Store,
+        label: "Retail",
+        description: "Tiendas y centros comerciales",
+    },
+    {
+        icon: Factory,
+        label: "Industrial",
+        description: "Plantas y almacenes",
+    },
+    {
+        icon: Building2,
+        label: "Corporativo",
+        description: "Oficinas y edificios",
+    },
 ];
 
 export const MethodologySection = () => {
     return (
         <>
             {/* Process Steps */}
-            <section className="section-padding bg-background overflow-hidden" id="metodologia">
+            <section
+                className="section-padding bg-background overflow-hidden"
+                id="metodologia"
+            >
                 <div className="section-container">
-                    <div className="text-center max-w-2xl mx-auto mb-16">
+                    <RevealOnScroll className="text-center max-w-2xl mx-auto mb-16">
                         <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
                             Metodología
                         </span>
                         <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                             Nuestro Proceso de Trabajo
                         </h2>
-                    </div>
+                    </RevealOnScroll>
 
                     {/* Horizontal Steps */}
                     <div className="relative">
@@ -81,7 +99,9 @@ export const MethodologySection = () => {
                                         <step.icon className="w-10 h-10 text-primary group-hover:scale-110 transition-transform" />
                                     </div>
 
-                                    <h3 className="text-xl font-bold text-foreground mb-2">{step.title}</h3>
+                                    <h3 className="text-xl font-bold text-foreground mb-2">
+                                        {step.title}
+                                    </h3>
                                     <p className="text-muted-foreground text-sm leading-relaxed max-w-[200px] mx-auto">
                                         {step.description}
                                     </p>
@@ -114,7 +134,7 @@ export const MethodologySection = () => {
                             </h2>
                         </div>
 
-                        <div className="flex flex-wrap justify-center gap-6 lg:gap-10">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 w-full lg:w-auto">
                             {sectors.map((sector, index) => (
                                 <motion.div
                                     key={sector.label}
@@ -122,13 +142,17 @@ export const MethodologySection = () => {
                                     whileInView={{ opacity: 1, scale: 1 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.1 }}
-                                    className="flex flex-col items-center gap-3 p-6 bg-primary-foreground/10 backdrop-blur-sm rounded-2xl border border-primary-foreground/20 min-w-[140px] hover:bg-primary-foreground/15 transition-colors"
+                                    className="flex flex-col items-center gap-3 p-6 bg-primary-foreground/10 backdrop-blur-sm rounded-2xl border border-primary-foreground/20 w-full hover:bg-primary-foreground/15 transition-colors h-full"
                                 >
                                     <div className="p-4 bg-primary-foreground/20 rounded-xl">
                                         <sector.icon className="w-8 h-8 text-accent-light" />
                                     </div>
-                                    <p className="text-lg font-bold text-primary-foreground">{sector.label}</p>
-                                    <p className="text-xs text-primary-foreground/70 text-center">{sector.description}</p>
+                                    <p className="text-lg font-bold text-primary-foreground">
+                                        {sector.label}
+                                    </p>
+                                    <p className="text-xs text-primary-foreground/70 text-center">
+                                        {sector.description}
+                                    </p>
                                 </motion.div>
                             ))}
                         </div>

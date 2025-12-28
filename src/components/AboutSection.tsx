@@ -1,5 +1,6 @@
 import { CheckCircle2, Award, Users, Clock } from "lucide-react";
 import aboutImage from "@/assets/about-team.jpg";
+import { RevealOnScroll } from "./RevealOnScroll";
 
 const features = [
   {
@@ -22,41 +23,48 @@ export const AboutSection = () => {
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Text Content */}
-          <div className="animate-slide-in-left">
-            <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
-              Sobre Nosotros
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
-              Excelencia en Gestión{" "}
-              <span className="text-primary">Integral de Proyectos</span>
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              DCA INGENIEROS es una empresa dedicada a la gestión integral de
-              proyectos de ingeniería, abarcando diseño, construcción y
-              mantenimiento. Nos respaldan profesionales con amplia experiencia,
-              comprometidos con la calidad, seguridad y cumplimiento de plazos.
-            </p>
+          <div className="relative">
+            <RevealOnScroll>
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+                Sobre Nosotros
+              </span>
+            </RevealOnScroll>
+            <RevealOnScroll delay={0.1}>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
+                Excelencia en Gestión{" "}
+                <span className="text-primary">Integral de Proyectos</span>
+              </h2>
+            </RevealOnScroll>
+            <RevealOnScroll delay={0.2}>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                DCA INGENIEROS es una empresa dedicada a la gestión integral de
+                proyectos de ingeniería, abarcando diseño, construcción y
+                mantenimiento. Nos respaldan profesionales con amplia experiencia,
+                comprometidos con la calidad, seguridad y cumplimiento de plazos.
+              </p>
+            </RevealOnScroll>
 
             {/* Features */}
             <div className="space-y-4">
               {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-4 p-4 bg-secondary rounded-lg hover:bg-secondary/80 transition-colors group"
-                >
-                  <div className="p-2 bg-accent/10 rounded-lg group-hover:bg-accent/20 transition-colors">
-                    <feature.icon className="h-6 w-6 text-accent" />
+                <RevealOnScroll key={index} delay={0.3 + index * 0.1}>
+                  <div
+                    className="flex items-center gap-4 p-4 bg-secondary rounded-lg hover:bg-secondary/80 transition-colors group"
+                  >
+                    <div className="p-2 bg-accent/10 rounded-lg group-hover:bg-accent/20 transition-colors">
+                      <feature.icon className="h-6 w-6 text-accent" />
+                    </div>
+                    <span className="text-foreground font-medium">
+                      {feature.text}
+                    </span>
                   </div>
-                  <span className="text-foreground font-medium">
-                    {feature.text}
-                  </span>
-                </div>
+                </RevealOnScroll>
               ))}
             </div>
           </div>
 
           {/* Image */}
-          <div className="relative animate-slide-in-right">
+          <RevealOnScroll delay={0.2} className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
                 src={aboutImage}
@@ -80,7 +88,7 @@ export const AboutSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </RevealOnScroll>
         </div>
       </div>
     </section>

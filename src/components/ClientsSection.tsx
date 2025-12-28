@@ -1,3 +1,5 @@
+import { RevealOnScroll } from "./RevealOnScroll";
+
 const clients = [
   { name: "PROSEGUR" },
   { name: "SENATI" },
@@ -11,7 +13,7 @@ export const ClientsSection = () => {
   return (
     <section id="clientes" className="section-padding bg-background">
       <div className="section-container">
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <RevealOnScroll className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
             Nuestros Clientes
           </span>
@@ -23,7 +25,7 @@ export const ClientsSection = () => {
             Trabajamos con empresas líderes en diversos sectores de la
             industria nacional.
           </p>
-        </div>
+        </RevealOnScroll>
 
         {/* Client Logo Carousel */}
         <div className="relative overflow-hidden py-8">

@@ -1,5 +1,6 @@
 import { Building, Hammer, Wrench, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
+import { RevealOnScroll } from "./RevealOnScroll";
 
 const services = [
   {
@@ -34,7 +35,7 @@ export const ServicesSection = () => {
     <section id="servicios" className="section-padding bg-section-gray">
       <div className="section-container">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <RevealOnScroll className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
             Nuestros Servicios
           </span>
@@ -46,49 +47,52 @@ export const ServicesSection = () => {
             Ofrecemos soluciones integrales adaptadas a las necesidades
             específicas de cada proyecto.
           </p>
-        </div>
+        </RevealOnScroll>
 
         {/* Services Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div
+            <RevealOnScroll
               key={index}
-              className="group bg-card rounded-xl p-8 shadow-md card-hover border border-border/50"
-              style={{ animationDelay: `${index * 100}ms` }}
+              delay={index * 0.1}
             >
-              <div className="p-4 bg-primary/10 rounded-xl w-fit mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                <service.icon className="h-8 w-8 text-primary group-hover:text-primary-foreground transition-colors" />
+              <div
+                className="group bg-card rounded-xl p-8 shadow-md card-hover border border-border/50 h-full"
+              >
+                <div className="p-4 bg-primary/10 rounded-xl w-fit mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                  <service.icon className="h-8 w-8 text-primary group-hover:text-primary-foreground transition-colors" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {service.description}
+                </p>
+                <div className="mt-6 pt-6 border-t border-border">
+                  {service.href ? (
+                    <Link
+                      to={service.href}
+                      className="text-sm font-semibold text-primary hover:text-accent transition-colors inline-flex items-center gap-2"
+                    >
+                      Más información
+                      <span className="group-hover:translate-x-1 transition-transform">
+                        →
+                      </span>
+                    </Link>
+                  ) : (
+                    <a
+                      href="#contacto"
+                      className="text-sm font-semibold text-primary hover:text-accent transition-colors inline-flex items-center gap-2"
+                    >
+                      Más información
+                      <span className="group-hover:translate-x-1 transition-transform">
+                        →
+                      </span>
+                    </a>
+                  )}
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-4">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {service.description}
-              </p>
-              <div className="mt-6 pt-6 border-t border-border">
-                {service.href ? (
-                  <Link
-                    to={service.href}
-                    className="text-sm font-semibold text-primary hover:text-accent transition-colors inline-flex items-center gap-2"
-                  >
-                    Más información
-                    <span className="group-hover:translate-x-1 transition-transform">
-                      →
-                    </span>
-                  </Link>
-                ) : (
-                  <a
-                    href="#contacto"
-                    className="text-sm font-semibold text-primary hover:text-accent transition-colors inline-flex items-center gap-2"
-                  >
-                    Más información
-                    <span className="group-hover:translate-x-1 transition-transform">
-                      →
-                    </span>
-                  </a>
-                )}
-              </div>
-            </div>
+            </RevealOnScroll>
           ))}
         </div>
       </div>

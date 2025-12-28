@@ -18,6 +18,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 // Placeholder imports for project images - in a real scenario we'd have specific images
 // For now, I'll use a placeholder div or reuse existing images to demonstrate the layout
@@ -113,53 +114,60 @@ const Proyectos = () => {
           <div className="section-container">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
-                <div
+                <RevealOnScroll
                   key={project.id}
-                  className="group bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border/50 flex flex-col h-full animate-fade-in"
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  delay={index * 0.1}
                 >
-                  <div className="relative h-48 overflow-hidden cursor-pointer" onClick={() => setSelectedProject(project)}>
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <span className="text-white font-medium px-4 py-2 border border-white/30 bg-white/10 backdrop-blur rounded-full">
+                  <div
+                    className="group bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border/50 flex flex-col h-full"
+                    onClick={() => setSelectedProject(project)}
+                  >
+                    <div className="relative h-48 overflow-hidden cursor-pointer">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span className="text-white font-medium px-4 py-2 border border-white/30 bg-white/10 backdrop-blur rounded-full">
+                          Ver Galería
+                        </span>
+                      </div>
+                      <div className="absolute top-4 left-4">
+                        <span className="bg-primary/90 text-primary-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm shadow-sm">
+                          {project.category}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="p-6 flex flex-col flex-grow">
+                      <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                        {project.title}
+                      </h3>
+
+                      <div className="flex items-center gap-2 mb-4 text-sm text-muted-foreground font-medium">
+                        <span className="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                        {project.client}
+                      </div>
+
+                      <p className="text-muted-foreground text-sm line-clamp-3 mb-6 flex-grow">
+                        {project.description}
+                      </p>
+
+                      <Button
+                        variant="outline"
+                        className="w-full mt-auto group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedProject(project);
+                        }}
+                      >
                         Ver Galería
-                      </span>
-                    </div>
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-primary/90 text-primary-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm shadow-sm">
-                        {project.category}
-                      </span>
+                        <ChevronRight className="ml-2 h-4 w-4" />
+                      </Button>
                     </div>
                   </div>
-
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
-                      {project.title}
-                    </h3>
-
-                    <div className="flex items-center gap-2 mb-4 text-sm text-muted-foreground font-medium">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent"></span>
-                      {project.client}
-                    </div>
-
-                    <p className="text-muted-foreground text-sm line-clamp-3 mb-6 flex-grow">
-                      {project.description}
-                    </p>
-
-                    <Button
-                      variant="outline"
-                      className="w-full mt-auto group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300"
-                      onClick={() => setSelectedProject(project)}
-                    >
-                      Ver Galería
-                      <ChevronRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </div>
-                </div>
+                </RevealOnScroll>
               ))}
             </div>
           </div>

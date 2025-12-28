@@ -14,6 +14,7 @@ import {
     CheckCircle2
 } from "lucide-react";
 import heroImage from "@/assets/servicios-hero.jpg"; // Reusing existing hero for now
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 const subServices = [
     {
@@ -112,7 +113,7 @@ const IngenieriaConstruccion = () => {
                                             <service.icon className="w-8 h-8" />
                                         </div>
                                         <div>
-                                            <h4 className="text-sm font-bold text-primary uppercase tracking-wide mb-2">
+                                            <h4 className="text-sm font-bold text-primary dark:text-primary-foreground uppercase tracking-wide mb-2">
                                                 {service.title}
                                             </h4>
                                             <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
@@ -143,7 +144,7 @@ const IngenieriaConstruccion = () => {
             <section className="section-padding bg-secondary/30 relative overflow-hidden">
                 <div className="section-container">
                     <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                        <div className="lg:w-1/2">
+                        <RevealOnScroll className="lg:w-1/2">
                             <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
                                 Por Qué Elegirnos
                             </span>
@@ -183,16 +184,16 @@ const IngenieriaConstruccion = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </RevealOnScroll>
 
-                        <div className="lg:w-1/2 relative">
+                        <RevealOnScroll className="lg:w-1/2 relative" delay={0.2}>
                             <div className="relative z-10 grid grid-cols-2 gap-4">
                                 <div className="space-y-4 translate-y-8">
                                     <div className="bg-card p-6 rounded-2xl shadow-lg border border-border">
                                         <h4 className="font-bold text-lg mb-2">5+ Años</h4>
                                         <p className="text-sm text-muted-foreground">Experiencia continua en el mercado</p>
                                     </div>
-                                    <div className="bg-primary p-6 rounded-2xl shadow-lg text-primary-foreground">
+                                    <div className="bg-primary p-6 rounded-2xl shadow-lg text-white">
                                         <h4 className="font-bold text-lg mb-2">ISO 9001</h4>
                                         <p className="text-sm opacity-90">Estándares de Calidad</p>
                                     </div>
@@ -211,15 +212,15 @@ const IngenieriaConstruccion = () => {
 
                             {/* Decorative elements */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/5 rounded-full blur-3xl -z-0" />
-                        </div>
+                        </RevealOnScroll>
                     </div>
                 </div>
             </section>
 
             {/* CTA Section */}
-            <section className="section-padding bg-primary text-primary-foreground">
-                <div className="section-container text-center max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <section className="section-padding bg-primary text-white">
+                <RevealOnScroll className="section-container text-center max-w-3xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                         ¿Listo para iniciar su proyecto de construcción?
                     </h2>
                     <p className="text-lg opacity-90 mb-8 leading-relaxed">
@@ -233,7 +234,7 @@ const IngenieriaConstruccion = () => {
                             Ver Proyectos
                         </Button>
                     </div>
-                </div>
+                </RevealOnScroll>
             </section>
 
             <Footer />
