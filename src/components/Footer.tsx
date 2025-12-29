@@ -1,4 +1,5 @@
 import { Building2, MapPin, Mail, Phone, FileText, ExternalLink } from "lucide-react";
+import logoDCA from "@/assets/Logo DCA.png";
 
 const quickLinks = [
   { label: "Inicio", href: "#inicio" },
@@ -11,17 +12,16 @@ export const Footer = () => {
   return (
     <footer id="contacto" className="bg-foreground text-primary-foreground">
       {/* Main Footer */}
-      <div className="section-container py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="section-container py-8 md:py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-primary rounded-lg">
-                <Building2 className="h-6 w-6 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold">
-                DCA <span className="text-accent-light">INGENIEROS</span>
-              </span>
+              <img
+                src={logoDCA}
+                alt="DCA Ingenieros Logo"
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-primary-foreground/70 mb-6 max-w-md leading-relaxed">
               Empresa líder en gestión integral de proyectos de ingeniería,
@@ -116,8 +116,15 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
             <p>© 2025 DCA INGENIEROS S.A.C. Todos los derechos reservados.</p>
             <p>
-              Diseñado con{" "}
-              <span className="text-accent-light">excelencia</span> en Perú
+              Diseñado por{" "}
+              <a
+                href="https://ideagency.pro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent-light transition-colors"
+              >
+                IDE Agency
+              </a>
             </p>
           </div>
         </div>

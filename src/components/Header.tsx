@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Building2, Menu, X, ChevronDown } from "lucide-react";
+import logoDCA from "@/assets/Logo DCA.png";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -64,12 +65,7 @@ export const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="p-2 bg-primary rounded-lg group-hover:bg-primary-light transition-colors">
-              <Building2 className="h-6 w-6 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-foreground tracking-tight">
-              DCA <span className="text-primary">INGENIEROS</span>
-            </span>
+            <img src={logoDCA} alt="DCA Ingenieros Logo" className="h-12 w-auto object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
