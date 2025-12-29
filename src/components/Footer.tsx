@@ -56,7 +56,7 @@ export const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="hidden md:block">
             <h4 className="text-lg font-semibold mb-6">Enlaces Rápidos</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (

@@ -53,7 +53,7 @@ const IngenieriaConstruccion = () => {
             <Header />
 
             {/* Hero Section */}
-            <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center pt-20 overflow-hidden">
+            <section className="relative h-[60vh] min-h-[550px] flex items-center justify-center pt-32 pb-20 md:pt-20 md:pb-0 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={heroImage}
@@ -194,7 +194,7 @@ const IngenieriaConstruccion = () => {
                                         <p className="text-sm text-muted-foreground">Experiencia continua en el mercado</p>
                                     </div>
                                     <div className="bg-primary p-6 rounded-2xl shadow-lg text-white">
-                                        <h4 className="font-bold text-lg mb-2">ISO 9001</h4>
+                                        <h4 className="font-bold text-lg mb-2 text-white">ISO 9001</h4>
                                         <p className="text-sm opacity-90">Estándares de Calidad</p>
                                     </div>
                                 </div>

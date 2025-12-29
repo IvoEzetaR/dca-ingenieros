@@ -71,16 +71,18 @@ const Nosotros = () => {
       <Header />
 
       {/* Hero Section - Airbrag Style */}
-      <section className="relative min-h-[60vh] bg-gradient-to-br from-primary via-primary to-primary-dark flex items-center pt-20">
+      <section className="relative min-h-[60vh] bg-gradient-to-br from-primary via-primary to-primary-dark flex items-center pt-32 pb-20 md:pt-20 md:pb-0">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAzMHYySDI0di0yaDEyek0zNiAyNnYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
 
         <div className="section-container relative z-10 text-center py-20">
           {/* Badge */}
-          <RevealOnScroll className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-full mb-8">
-            <BadgeCheck className="w-4 h-4 text-accent-light" />
-            <span className="text-sm font-medium text-primary-foreground">
-              +4 Años de Excelencia en el Mercado Peruano
-            </span>
+          <RevealOnScroll>
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-full mb-8 text-left">
+              <BadgeCheck className="w-4 h-4 text-accent-light shrink-0" />
+              <span className="text-sm font-medium text-primary-foreground">
+                +4 Años de Excelencia en el Mercado Peruano
+              </span>
+            </div>
           </RevealOnScroll>
 
           {/* Main Title */}
@@ -126,7 +128,7 @@ const Nosotros = () => {
               <RevealOnScroll delay={0.2}>
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   Nuestro enfoque combina la <strong className="text-foreground">precisión técnica</strong> con una gestión eficiente
-                  de recursos, asegurando que cada proyecto —ya sea retail, industrial o corporativo— cumpla estrictamente
+                  de recursos, asegurando que cada proyecto, ya sea retail, industrial o corporativo, cumpla estrictamente
                   con los <strong className="text-foreground">plazos y presupuestos pactados</strong>.
                 </p>
               </RevealOnScroll>

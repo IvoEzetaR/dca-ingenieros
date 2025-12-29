@@ -159,7 +159,7 @@ const Servicios = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center pt-20">
+      <section className="relative min-h-[50vh] flex items-center pt-32 pb-20 md:pt-20 md:pb-0">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${serviciosHero})` }}

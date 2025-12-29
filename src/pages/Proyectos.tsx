@@ -79,7 +79,7 @@ const Proyectos = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center pt-20 overflow-hidden">
+        <section className="relative h-[60vh] min-h-[450px] flex items-center justify-center pt-32 pb-20 md:pt-20 md:pb-0 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
               src={heroImage}
