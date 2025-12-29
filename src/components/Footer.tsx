@@ -12,22 +12,22 @@ export const Footer = () => {
   return (
     <footer id="contacto" className="bg-foreground text-primary-foreground">
       {/* Main Footer */}
-      <div className="section-container py-8 md:py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+      <div className="section-container py-6 md:py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-3 mb-4 md:mb-6">
               <img
                 src={logoDCA}
                 alt="DCA Ingenieros Logo"
                 className="h-12 w-auto object-contain brightness-0 invert"
               />
             </div>
-            <p className="text-primary-foreground/70 mb-6 max-w-md leading-relaxed">
+            <p className="text-primary-foreground/70 mb-4 md:mb-6 max-w-md leading-relaxed">
               Empresa líder en gestión integral de proyectos de ingeniería,
               comprometidos con la calidad, seguridad y cumplimiento de plazos.
             </p>
-            <div className="space-y-3">
+            <div className="space-y-2 md:space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent-light mt-1 flex-shrink-0" />
                 <span className="text-primary-foreground/80">
@@ -75,8 +75,8 @@ export const Footer = () => {
 
           {/* Legal */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Legal</h4>
-            <ul className="space-y-3">
+            <h4 className="text-lg font-semibold mb-3 md:mb-6">Legal</h4>
+            <ul className="space-y-2 md:space-y-3">
               <li>
                 <a
                   href="#"
