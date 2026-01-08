@@ -4,6 +4,7 @@ import { motion, useInView, useAnimation, Variant } from "framer-motion";
 interface RevealOnScrollProps {
     children: React.ReactNode;
     className?: string;
+    innerClassName?: string;
     delay?: number;
     width?: "fit-content" | "100%";
 }
@@ -11,6 +12,7 @@ interface RevealOnScrollProps {
 export const RevealOnScroll = ({
     children,
     className = "",
+    innerClassName = "",
     delay = 0,
     width = "100%"
 }: RevealOnScrollProps) => {
@@ -30,12 +32,17 @@ export const RevealOnScroll = ({
     };
 
     return (
-        <div ref={ref} style={{ width }} className={className}>
+        <div
+            ref={ref}
+            style={{ width }}
+            className={`${className}`}
+        >
             <motion.div
                 variants={variants}
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.8, delay: delay, ease: [0.25, 0.25, 0.25, 0.75] }}
+                className={innerClassName}
             >
                 {children}
             </motion.div>

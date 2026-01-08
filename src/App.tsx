@@ -7,6 +7,10 @@ import Index from "./pages/Index";
 import Nosotros from "./pages/Nosotros";
 import Proyectos from "./pages/Proyectos";
 import IngenieriaConstruccion from "./pages/servicios/IngenieriaConstruccion";
+import ObrasServiciosGenerales from "./pages/servicios/ObrasServiciosGenerales";
+import FerreteriaIntegral from "./pages/servicios/FerreteriaIntegral";
+import AlquilerMaquinarias from "./pages/servicios/AlquilerMaquinarias";
+import Importacion from "./pages/servicios/Importacion";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -24,6 +28,10 @@ const App = () => (
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/proyectos" element={<Proyectos />} />
           <Route path="/servicios/ingenieria-construccion" element={<IngenieriaConstruccion />} />
+          <Route path="/servicios/obras-servicios-generales" element={<ObrasServiciosGenerales />} />
+          <Route path="/servicios/ferreteria-integral" element={<FerreteriaIntegral />} />
+          <Route path="/servicios/alquiler-maquinarias" element={<AlquilerMaquinarias />} />
+          <Route path="/servicios/importacion" element={<Importacion />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

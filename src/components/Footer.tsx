@@ -1,5 +1,5 @@
 import { Building2, MapPin, Mail, Phone, FileText, ExternalLink } from "lucide-react";
-import logoDCA from "@/assets/Logo DCA.png";
+import logoDCA from "@/assets/LOGO-DCA.jpg";
 
 const quickLinks = [
   { label: "Inicio", href: "#inicio" },
@@ -20,7 +20,7 @@ export const Footer = () => {
               <img
                 src={logoDCA}
                 alt="DCA Ingenieros Logo"
-                className="h-12 w-auto object-contain brightness-0 invert"
+                className="h-12 w-auto object-contain"
               />
             </div>
             <p className="text-primary-foreground/70 mb-4 md:mb-6 max-w-md leading-relaxed">

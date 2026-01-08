@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center pt-32 pb-20 md:pt-20 md:pb-0"
+      className="relative min-h-screen flex items-center justify-center pt-48 pb-20 md:pt-40 md:pb-0"
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
