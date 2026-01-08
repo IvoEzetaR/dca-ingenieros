@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, Search, Send } from "lucide-react";
-import logoDCA from "@/assets/LOGO-DCA.jpg";
+import logoDCA from "@/assets/Logo DCA.png";
 import {
   NavigationMenu,
   NavigationMenuContent,

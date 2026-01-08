@@ -1,5 +1,5 @@
 import { Building2, MapPin, Mail, Phone, FileText, ExternalLink } from "lucide-react";
-import logoDCA from "@/assets/LOGO-DCA.jpg";
+import logoDCA from "@/assets/Logo DCA.png";
 
 const quickLinks = [
   { label: "Inicio", href: "#inicio" },
