@@ -2,10 +2,10 @@ import { Building2, MapPin, Mail, Phone, FileText, ExternalLink } from "lucide-r
 import logoDCA from "@/assets/Logo DCA.png";
 
 const quickLinks = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Nosotros", href: "#nosotros" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Grupo DCA", href: "/" },
+  { label: "Servicios", href: "/#servicios" },
+  { label: "Noticias", href: "/noticias" },
+  { label: "Talento", href: "/talento" },
 ];
 
 export const Footer = () => {

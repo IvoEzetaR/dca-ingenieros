@@ -14,8 +14,7 @@ import {
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { label: "Inicio", href: "/", isRoute: true },
-  { label: "Nosotros", href: "/nosotros", isRoute: true },
+  { label: "Grupo DCA", href: "/", isRoute: true },
   {
     label: "Líneas de Negocio",
     href: "/#servicios",
@@ -54,7 +53,8 @@ const navItems = [
     ],
   },
   { label: "Proyectos", href: "/proyectos", isRoute: true },
-  { label: "Contacto", href: "/#contacto", isRoute: false },
+  { label: "Noticias", href: "/noticias", isRoute: true },
+  { label: "Talento", href: "/talento", isRoute: true },
 ];
 
 export const Header = () => {
