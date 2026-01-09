@@ -134,7 +134,7 @@ export const ServicesSection = () => {
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16 blur-3xl" />
             <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full translate-y-16 -translate-x-16 blur-3xl" />
 
-            <h3 className="text-3xl font-bold mb-4 relative z-10">¿Listo para empezar su proyecto?</h3>
+            <h3 className="text-3xl font-bold mb-4 relative z-10 text-white">¿Listo para empezar su proyecto?</h3>
             <p className="text-primary-foreground/90 mb-8 relative z-10">Conversemos sobre cómo podemos ayudarle a alcanzar sus objetivos.</p>
             <a
               href="#contacto"
