@@ -85,8 +85,8 @@ export const Header = () => {
           <div className="flex items-center gap-4 md:gap-6">
             <div className="flex items-center gap-2">
               <Phone className="h-3.5 w-3.5 fill-current" />
-              <a href="tel:+51999999999" className="hover:text-blue-200 transition-colors">
-                (+51) 999 999 999
+              <a href="tel:+51925277375" className="hover:text-blue-200 transition-colors">
+                925277375 / 994627900
               </a>
             </div>
             <div className="hidden sm:flex items-center gap-2">
@@ -264,7 +264,7 @@ export const Header = () => {
                   <div className="space-y-3">
                     <div className="flex items-center gap-3 text-[#1B316E]">
                       <Phone className="h-4 w-4" />
-                      <a href="tel:+51999999999" className="text-sm font-medium">(+51) 999 999 999</a>
+                      <a href="tel:+51925277375" className="text-sm font-medium">925277375 / 994627900</a>
                     </div>
                     <div className="flex items-center gap-3 text-[#1B316E]">
                       <Mail className="h-4 w-4" />

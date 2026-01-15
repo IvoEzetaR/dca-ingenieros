@@ -31,7 +31,7 @@ export const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent-light mt-1 flex-shrink-0" />
                 <span className="text-primary-foreground/80">
-                  Jr. Río Huaura Urb. Villa del Norte, Los Olivos, Lima.
+                  Jr. Rio Huaura 5522, Urb. Villa del Norte - Los Olivos
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -46,10 +46,10 @@ export const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent-light flex-shrink-0" />
                 <a
-                  href="tel:+51999999999"
+                  href="tel:+51925277375"
                   className="text-primary-foreground/80 hover:text-accent-light transition-colors"
                 >
-                  +51 999 999 999
+                  925277375 / 994627900
                 </a>
               </div>
             </div>
