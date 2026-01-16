@@ -6,11 +6,13 @@ import { motion } from "framer-motion";
 import {
     Truck,
     Wrench,
-    Construction,
-    Timer,
+    Zap,
+    Scale,
+    Cpu,
     ArrowRight,
     Settings,
-    Shield
+    Shield,
+    Timer
 } from "lucide-react";
 import heroImage from "@/assets/servicios-hero.jpg";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
@@ -18,31 +20,38 @@ import { RevealOnScroll } from "@/components/RevealOnScroll";
 const subServices = [
     {
         icon: Truck,
-        title: "Maquinaria Pesada",
-        subtitle: "Movimiento de Tierras",
-        description: "Alquiler de excavadoras, retroexcavadoras, cargadores frontales y volquetes. Equipos potentes y modernos con operadores certificados para obras de gran envergadura.",
-        keywords: ["Excavadoras", "Retroexcavadoras", "Rodillos"]
+        title: "Maquinaria Ligera",
+        subtitle: "Equipos de Construcción",
+        description: "Alquiler de mezcladoras, vibradores de concreto, cortadoras y compactadoras. Nuestra flota está en constante renovación para asegurar máxima eficiencia en cada metro cuadrado de su obra.",
+        keywords: ["Mezcladoras", "Compactadoras", "Equipos Auxiliares"]
     },
     {
-        icon: Construction,
-        title: "Equipos Menores",
-        subtitle: "Compactación y Mezcla",
-        description: "Equipos ligeros para construcción: mezcladoras de concreto, vibroapisonadores (canguros), planchas compactadoras y cortadoras de pavimento, esenciales para trabajos puntuales.",
-        keywords: ["Mezcladoras", "Vibradoras", "Canguros"]
+        icon: Zap,
+        title: "Herramientas Eléctricas",
+        subtitle: "Potencia en sus Manos",
+        description: "Contamos con una amplia gama de taladros, rotomartillos, amoladoras y demoledores de alto rendimiento. Equipos revisados minuciosamente para garantizar su operatividad total.",
+        keywords: ["Rotomartillos", "Demoledores", "Equipos Bosch/Makita"]
+    },
+    {
+        icon: Scale,
+        title: "Trabajos en Altura",
+        subtitle: "Acceso Seguro y Certificado",
+        description: "Provisión de escaleras, andamios multidireccionales y plataformas elevadoras. Todos nuestros equipos para altura cumplen con certificaciones de seguridad nacionales e internacionales.",
+        keywords: ["Andamios", "Plataformas", "Seguridad en Altura"]
+    },
+    {
+        icon: Cpu,
+        title: "Mantenimiento Industrial",
+        subtitle: "Equipos Especializados",
+        description: "Ofrecemos maquinaria técnica para procesos de mantenimiento mecánico, eléctrico y civil en plantas industriales. Soluciones robustas para entornos exigentes.",
+        keywords: ["Equipos Mecánicos", "Mantenimiento Civil", "Plantas"]
     },
     {
         icon: Settings,
-        title: "Herramientas de Poder",
-        subtitle: "Taladros y Demolición",
-        description: "Martillos demoledores, rotomartillos, esmeriles y generadores eléctricos portátiles. Soluciones versátiles para facilitar el trabajo manual en obra.",
-        keywords: ["Generadores", "Martillos demoledores", "Soldadoras"]
-    },
-    {
-        icon: Wrench,
-        title: "Andamios y Encofrados",
-        subtitle: "Estructuras Temporales",
-        description: "Sistema de andamiaje multidireccional certificado y sistemas de encofrado metálico para losas y muros. Garantizamos seguridad para trabajos en altura.",
-        keywords: ["Andamios normados", "Puntales", "Encofrado metálico"]
+        title: "Soporte y Garantía",
+        subtitle: "Asistencia Técnica Continua",
+        description: "No solo alquilamos equipos; entregamos soluciones. Brindamos mantenimiento preventivo y asistencia técnica en campo durante todo el periodo de alquiler.",
+        keywords: ["Asistencia Técnica", "Prevención", "Soporte en Obra"]
     }
 ];
 
@@ -52,7 +61,7 @@ const AlquilerMaquinarias = () => {
             <Header />
 
             {/* Hero Section */}
-            <section className="relative h-[60vh] min-h-[550px] flex items-center justify-center pt-32 pb-20 md:pt-20 md:pb-0 overflow-hidden">
+            <section className="relative h-[60vh] min-h-[550px] flex items-center justify-center pt-56 pb-32 md:pt-48 md:pb-32 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={heroImage}

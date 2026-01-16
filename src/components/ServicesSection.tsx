@@ -12,9 +12,9 @@ import imageImportacion from "@/assets/servicios-importacion.png";
 const services = [
   {
     icon: Settings,
-    title: "Obras y servicios generales",
+    title: "Obras y Servicios Generales",
     description:
-      "Mantenimiento integral y servicios generales para asegurar la continuidad de sus operaciones con los más altos estándares.",
+      "Soluciones integrales en obras civiles, mantenimiento y servicios generales para empresas e instituciones. Garantizamos altos estándares de calidad, seguridad y cumplimiento de plazos.",
     href: "/servicios/obras-servicios-generales",
     image: imageObras,
     color: "blue",
@@ -23,34 +23,34 @@ const services = [
     icon: Building,
     title: "Construcción",
     description:
-      "Diseño, Gerencia de Proyectos y obras civiles integrales para el sector público y privado, transformando ideas en realidad.",
+      "Planificación, ejecución y supervisión de proyectos de construcción. Expertos en obras nuevas, remodelaciones y refuerzos estructurales bajo normativas técnicas vigentes.",
     href: "/servicios/ingenieria-construccion",
     image: imageConstruccion,
     color: "emerald",
   },
   {
     icon: Wrench,
-    title: "Ferretería integral",
+    title: "Ferretería",
     description:
-      "Suministro completo de materiales y herramientas de alta calidad para cada etapa de su proyecto de construcción.",
+      "Suministro especializado de materiales, equipos y herramientas para la construcción. Trabajamos con marcas líderes, brindando asesoría técnica y disponibilidad inmediata.",
     href: "/servicios/ferreteria-integral",
     image: imageFerreteria,
     color: "orange",
   },
   {
     icon: Truck,
-    title: "Alquiler de maquinarias",
+    title: "Alquiler de Maquinarias y Herramientas",
     description:
-      "Flota moderna de maquinarias y herramientas pesadas para optimizar los tiempos y costos de su obra.",
+      "Alquiler de maquinaria pesada y herramientas en óptimas condiciones. Optimizamos sus costos operativos con equipos seguros, mantenimiento constante y soporte técnico.",
     href: "/servicios/alquiler-maquinarias",
     image: imageMaquinaria,
     color: "indigo",
   },
   {
     icon: Globe,
-    title: "Importación",
+    title: "Importaciones",
     description:
-      "Importación directa de materiales especializados y equipos de última generación según sus requerimientos específicos.",
+      "Gestión estratégica de importación de materiales y equipos especializados. Aseguramos calidad y cumplimiento de estándares internacionales para optimizar su abastecimiento.",
     href: "/servicios/importacion",
     image: imageImportacion,
     color: "cyan",

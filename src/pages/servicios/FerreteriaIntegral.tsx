@@ -4,10 +4,11 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import {
-    Hammer,
-    HardHat,
-    ShoppingBag,
-    PackageCheck,
+    Construction,
+    Zap,
+    Droplets,
+    Wrench,
+    ShieldCheck,
     ArrowRight,
     Star,
     Truck
@@ -17,32 +18,39 @@ import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 const subServices = [
     {
-        icon: Hammer,
-        title: "Herramientas",
+        icon: Construction,
+        title: "Materiales de Construcción",
+        subtitle: "Base Estructural Certificada",
+        description: "Comercializamos cemento, agregados, fierro y sistemas de tabiquería drywall. Todos nuestros materiales cuentan con certificaciones que aseguran la máxima integridad estructural.",
+        keywords: ["Cemento y Fierro", "Drywall", "Agregados Certificados"]
+    },
+    {
+        icon: Zap,
+        title: "Materiales Eléctricos",
+        subtitle: "Suministro de Alta Calidad",
+        description: "Amplio stock en cables, tuberías, tableros y sistemas de iluminación. Proveemos accesorios eléctricos de marcas líderes para instalaciones seguras y duraderas.",
+        keywords: ["Conductores", "Tableros", "Marcas Reconocidas"]
+    },
+    {
+        icon: Droplets,
+        title: "Suministros Sanitarios",
+        subtitle: "Sistemas de Fluido y Gasfitería",
+        description: "Venta especializada de tuberías, válvulas y grifería de alto rendimiento. Soluciones ideales para redes residenciales, comerciales e industriales de gran escala.",
+        keywords: ["Válvulas", "Redes de Agua", "Sistemas Industriales"]
+    },
+    {
+        icon: Wrench,
+        title: "Herramientas de Obra",
         subtitle: "Manuales y Eléctricas",
-        description: "Catálogo completo de herramientas para construcción y mantenimiento. Desde destornilladores y llaves hasta rotomartillos y amoladoras de las mejores marcas del mercado.",
-        keywords: ["Bosch", "Makita", "Stanley", "DeWalt"]
+        description: "Distribución de herramientas profesionales diseñadas para el uso intensivo en obra. Contamos con asesoría técnica para la selección del equipo adecuado según su proyecto.",
+        keywords: ["Equipos Eléctricos", "Herramientas Manuales", "Asesoría"]
     },
     {
-        icon: HardHat,
-        title: "Seguridad Industrial",
-        subtitle: "EPPs y Señalización",
-        description: "Equipos de protección personal (EPP) certificados para garantizar la seguridad de su personal: cascos, lentes, guantes, zapatos de seguridad y ropa de trabajo.",
-        keywords: ["Certificación ANSI", "Protección auditiva", "Arneses"]
-    },
-    {
-        icon: PackageCheck,
-        title: "Materiales",
-        subtitle: "Construcción y Acabados",
-        description: "Suministro de materiales de alta rotación: cemento, fierro, ladrillos, agregados, así como pegamentos, fraguas y aditivos especiales para sus obras.",
-        keywords: ["Cemento", "Fierro corrugado", "Sika"]
-    },
-    {
-        icon: ShoppingBag,
-        title: "Ferretería General",
-        subtitle: "Insumos Varios",
-        description: "Todo lo que necesita para el día a día: tornillería, abrasivos, discos de corte, adhesivos, siliconas, y artículos de limpieza industrial.",
-        keywords: ["Pernos", "Discos de corte", "Selladores"]
+        icon: ShieldCheck,
+        title: "Equipos de Seguridad",
+        subtitle: "Protección Personal (EPP)",
+        description: "Garantizamos la seguridad de sus colaboradores con equipos de protección personal y señalización industrial que cumplen con las normativas locales e internacionales.",
+        keywords: ["Protección Industrial", "EPPs", "Señalización"]
     }
 ];
 
@@ -52,7 +60,7 @@ const FerreteriaIntegral = () => {
             <Header />
 
             {/* Hero Section */}
-            <section className="relative h-[60vh] min-h-[550px] flex items-center justify-center pt-32 pb-20 md:pt-20 md:pb-0 overflow-hidden">
+            <section className="relative h-[60vh] min-h-[550px] flex items-center justify-center pt-56 pb-32 md:pt-48 md:pb-32 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={heroImage}

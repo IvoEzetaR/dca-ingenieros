@@ -1,16 +1,8 @@
 import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Mail, Search, Send } from "lucide-react";
+import { Menu, X, Phone, Mail, Search, Send, ChevronDown } from "lucide-react";
 import logoDCA from "@/assets/Logo DCA.png";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -52,7 +44,61 @@ const navItems = [
       },
     ],
   },
-  { label: "Proyectos", href: "/proyectos", isRoute: true },
+  {
+    label: "Proyectos",
+    href: "/proyectos",
+    isRoute: true,
+    children: [
+      {
+        label: "Planificación y Control de Proyectos",
+        href: "/proyectos/planificacion-y-control",
+        isRoute: true,
+        description: "Optimización de tiempos y recursos para el éxito de su obra.",
+      },
+      {
+        label: "Gestión de Riesgos y Oportunidades",
+        href: "/proyectos/gestion-de-riesgos",
+        isRoute: true,
+        description: "Identificación y mitigación proactiva de posibles contingencias.",
+      },
+      {
+        label: "Gestión de Comunicaciones y Stakeholders",
+        href: "/proyectos/gestion-de-comunicaciones",
+        isRoute: true,
+        description: "Coordinación efectiva entre clientes, contratistas y equipos de trabajo, asegurando una comunicación clara y alineada a los objetivos del proyecto.",
+      },
+      {
+        label: "Gestión del Alcance y Control de Cambios",
+        href: "/proyectos/gestion-del-alcance",
+        isRoute: true,
+        description: "Aseguramos el cumplimiento de los objetivos pactados.",
+      },
+      {
+        label: "Gestión de Costos y Presupuestos",
+        href: "/proyectos/gestion-de-costos",
+        isRoute: true,
+        description: "Control riguroso financiero y eficiencia presupuestaria.",
+      },
+      {
+        label: "Supervisión y Coordinación de Obras",
+        href: "/proyectos/supervision-y-coordinacion",
+        isRoute: true,
+        description: "Seguimiento técnico detallado en cada etapa constructiva.",
+      },
+      {
+        label: "Gestión de Seguridad, Calidad y Medio Ambiente",
+        href: "/proyectos/seguridad-y-medio-ambiente",
+        isRoute: true,
+        description: "Compromiso con la excelencia operativa y sostenibilidad.",
+      },
+      {
+        label: "Ver Portafolio de Proyectos",
+        href: "/proyectos",
+        isRoute: true,
+        description: "Explore nuestra trayectoria y casos de éxito.",
+      },
+    ],
+  },
   { label: "Noticias", href: "/noticias", isRoute: true },
   { label: "Talento", href: "/talento", isRoute: true },
 ];
@@ -126,75 +172,67 @@ export const Header = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-8">
-              <NavigationMenu>
-                <NavigationMenuList className="gap-6">
-                  {navItems.map((item) => (
-                    <NavigationMenuItem key={item.label}>
-                      {item.children ? (
-                        <>
-                          <NavigationMenuTrigger
-                            className={cn(
-                              "text-[#1B316E] font-bold text-base hover:text-[#00BCD4] bg-transparent hover:bg-transparent data-[state=open]:bg-transparent focus:bg-transparent p-0 data-[active]:text-[#00BCD4]",
-                              isActive(item.href, item.isRoute) && "text-[#00BCD4]"
-                            )}
-                          >
-                            {item.label}
-                          </NavigationMenuTrigger>
-                          <NavigationMenuContent>
-                            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[300px] bg-white border border-gray-100 shadow-xl rounded-md">
-                              {item.children.map((child) => (
-                                <li key={child.label}>
-                                  <NavigationMenuLink asChild>
-                                    <Link
-                                      to={child.href}
-                                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-blue-50 hover:text-[#1B316E] focus:bg-blue-50 focus:text-[#1B316E]"
-                                    >
-                                      <div className="text-sm font-bold leading-none text-[#1B316E]">
-                                        {child.label}
-                                      </div>
-                                      <p className="line-clamp-2 text-sm leading-snug text-gray-500 mt-2">
-                                        {child.description}
-                                      </p>
-                                    </Link>
-                                  </NavigationMenuLink>
-                                </li>
-                              ))}
-                            </ul>
-                          </NavigationMenuContent>
-                        </>
-                      ) : (
-                        item.isRoute ? (
-                          <Link to={item.href} className="legacy-nav-link">
-                            <NavigationMenuLink
-                              className={cn(
-                                "group inline-flex h-auto w-auto items-center justify-center bg-transparent p-0 text-base font-bold transition-colors hover:text-[#00BCD4] focus:text-[#00BCD4] focus:outline-none disabled:pointer-events-none disabled:opacity-50",
-                                isActive(item.href, item.isRoute)
-                                  ? "text-[#00BCD4]"
-                                  : "text-[#1B316E]"
-                              )}
-                            >
-                              {item.label}
-                            </NavigationMenuLink>
-                          </Link>
-                        ) : (
-                          <a href={item.href} className="legacy-nav-link">
-                            <NavigationMenuLink
-                              className={cn(
-                                "group inline-flex h-auto w-auto items-center justify-center bg-transparent p-0 text-base font-bold transition-colors hover:text-[#00BCD4] focus:text-[#00BCD4] focus:outline-none disabled:pointer-events-none disabled:opacity-50",
-                                isActive(item.href, item.isRoute)
-                                  ? "text-[#00BCD4]"
-                                  : "text-[#1B316E]"
-                              )}
-                            >
-                              {item.label}
-                            </NavigationMenuLink>
-                          </a>
-                        )
+              {navItems.map((item) => (
+                <div key={item.label} className="relative group h-full flex items-center">
+                  {item.children ? (
+                    <>
+                      <Link
+                        to={item.href}
+                        className={cn(
+                          "flex items-center gap-1 text-[#1B316E] font-bold text-base hover:text-[#00BCD4] transition-colors py-8",
+                          isActive(item.href, item.isRoute) && "text-[#00BCD4]"
+                        )}
+                      >
+                        {item.label}
+                        <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
+                      </Link>
+
+                      {/* Dropdown Content - Aligned under the item */}
+                      <div className={cn(
+                        "absolute top-full pt-0 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50",
+                        item.label === "Líneas de Negocio" ? "left-0" : "right-0 lg:left-auto"
+                      )}>
+                        <div className={cn(
+                          "bg-white border border-gray-100 shadow-2xl rounded-xl p-3 mt-2 overflow-hidden",
+                          item.children.length > 5 ? "w-[640px]" : "w-[320px]"
+                        )}>
+                          <div className={cn(
+                            "grid gap-2",
+                            item.children.length > 5 ? "grid-cols-2" : "grid-cols-1"
+                          )}>
+                            {item.children.map((child) => (
+                              <Link
+                                key={child.label}
+                                to={child.href}
+                                className="block group/item p-3 rounded-lg hover:bg-blue-50 transition-all h-full"
+                              >
+                                <div className="text-sm font-bold text-[#1B316E] group-hover/item:text-[#00BCD4] transition-colors leading-tight">
+                                  {child.label}
+                                </div>
+                                {child.description && (
+                                  <p className="text-xs text-gray-500 mt-1.5 line-clamp-2 leading-relaxed">
+                                    {child.description}
+                                  </p>
+                                )}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className={cn(
+                        "text-[#1B316E] font-bold text-base hover:text-[#00BCD4] transition-colors py-8",
+                        isActive(item.href, item.isRoute) && "text-[#00BCD4]"
                       )}
-                    </NavigationMenuItem>
-                  ))}
-                </NavigationMenuList>
-              </NavigationMenu>
+                    >
+                      {item.label}
+                    </Link>
+                  )}
+                </div>
+              ))}
             </div>
 
             {/* Mobile Menu Button */}

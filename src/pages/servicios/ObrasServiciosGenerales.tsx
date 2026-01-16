@@ -4,13 +4,17 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import {
-    Settings,
     Wrench,
     Paintbrush,
     Zap,
     ArrowRight,
     Clock,
-    CheckCircle2
+    CheckCircle2,
+    Droplets,
+    Layout,
+    Hammer,
+    RefreshCw,
+    ShieldCheck
 } from "lucide-react";
 import heroImage from "@/assets/servicios-hero.jpg";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
@@ -20,29 +24,57 @@ const subServices = [
         icon: Wrench,
         title: "Mantenimiento Integral",
         subtitle: "Preventivo y Correctivo",
-        description: "Programas de mantenimiento diseñados para oficinas, plantas industriales y locales comerciales. Aseguramos la continuidad operativa de sus instalaciones con respuesta rápida y eficiente.",
-        keywords: ["Mantenimiento preventivo", "Reparaciones urgentes", "Gestión de activos"]
+        description: "Implementamos programas estratégicos para infraestructuras y equipos, enfocados en maximizar la vida útil de sus activos y garantizar la continuidad operativa sin interrupciones.",
+        keywords: ["Gestión de activos", "Continuidad operativa", "Respuesta inmediata"]
+    },
+    {
+        icon: Droplets,
+        title: "Sistemas Sanitarios",
+        subtitle: "Agua, Desagüe y Drenaje",
+        description: "Expertos en el diseño, ejecución y mantenimiento de redes sanitarias. Trabajamos bajo rigurosas normativas para asegurar sistemas eficientes, seguros y de alto rendimiento.",
+        keywords: ["Normativa vigente", "Redes de agua", "Eficiencia sanitaria"]
     },
     {
         icon: Zap,
-        title: "Instalaciones",
-        subtitle: "Eléctricas y Sanitarias",
-        description: "Ejecución y mantenimiento de sistemas eléctricos y sanitarios. Desde cableado estructurado y tableros eléctricos hasta redes de agua y desagüe, cumpliendo con toda la normativa vigente.",
-        keywords: ["Pozos a tierra", "Gasfitería", "Tableros eléctricos"]
+        title: "Instalaciones Eléctricas",
+        subtitle: "Baja y Media Tensión",
+        description: "Soluciones eléctricas integrales: desde tableros y luminarias hasta sistemas de puesta a tierra. Garantizamos seguridad y eficiencia bajo el Código Nacional de Electricidad.",
+        keywords: ["CNE Perú", "Puesta a tierra", "Tableros industriales"]
     },
     {
-        icon: Settings,
-        title: "Drywall y Divisiones",
-        subtitle: "Tabiquería y Falsos Techos",
-        description: "Soluciones versátiles en sistema drywall para divisiones de ambientes, falsos techos y detalles arquitectónicos. Acabados de primera calidad con aislamiento acústico y térmico.",
-        keywords: ["Baldosas acústicas", "Divisiones de oficina", "Diseños curvos"]
+        icon: Layout,
+        title: "Construcción en Seco",
+        subtitle: "Sistema Drywall Avanzado",
+        description: "División de ambientes, cielos rasos y ampliaciones con tecnología drywall. Ofrecemos rapidez, versatilidad y acabados premium para locales comerciales y oficinas.",
+        keywords: ["Tabiquería ligera", "Cielos rasos", "Rapidez constructiva"]
     },
     {
         icon: Paintbrush,
-        title: "Acabados Generales",
-        subtitle: "Pintura y Recubrimientos",
-        description: "Servicios de pintura interior y exterior, tratamiento de pisos y recubrimientos industriales. Utilizamos materiales de alta durabilidad para proteger y embellecer sus espacios.",
-        keywords: ["Pintura epóxica", "Tratamiento de pisos", "Impermeabilización"]
+        title: "Acabados Finales",
+        subtitle: "Belleza y Funcionalidad",
+        description: "Especialistas en pintura, enchapes, pisos y carpintería. Cuidamos cada detalle para entregar ambientes estéticos, duraderos y perfectamente funcionales.",
+        keywords: ["Pintura profesional", "Revestimientos", "Estética premium"]
+    },
+    {
+        icon: Hammer,
+        title: "Carpintería Metálica",
+        subtitle: "Estructuras de Alta Resistencia",
+        description: "Fabricación y reparación de estructuras, rejas y portones con materiales certificados. Procesos de soldadura y acabados que aseguran máxima protección y durabilidad.",
+        keywords: ["Acero certificado", "Estructuras metálicas", "Seguridad"]
+    },
+    {
+        icon: RefreshCw,
+        title: "Remodelación Integral",
+        subtitle: "Adaptación de Espacios",
+        description: "Rediseñamos sus ambientes para adaptarlos a nuevas necesidades. Optimizamos la funcionalidad operativa cumpliendo con todos los estándares técnicos y legales.",
+        keywords: ["Modernización", "Cambio de uso", "Optimización espacial"]
+    },
+    {
+        icon: ShieldCheck,
+        title: "Seguridad Industrial",
+        subtitle: "Señalización y Protección",
+        description: "Implementación de sistemas de señalética, barandas y protecciones industriales. Aseguramos el cumplimiento de las normativas de SST y la prevención de riesgos laborales.",
+        keywords: ["Normativa SST", "Señalética vial", "Protección industrial"]
     }
 ];
 
@@ -52,7 +84,7 @@ const ObrasServiciosGenerales = () => {
             <Header />
 
             {/* Hero Section */}
-            <section className="relative h-[60vh] min-h-[550px] flex items-center justify-center pt-32 pb-20 md:pt-20 md:pb-0 overflow-hidden">
+            <section className="relative h-[60vh] min-h-[550px] flex items-center justify-center pt-56 pb-32 md:pt-48 md:pb-32 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={heroImage}

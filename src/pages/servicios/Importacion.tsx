@@ -5,9 +5,10 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import {
     Globe,
-    Container,
+    Zap,
+    Wrench,
+    Truck,
     FileCheck,
-    Ship,
     ArrowRight,
     TrendingUp,
     Map
@@ -17,32 +18,39 @@ import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 const subServices = [
     {
-        icon: Container,
-        title: "Importación de Maquinaria",
-        subtitle: "Equipos Pesados e Industriales",
-        description: "Gestionamos la importación de maquinaria nueva o de segundo uso desde los principales mercados globales (USA, China, Europa), encargándonos de toda la logística.",
-        keywords: ["Maquinaria amarilla", "Líneas de producción", "Repuestos"]
+        icon: Globe,
+        title: "Materiales Críticos",
+        subtitle: "Importación de Construcción",
+        description: "Gestionamos la adquisición internacional de materiales especializados y recursos técnicos no disponibles en el mercado local, asegurando calidad desde el origen.",
+        keywords: ["Sourcing Global", "Materiales Especiales", "Calidad"]
     },
     {
-        icon: Ship,
-        title: "Logística Internacional",
-        subtitle: "Flete y Transporte",
-        description: "Coordinación completa de transporte marítimo, aéreo o terrestre. Buscamos las mejores rutas y tarifas para optimizar los costos de su importación.",
-        keywords: ["Flete marítimo", "Consolidación de carga", "Seguro internacional"]
+        icon: Zap,
+        title: "Componentes Eléctricos",
+        subtitle: "Tecnología y Equipamiento",
+        description: "Importación de tableros eléctricos, sistemas de iluminación avanzada y componentes industriales certificados bajo estándares internacionales de alto rendimiento.",
+        keywords: ["Equipos Industriales", "Certificación", "Tecnología"]
+    },
+    {
+        icon: Wrench,
+        title: "Equipos Especializados",
+        subtitle: "Herramientas de Alto Desempeño",
+        description: "Abastecimiento de herramientas profesionales y maquinaria técnica específica desde los principales fabricantes globales hacia su centro de operaciones.",
+        keywords: ["Herramientas Pro", "Maquinaria Técnica", "Suministro"]
+    },
+    {
+        icon: Truck,
+        title: "Gestión Logística",
+        subtitle: "Coordinación y Aduanas",
+        description: "Control integral del proceso de importación: desde la coordinación con el proveedor extranjero hasta la entrega final 'puerta a puerta' en sus instalaciones.",
+        keywords: ["Logística Integral", "Desaduanaje", "Puerta a Puerta"]
     },
     {
         icon: FileCheck,
-        title: "Gestión Aduanera",
-        subtitle: "Trámites y Permisos",
-        description: "Asesoría y gestión en desaduanaje. Nos encargamos de la clasificación arancelaria, permisos especiales y todo el papeleo necesario para nacionalizar su carga sin contratiempos.",
-        keywords: ["Nacionalización", "Partidas arancelarias", "Permisos MTC"]
-    },
-    {
-        icon: Globe,
-        title: "Sourcing",
-        subtitle: "Búsqueda de Proveedores",
-        description: "Le ayudamos a encontrar proveedores confiables en el extranjero para materiales específicos o equipos especializados que su proyecto requiera.",
-        keywords: ["Validación de proveedores", "Negociación", "Muestras"]
+        title: "Cumplimiento Técnico",
+        subtitle: "Normativa y Certificaciones",
+        description: "Verificamos rigurosamente cada estándar técnico y documento legal para asegurar que todos los equipos importados cumplan con la normativa vigente en el país.",
+        keywords: ["Marco Legal", "Certificaciones", "Garantía"]
     }
 ];
 
@@ -52,7 +60,7 @@ const Importacion = () => {
             <Header />
 
             {/* Hero Section */}
-            <section className="relative h-[60vh] min-h-[550px] flex items-center justify-center pt-32 pb-20 md:pt-20 md:pb-0 overflow-hidden">
+            <section className="relative h-[60vh] min-h-[550px] flex items-center justify-center pt-56 pb-32 md:pt-48 md:pb-32 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={heroImage}
