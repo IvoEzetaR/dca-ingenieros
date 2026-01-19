@@ -54,6 +54,43 @@ import huanuco3 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANU
 import huanuco4 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO4.jpg";
 import huanuco5 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO5.jpg";
 
+// Servicios Generales - Banco de la Nación Images
+import bnCarmen1 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO1.jpg";
+import bnCarmen2 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO2.jpg";
+import bnCarmen3 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO3.jpg";
+import bnCarmen4 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO4.jpg";
+import bnCarmen5 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO5.jpg";
+
+import bnGraco1 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE1.jpg";
+import bnGraco2 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE2.jpg";
+import bnGraco3 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE3.jpg";
+import bnGraco4 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE4.jpg";
+import bnGraco5 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE5.jpg";
+
+import bnMexico1 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA1.jpg";
+import bnMexico2 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA2.jpg";
+import bnMexico3 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA3.jpg";
+import bnMexico4 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA4.jpg";
+import bnMexico5 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA5.jpg";
+
+import bnMegaplaza1 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEGAPLAZA  - INDEPENDENCIA1.jpg";
+import bnMegaplaza2 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEGAPLAZA  - INDEPENDENCIA2.jpg";
+import bnMegaplaza3 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEGAPLAZA  - INDEPENDENCIA3.jpg";
+import bnMegaplaza4 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEGAPLAZA  - INDEPENDENCIA4.jpg";
+import bnMegaplaza5 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEGAPLAZA  - INDEPENDENCIA5.jpg";
+
+import bnDorado1 from "@/assets/imagenes-proyectos/ITSE/Banco de la nacion el dorado1.jpg";
+import bnDorado2 from "@/assets/imagenes-proyectos/ITSE/Banco de la nacion el dorado2.jpg";
+import bnDorado3 from "@/assets/imagenes-proyectos/ITSE/Banco de la nacion el dorado3.jpg";
+import bnDorado4 from "@/assets/imagenes-proyectos/ITSE/Banco de la nacion el dorado4.jpg";
+import bnDorado5 from "@/assets/imagenes-proyectos/ITSE/Banco de la nacion el dorado5.jpg";
+
+import bnSanBorja1 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA1.jpg";
+import bnSanBorja2 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA2.jpg";
+import bnSanBorja3 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA3.jpg";
+import bnSanBorja4 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA4.jpg";
+import bnSanBorja5 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA5.jpg";
+
 import {
   Dialog,
   DialogContent,
@@ -75,16 +112,6 @@ import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 const projects = [
   {
-    id: 1,
-    title: "Mantenimiento Correctivo de Barandas Metálicas",
-    client: "GRUPO ATV BARRANCO",
-    description: "Servicio integral de mantenimiento y reparación de estructuras metálicas para garantizar la seguridad y durabilidad.",
-    image: heroImage,
-    category: "servicios-generales",
-    categoryLabel: "Servicios generales",
-    images: [heroImage, heroImage, heroImage, heroImage]
-  },
-  {
     id: 2,
     title: "Remodelación Nuevo Soc Security Perú",
     client: "PROSEGUR SURCO",
@@ -92,16 +119,6 @@ const projects = [
     image: heroImage,
     category: "remodelaciones",
     categoryLabel: "Remodelaciones",
-    images: [heroImage, heroImage, heroImage, heroImage]
-  },
-  {
-    id: 3,
-    title: "Mantenimiento Correctivo",
-    client: "ADUNI ATE",
-    description: "Intervención correctiva en infraestructura educativa para asegurar el óptimo funcionamiento de las instalaciones.",
-    image: heroImage,
-    category: "servicios-generales",
-    categoryLabel: "Servicios generales",
     images: [heroImage, heroImage, heroImage, heroImage]
   },
   {
@@ -173,6 +190,66 @@ const projects = [
     category: "levantamiento-itse",
     categoryLabel: "Levantamiento itse",
     images: [huanuco1, huanuco2, huanuco3, huanuco4, huanuco5]
+  },
+  {
+    id: 11,
+    title: "PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE",
+    client: "BANCO DE LA NACIÓN",
+    description: "Servicio integral de mantenimiento preventivo y correctivo según plan anual.",
+    image: bnGraco1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [bnGraco1, bnGraco2, bnGraco3, bnGraco4, bnGraco5]
+  },
+  {
+    id: 12,
+    title: "PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA",
+    client: "BANCO DE LA NACIÓN",
+    description: "Ejecución del plan anual de mantenimiento para la sede México en La Victoria.",
+    image: bnMexico1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [bnMexico1, bnMexico2, bnMexico3, bnMexico4, bnMexico5]
+  },
+  {
+    id: 13,
+    title: "PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO",
+    client: "BANCO DE LA NACIÓN",
+    description: "Servicios de mantenimiento especializado para la sede Carmen Alto en Ayacucho.",
+    image: bnCarmen1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [bnCarmen1, bnCarmen2, bnCarmen3, bnCarmen4, bnCarmen5]
+  },
+  {
+    id: 14,
+    title: "PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEGAPLAZA - INDEPENDENCIA",
+    client: "BANCO DE LA NACIÓN",
+    description: "Mantenimiento preventivo y correctivo según cronograma anual en sede Megaplaza.",
+    image: bnMegaplaza1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [bnMegaplaza1, bnMegaplaza2, bnMegaplaza3, bnMegaplaza4, bnMegaplaza5]
+  },
+  {
+    id: 15,
+    title: "BANCO DE LA NACIÓN EL DORADO",
+    client: "BANCO DE LA NACIÓN",
+    description: "Servicios de mantenimiento y soporte técnico para la sede El Dorado.",
+    image: bnDorado1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [bnDorado1, bnDorado2, bnDorado3, bnDorado4, bnDorado5]
+  },
+  {
+    id: 16,
+    title: "IMPLEMENTACION BANCO DE LA NACION - SAN BORJA",
+    client: "BANCO DE LA NACIÓN",
+    description: "Servicio de implementación y adecuación de espacios para la sede San Borja.",
+    image: bnSanBorja1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [bnSanBorja1, bnSanBorja2, bnSanBorja3, bnSanBorja4, bnSanBorja5]
   }
 ];
 
