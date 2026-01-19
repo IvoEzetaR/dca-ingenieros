@@ -11,12 +11,6 @@ import alarma2 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma2.jpg"
 import alarma3 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma3.jpg";
 import alarma4 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma4.jpg";
 import alarma5 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma5.jpg";
-import alarma6 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma6.jpg";
-import alarma7 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma7.jpg";
-import alarma8 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma8.jpg";
-import alarma9 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma9.jpg";
-import alarma10 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma10.jpg";
-import alarma11 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma11.jpg";
 
 // ITSE Prosegur Cash Piura Images
 import cash1 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura1.jpg";
@@ -24,9 +18,41 @@ import cash2 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura2.jpg";
 import cash3 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura3.jpg";
 import cash4 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura4.jpg";
 import cash5 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura5.jpg";
-import cash6 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura6.jpg";
-import cash7 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura7.jpg";
-import cash8 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura8.jpg";
+
+// ITSE Prosegur Cajero Miraflores Images
+import miraflores1 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES1.jpg";
+import miraflores2 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES2.jpg";
+import miraflores3 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES3.jpg";
+import miraflores4 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES4.jpg";
+import miraflores5 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES5.jpg";
+
+// ITSE Proseguridad Callao Images
+import callao1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO1.jpg";
+import callao2 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO2.jpg";
+import callao3 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO3.jpg";
+import callao4 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO4.jpg";
+import callao5 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO5.jpg";
+
+// ITSE Prosegur Cash Centro Bancario Images
+import bancario1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH CENTRO BANCARIO1.jpg";
+import bancario2 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH CENTRO BANCARIO2.jpg";
+import bancario3 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH CENTRO BANCARIO3.jpg";
+import bancario4 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH CENTRO BANCARIO4.jpg";
+import bancario5 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH CENTRO BANCARIO5.jpg";
+
+// ITSE Prosegur Cash Morro Solar Images
+import morro1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR1.jpg";
+import morro2 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR2.jpg";
+import morro3 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR3.jpeg";
+import morro4 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR4.jpeg";
+import morro5 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR5.jpeg";
+
+// ITSE Proseguridad Huanuco Images
+import huanuco1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO1.jpg";
+import huanuco2 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO2.jpg";
+import huanuco3 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO3.jpg";
+import huanuco4 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO4.jpg";
+import huanuco5 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO5.jpg";
 
 import {
   Dialog,
@@ -86,7 +112,7 @@ const projects = [
     image: alarma1,
     category: "levantamiento-itse",
     categoryLabel: "Levantamiento itse",
-    images: [alarma1, alarma2, alarma3, alarma4, alarma5, alarma6, alarma7, alarma8, alarma9, alarma10, alarma11]
+    images: [alarma1, alarma2, alarma3, alarma4, alarma5]
   },
   {
     id: 5,
@@ -96,7 +122,57 @@ const projects = [
     image: cash1,
     category: "levantamiento-itse",
     categoryLabel: "Levantamiento itse",
-    images: [cash1, cash2, cash3, cash4, cash5, cash6, cash7, cash8]
+    images: [cash1, cash2, cash3, cash4, cash5]
+  },
+  {
+    id: 6,
+    title: "Levantamiento de observaciones ITSE - Prosegur Cajero Miraflores",
+    client: "PROSEGUR",
+    description: "Adecuación de infraestructura para cumplimiento de normativas ITSE en cajeros Miraflores.",
+    image: miraflores1,
+    category: "levantamiento-itse",
+    categoryLabel: "Levantamiento itse",
+    images: [miraflores1, miraflores2, miraflores3, miraflores4, miraflores5]
+  },
+  {
+    id: 7,
+    title: "Levantamiento de observaciones ITSE - Proseguridad Callao",
+    client: "PROSEGURIDAD",
+    description: "Implementación de mejoras de seguridad y cumplimiento normativo ITSE en sede Callao.",
+    image: callao1,
+    category: "levantamiento-itse",
+    categoryLabel: "Levantamiento itse",
+    images: [callao1, callao2, callao3, callao4, callao5]
+  },
+  {
+    id: 8,
+    title: "Levantamiento de observaciones ITSE - Prosegur Cash Centro Bancario",
+    client: "PROSEGUR CASH",
+    description: "Servicio de adecuación ITSE para el Centro Bancario de Prosegur Cash.",
+    image: bancario1,
+    category: "levantamiento-itse",
+    categoryLabel: "Levantamiento itse",
+    images: [bancario1, bancario2, bancario3, bancario4, bancario5]
+  },
+  {
+    id: 9,
+    title: "Levantamiento de observaciones ITSE - Prosegur Cash Morro Solar",
+    client: "PROSEGUR CASH",
+    description: "Implementación de mejoras y cumplimiento normativo ITSE en sede Morro Solar.",
+    image: morro1,
+    category: "levantamiento-itse",
+    categoryLabel: "Levantamiento itse",
+    images: [morro1, morro2, morro3, morro4, morro5]
+  },
+  {
+    id: 10,
+    title: "Levantamiento de observaciones ITSE - Proseguridad Huanuco",
+    client: "PROSEGURIDAD",
+    description: "Adecuación de infraestructura para cumplimiento de normativas ITSE en sede Huanuco.",
+    image: huanuco1,
+    category: "levantamiento-itse",
+    categoryLabel: "Levantamiento itse",
+    images: [huanuco1, huanuco2, huanuco3, huanuco4, huanuco5]
   }
 ];
 
