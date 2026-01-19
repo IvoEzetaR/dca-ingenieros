@@ -18,6 +18,7 @@ import nosotrosHero from "@/assets/nosotros-hero.jpg";
 import nosotrosTeam from "@/assets/nosotros-team.jpg";
 import nosotrosMision from "@/assets/nosotros-mision.jpg";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
+import { ContactDialog } from "@/components/ContactDialog";
 
 const valores = [
   {
@@ -384,13 +385,19 @@ const Nosotros = () => {
                   Deje la ingeniería en manos de expertos. Hagamos realidad su visión con los
                   <strong className="text-primary-foreground"> estándares que su empresa merece</strong>.
                 </p>
-                <Button
-                  size="lg"
-                  className="bg-accent hover:bg-accent-light text-accent-foreground font-semibold px-8 py-6 text-base rounded-xl shadow-lg hover:shadow-xl transition-all"
+                <ContactDialog
+                  title="Inicia tu Proyecto"
+                  description="Cuéntanos sobre tu requerimiento y recibe una propuesta técnica personalizada."
+                  source="Página Nosotros - CTA Final"
                 >
-                  Cotizar con un Ingeniero
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
+                  <Button
+                    size="lg"
+                    className="bg-accent hover:bg-accent-light text-accent-foreground font-semibold px-8 py-6 text-base rounded-xl shadow-lg hover:shadow-xl transition-all"
+                  >
+                    Cotizar con un Ingeniero
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </ContactDialog>
               </div>
             </div>
           </RevealOnScroll>

@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/servicios-hero.jpg";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
+import { ContactDialog } from "@/components/ContactDialog";
 
 const subServices = [
     {
@@ -93,10 +94,16 @@ const FerreteriaIntegral = () => {
                             Abastecemos su proyecto con las mejores marcas y garantía de producto. Todo lo que necesita en un solo lugar.
                         </p>
 
-                        <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
-                            Ver Catálogo
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
+                        <ContactDialog
+                            title="Ver Catálogo y Cotizar"
+                            description="Solicita nuestra lista de precios y stock actualizado de materiales."
+                            source="Ferretería Integral - Hero"
+                        >
+                            <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
+                                Ver Catálogo
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                        </ContactDialog>
                     </motion.div>
                 </div>
             </section>
@@ -232,9 +239,15 @@ const FerreteriaIntegral = () => {
                         Envíenos su lista de requerimientos y le responderemos a la brevedad con nuestra mejor propuesta.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
-                            Cotizar Ahora
-                        </Button>
+                        <ContactDialog
+                            title="Cotiza tus Materiales"
+                            description="Sube tu lista de materiales o descríbenos qué necesitas."
+                            source="Ferretería Integral - CTA Final"
+                        >
+                            <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
+                                Cotizar Ahora
+                            </Button>
+                        </ContactDialog>
                         <Button size="lg" variant="outline" className="font-semibold text-lg px-8 py-6 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                             Contactar Asesor
                         </Button>

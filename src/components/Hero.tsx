@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg";
+import { ContactDialog } from "./ContactDialog";
 
 export const Hero = () => {
   return (
@@ -42,14 +43,22 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="hero" size="xl">
-              Conoce nuestros servicios
-              <ChevronRight className="ml-2 h-5 w-5" />
+            <Button variant="hero" size="xl" asChild>
+              <a href="#servicios">
+                Conoce nuestros servicios
+                <ChevronRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
-            <Button variant="heroOutline" size="xl">
-              <Phone className="mr-2 h-5 w-5" />
-              Contáctanos
-            </Button>
+            <ContactDialog
+              title="¡Trabajemos Juntos!"
+              description="Déjanos tus datos y nos pondremos en contacto contigo para asesorarte en tu próximo proyecto."
+              source="Hero Principal - Inicio"
+            >
+              <Button variant="heroOutline" size="xl">
+                <Phone className="mr-2 h-5 w-5" />
+                Contáctanos
+              </Button>
+            </ContactDialog>
           </div>
 
           {/* Stats */}

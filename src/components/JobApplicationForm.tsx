@@ -24,48 +24,133 @@ interface JobApplicationFormProps {
 export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormProps) => {
     const [isSubmitting, setIsSubmitting] = React.useState(false);
     const [fileName, setFileName] = React.useState<string | null>(null);
+    const [fileBase64, setFileBase64] = React.useState<string | null>(null);
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
+    const { register, handleSubmit, setValue, watch, reset } = useForm({
+        defaultValues: {
+            fullname: "",
+            email: "",
+            phone: "",
+            docType: "dni",
+            message: "",
+            terms: false,
+        }
+    });
+
+    const [showSuccess, setShowSuccess] = React.useState(false);
+
+    const onSubmit = async (data: any) => {
         setIsSubmitting(true);
+        try {
+            const payload = {
+                ...data,
+                jobTitle,
+                cvName: fileName,
+                cvData: fileBase64,
+                formType: "Talento / Postulación",
+                submittedAt: new Date().toISOString(),
+            };
 
-        // Simulate API call
-        setTimeout(() => {
-            setIsSubmitting(false);
-            toast.success("Postulación enviada con éxito. ¡Mucha suerte!", {
-                description: "Te contactaremos pronto por correo electrónico o teléfono.",
+            const response = await fetch("https://n8n-n8n.op5xvn.easypanel.host/webhook/DCA", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
             });
-            onSuccess();
-        }, 2000);
+
+            if (!response.ok) throw new Error("Error en el servidor");
+
+            toast.success("Postulación enviada correctamente");
+            setShowSuccess(true);
+            reset();
+            setFileName(null);
+            setFileBase64(null);
+        } catch (error) {
+            console.error("Submission error:", error);
+            toast.error("Hubo un problema al enviar tu postulación", {
+                description: "Por favor, inténtalo de nuevo más tarde o contáctanos por WhatsApp.",
+            });
+        } finally {
+            setIsSubmitting(false);
+        }
     };
+
+    if (showSuccess) {
+        return (
+            <div className="flex flex-col items-center justify-center py-10 text-center animate-in fade-in zoom-in duration-300">
+                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-8 h-8">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 className="text-2xl font-bold text-[#1B316E] mb-2">¡Postulación Recibida!</h3>
+                <p className="text-muted-foreground mb-8 max-w-[320px]">
+                    Tu CV ha sido registrado en nuestra base de datos para la vacante de <strong>{jobTitle}</strong>. ¡Mucha suerte!
+                </p>
+                <Button
+                    onClick={() => {
+                        setShowSuccess(false);
+                        onSuccess();
+                    }}
+                    className="bg-[#1B316E] hover:bg-accent text-white px-8 h-12 rounded-xl"
+                >
+                    Cerrar
+                </Button>
+            </div>
+        );
+    }
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.files && e.target.files[0]) {
-            setFileName(e.target.files[0].name);
+            const file = e.target.files[0];
+            setFileName(file.name);
+
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setFileBase64(reader.result as string);
+            };
+            reader.readAsDataURL(file);
         }
     };
 
     return (
-        <form onSubmit={handleSubmit} className="space-y-6 pt-4">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 pt-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                     <Label htmlFor="fullname">Nombres y Apellidos</Label>
-                    <Input id="fullname" placeholder="Ej. Juan Pérez" required />
+                    <Input
+                        id="fullname"
+                        placeholder="Ej. Juan Pérez"
+                        {...register("fullname", { required: true })}
+                    />
                 </div>
                 <div className="space-y-2">
                     <Label htmlFor="email">Correo Electrónico</Label>
-                    <Input id="email" type="email" placeholder="juan.perez@ejemplo.com" required />
+                    <Input
+                        id="email"
+                        type="email"
+                        placeholder="juan.perez@ejemplo.com"
+                        {...register("email", { required: true })}
+                    />
                 </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                     <Label htmlFor="phone">Teléfono / WhatsApp</Label>
-                    <Input id="phone" type="tel" placeholder="+51 987 654 321" required />
+                    <Input
+                        id="phone"
+                        type="tel"
+                        placeholder="+51 987 654 321"
+                        {...register("phone", { required: true })}
+                    />
                 </div>
                 <div className="space-y-2">
                     <Label htmlFor="doc-type">Tipo de Documento</Label>
-                    <Select required>
+                    <Select onValueChange={(value) => setValue("docType", value)}>
                         <SelectTrigger>
                             <SelectValue placeholder="Seleccionar" />
                         </SelectTrigger>
@@ -84,6 +169,7 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
                     id="message"
                     placeholder="Cuéntanos un poco sobre tu experiencia y motivación..."
                     className="min-h-[100px]"
+                    {...register("message")}
                 />
             </div>
 
@@ -118,7 +204,11 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
             </div>
 
             <div className="flex items-start space-x-2 pt-2">
-                <Checkbox id="terms" required />
+                <Checkbox
+                    id="terms"
+                    onCheckedChange={(checked) => setValue("terms", checked as boolean)}
+                    required
+                />
                 <label
                     htmlFor="terms"
                     className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"

@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/servicios-hero.jpg";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
+import { ContactDialog } from "@/components/ContactDialog";
 
 const subServices = [
     {
@@ -93,10 +94,16 @@ const Importacion = () => {
                             Traemos el mundo a su empresa. Gestión integral de importaciones desde la búsqueda del proveedor hasta la entrega en su almacén.
                         </p>
 
-                        <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
-                            Iniciar Importación
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
+                        <ContactDialog
+                            title="Inicia tu Importación"
+                            description="Asesoría especializada para la adquisición de materiales y equipos internacionales."
+                            source="Importación - Hero"
+                        >
+                            <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
+                                Iniciar Importación
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                        </ContactDialog>
                     </motion.div>
                 </div>
             </section>
@@ -232,9 +239,15 @@ const Importacion = () => {
                         Hable con nuestros especialistas en comercio exterior y reciba asesoría gratuita para su primera importación.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
-                            Contactar Especialista
-                        </Button>
+                        <ContactDialog
+                            title="Contactar Especialista"
+                            description="Resuelve tus dudas sobre logística internacional y desaduanaje."
+                            source="Importación - CTA Final"
+                        >
+                            <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
+                                Contactar Especialista
+                            </Button>
+                        </ContactDialog>
                         <Button size="lg" variant="outline" className="font-semibold text-lg px-8 py-6 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                             Más Información
                         </Button>

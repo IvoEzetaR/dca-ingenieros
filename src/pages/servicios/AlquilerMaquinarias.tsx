@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/servicios-hero.jpg";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
+import { ContactDialog } from "@/components/ContactDialog";
 
 const subServices = [
     {
@@ -94,10 +95,16 @@ const AlquilerMaquinarias = () => {
                             Equipos confiables y de alto rendimiento para optimizar los tiempos y costos de su proyecto.
                         </p>
 
-                        <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
-                            Ver Flota Disponible
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
+                        <ContactDialog
+                            title="Consulta Disponibilidad"
+                            description="Selecciona los equipos que necesitas y verifica su disponibilidad inmediata."
+                            source="Alquiler Maquinarias - Hero"
+                        >
+                            <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
+                                Ver Flota Disponible
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                        </ContactDialog>
                     </motion.div>
                 </div>
             </section>
@@ -233,9 +240,15 @@ const AlquilerMaquinarias = () => {
                         Consulte la disponibilidad de nuestros equipos y solicite una cotización personalizada.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
-                            Consultar Disponibilidad
-                        </Button>
+                        <ContactDialog
+                            title="Cotiza tu Alquiler"
+                            description="Indícanos el tiempo de alquiler y el lugar de entrega para una mejor oferta."
+                            source="Alquiler Maquinarias - CTA Final"
+                        >
+                            <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
+                                Consultar Disponibilidad
+                            </Button>
+                        </ContactDialog>
                         <Button size="lg" variant="outline" className="font-semibold text-lg px-8 py-6 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                             Descargar Tarifario
                         </Button>

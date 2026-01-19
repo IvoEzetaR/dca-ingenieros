@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/servicios-hero.jpg";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
+import { ContactDialog } from "@/components/ContactDialog";
 
 const subServices = [
     {
@@ -117,10 +118,16 @@ const ObrasServiciosGenerales = () => {
                             Aseguramos el funcionamiento óptimo de sus instalaciones con servicios rápidos, eficientes y profesionales.
                         </p>
 
-                        <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
-                            Solicitar Servicio
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
+                        <ContactDialog
+                            title="Solicita un Servicio"
+                            description="Mantenimiento integral, drywall, acabados y más. Cuéntanos qué necesitas."
+                            source="Obras y Servicios Generales - Hero"
+                        >
+                            <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
+                                Solicitar Servicio
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                        </ContactDialog>
                     </motion.div>
                 </div>
             </section>
@@ -256,9 +263,15 @@ const ObrasServiciosGenerales = () => {
                         Deje sus instalaciones en manos de expertos. Contáctenos para coordinar una visita técnica.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
-                            Solicitar Visita
-                        </Button>
+                        <ContactDialog
+                            title="Programa una Visita"
+                            description="Coordinemos una inspección técnica para tus instalaciones."
+                            source="Obras y Servicios Generales - CTA Final"
+                        >
+                            <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
+                                Solicitar Visita
+                            </Button>
+                        </ContactDialog>
                         <Button size="lg" variant="outline" className="font-semibold text-lg px-8 py-6 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                             Ver Servicios
                         </Button>

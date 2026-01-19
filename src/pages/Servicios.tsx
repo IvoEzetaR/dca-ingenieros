@@ -29,6 +29,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import serviciosHero from "@/assets/servicios-hero.jpg";
+import { ContactDialog } from "@/components/ContactDialog";
 
 const services = [
   {
@@ -433,13 +434,19 @@ const Servicios = () => {
               Nuestro equipo de ingenieros evaluará su proyecto en sitio y le brindará una
               <strong className="text-foreground"> propuesta personalizada sin compromiso</strong>.
             </p>
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary-light text-primary-foreground font-semibold px-8 py-6 text-base rounded-xl shadow-lg hover:shadow-xl transition-all"
+            <ContactDialog
+              title="Solicita una Visita Técnica"
+              description="Nuestros ingenieros evaluarán tu proyecto en sitio y te brindarán una propuesta personalizada."
+              source="Página Servicios - CTA Final"
             >
-              Contactar Ahora
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary-light text-primary-foreground font-semibold px-8 py-6 text-base rounded-xl shadow-lg hover:shadow-xl transition-all"
+              >
+                Contactar Ahora
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </ContactDialog>
           </motion.div>
         </div>
       </section>

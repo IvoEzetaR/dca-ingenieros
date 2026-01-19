@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/servicios-hero.jpg";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
+import { ContactDialog } from "@/components/ContactDialog";
 
 const subServices = [
     {
@@ -116,10 +117,16 @@ const GestionProyectos = () => {
                             Nuestro enfoque integra la planificación estratégica, la gestión de riesgos y el control permanente de los recursos, permitiendo a nuestros clientes ejecutar sus proyectos con mayor eficiencia, predictibilidad y control.
                         </p>
 
-                        <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
-                            Cotizar Mi Proyecto
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
+                        <ContactDialog
+                            title="Cotiza tu Gerencia de Proyecto"
+                            description="Optimiza tus recursos y asegura el éxito de tu obra con nuestra gestión profesional."
+                            source="Gerencia de Proyectos - Hero"
+                        >
+                            <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
+                                Cotizar Mi Proyecto
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                        </ContactDialog>
                     </motion.div>
                 </div>
             </section>
@@ -252,9 +259,15 @@ const GestionProyectos = () => {
                         Contamos con la experiencia y la metodología para llevarlo al éxito. Conversemos sobre sus objetivos.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
-                            Agendar Consultoría
-                        </Button>
+                        <ContactDialog
+                            title="Agenda una Consultoría"
+                            description="Conversemos sobre tus objetivos y cómo nuestra metodología puede ayudarte."
+                            source="Gerencia de Proyectos - CTA Final"
+                        >
+                            <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
+                                Agendar Consultoría
+                            </Button>
+                        </ContactDialog>
                         <Button size="lg" variant="outline" className="font-semibold text-lg px-8 py-6 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                             Ver Portafolio
                         </Button>

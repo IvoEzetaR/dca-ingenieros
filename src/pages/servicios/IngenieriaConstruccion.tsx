@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/servicios-hero.jpg";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
+import { ContactDialog } from "@/components/ContactDialog";
 
 const subServices = [
     {
@@ -94,10 +95,16 @@ const IngenieriaConstruccion = () => {
                             Soluciones estructurales y gestión de obra bajo estándares PMI e ISO. Desde el primer trazo hasta la entrega de llaves.
                         </p>
 
-                        <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
-                            Cotizar Proyecto
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
+                        <ContactDialog
+                            title="Cotiza tu Proyecto"
+                            description="Solicita un presupuesto detallado para tu obra civil o remodelación."
+                            source="Ingeniería y Construcción - Hero"
+                        >
+                            <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">
+                                Cotizar Proyecto
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                        </ContactDialog>
                     </motion.div>
                 </div>
             </section>
@@ -235,9 +242,15 @@ const IngenieriaConstruccion = () => {
                         Contáctenos hoy para una evaluación técnica inicial y descubra cómo podemos hacer realidad su visión con los más altos estándares.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
-                            Agendar Reunión
-                        </Button>
+                        <ContactDialog
+                            title="Inicia tu Obra"
+                            description="Programa una reunión técnica con nuestros especialistas."
+                            source="Ingeniería y Construcción - CTA Final"
+                        >
+                            <Button size="lg" variant="secondary" className="font-semibold text-lg px-8 py-6">
+                                Agendar Reunión
+                            </Button>
+                        </ContactDialog>
                         <Button size="lg" variant="outline" className="font-semibold text-lg px-8 py-6 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                             Ver Proyectos
                         </Button>

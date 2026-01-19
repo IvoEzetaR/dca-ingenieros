@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, Search, Send, ChevronDown } from "lucide-react";
 import logoDCA from "@/assets/Logo DCA.png";
 import { cn } from "@/lib/utils";
+import { ContactDialog } from "./ContactDialog";
 
 const navItems = [
   { label: "Grupo DCA", href: "/", isRoute: true },
@@ -291,9 +292,15 @@ export const Header = () => {
                       <a href="mailto:proyectos@dcaingenieros.com" className="text-sm font-medium">proyectos@dcaingenieros.com</a>
                     </div>
                   </div>
-                  <Button variant="default" size="lg" className="w-full bg-[#1B316E] hover:bg-[#1B316E]/90 text-white">
-                    Cotizar Proyecto
-                  </Button>
+                  <ContactDialog
+                    title="Cotiza tu Proyecto"
+                    description="Déjanos tus datos y nos pondremos en contacto contigo para asesorarte."
+                    source="Menú Móvil - Cabecera"
+                  >
+                    <Button variant="default" size="lg" className="w-full bg-[#1B316E] hover:bg-[#1B316E]/90 text-white">
+                      Cotizar Proyecto
+                    </Button>
+                  </ContactDialog>
                 </div>
               </nav>
             </div>
