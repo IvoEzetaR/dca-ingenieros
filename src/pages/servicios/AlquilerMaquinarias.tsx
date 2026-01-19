@@ -61,7 +61,7 @@ const AlquilerMaquinarias = () => {
             <Header />
 
             {/* Hero Section */}
-            <section className="relative h-[60vh] min-h-[550px] flex items-center justify-center pt-56 pb-32 md:pt-48 md:pb-32 overflow-hidden">
+            <section className="relative h-[85vh] min-h-[750px] flex items-center justify-center pt-96 pb-80 md:pt-80 md:pb-64 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={heroImage}

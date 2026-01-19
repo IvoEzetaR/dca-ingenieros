@@ -3,7 +3,31 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
-import heroImage from "@/assets/hero-construction.jpg"; // Reusing hero image for now
+import heroImage from "@/assets/hero-construction.jpg";
+
+// ITSE Prosegur Alarma Images
+import alarma1 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma1.jpg";
+import alarma2 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma2.jpg";
+import alarma3 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma3.jpg";
+import alarma4 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma4.jpg";
+import alarma5 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma5.jpg";
+import alarma6 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma6.jpg";
+import alarma7 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma7.jpg";
+import alarma8 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma8.jpg";
+import alarma9 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma9.jpg";
+import alarma10 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma10.jpg";
+import alarma11 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma11.jpg";
+
+// ITSE Prosegur Cash Piura Images
+import cash1 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura1.jpg";
+import cash2 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura2.jpg";
+import cash3 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura3.jpg";
+import cash4 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura4.jpg";
+import cash5 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura5.jpg";
+import cash6 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura6.jpg";
+import cash7 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura7.jpg";
+import cash8 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura8.jpg";
+
 import {
   Dialog,
   DialogContent,
@@ -56,23 +80,23 @@ const projects = [
   },
   {
     id: 4,
-    title: "Levantamiento de Observaciones ITSE",
-    client: "PROSEGUR MIRAFLORES",
-    description: "Adecuación de infraestructura para cumplimiento de normativas de Inspección Técnica de Seguridad en Edificaciones.",
-    image: heroImage,
+    title: "Levantamiento de observaciones ITSE Prosegur alarma",
+    client: "PROSEGUR",
+    description: "Adecuación de infraestructura y sistemas de alarma para cumplimiento de normativas de Inspección Técnica de Seguridad en Edificaciones.",
+    image: alarma1,
     category: "levantamiento-itse",
     categoryLabel: "Levantamiento itse",
-    images: [heroImage, heroImage, heroImage, heroImage]
+    images: [alarma1, alarma2, alarma3, alarma4, alarma5, alarma6, alarma7, alarma8, alarma9, alarma10, alarma11]
   },
   {
     id: 5,
-    title: "Levantamiento de Observaciones ITSE",
-    client: "PROSEGUR CHIMBOTE",
-    description: "Implementación de mejoras y correcciones según requerimientos de ITSE para certificación de seguridad.",
-    image: heroImage,
+    title: "Levantamiento de observaciones ITSE Prosegur Cash Piura",
+    client: "PROSEGUR CASH",
+    description: "Implementación de mejoras y correcciones de seguridad en la sede Piura para certificación ITSE.",
+    image: cash1,
     category: "levantamiento-itse",
     categoryLabel: "Levantamiento itse",
-    images: [heroImage, heroImage, heroImage, heroImage]
+    images: [cash1, cash2, cash3, cash4, cash5, cash6, cash7, cash8]
   }
 ];
 
@@ -84,7 +108,7 @@ const Proyectos = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative h-[60vh] min-h-[450px] flex items-center justify-center pt-56 pb-32 md:pt-48 md:pb-32 overflow-hidden">
+        <section className="relative h-[85vh] min-h-[750px] flex items-center justify-center pt-96 pb-80 md:pt-80 md:pb-64 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
               src={heroImage}

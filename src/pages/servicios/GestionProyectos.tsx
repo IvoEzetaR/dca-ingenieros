@@ -20,7 +20,7 @@ import {
     DollarSign,
     Users
 } from "lucide-react";
-import heroImage from "@/assets/hero-construction.jpg"; // Reusing high-quality construction image
+import heroImage from "@/assets/servicios-hero.jpg";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 const subServices = [
