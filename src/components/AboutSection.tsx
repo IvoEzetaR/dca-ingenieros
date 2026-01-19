@@ -1,5 +1,5 @@
 import { CheckCircle2, Award, Users, Clock } from "lucide-react";
-import aboutImage from "@/assets/about-team.jpg";
+import aboutImage from "@/assets/Apto sección nosotros.jpg";
 import { RevealOnScroll } from "./RevealOnScroll";
 
 const features = [

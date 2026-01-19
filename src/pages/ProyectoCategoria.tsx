@@ -105,6 +105,13 @@ import teleperformance3 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE3.
 import teleperformance4 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE4.jpg";
 import teleperformance5 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE5.jpg";
 
+// Construcción - Reforzamiento Estructural Panamá
+import panama1 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama1.jpg";
+import panama2 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama2.jpg";
+import panama3 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama3.jpg";
+import panama4 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama4.jpg";
+import panama5 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama5.jpg";
+
 import {
     Dialog,
     DialogContent,
@@ -148,6 +155,16 @@ const projects = [
         category: "remodelaciones",
         categoryLabel: "Remodelaciones",
         images: [teleperformance1, teleperformance2, teleperformance3, teleperformance4, teleperformance5]
+    },
+    {
+        id: 19,
+        title: "Reforzamiento estructural Panama",
+        client: "PANAMA",
+        description: "Servicio especializado de reforzamiento estructural para mejorar la estabilidad y capacidad de carga de edificaciones.",
+        image: panama1,
+        category: "construccion",
+        categoryLabel: "Construcción",
+        images: [panama1, panama2, panama3, panama4, panama5]
     },
     {
         id: 4,
