@@ -91,6 +91,19 @@ import bnSanBorja3 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO D
 import bnSanBorja4 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA4.jpg";
 import bnSanBorja5 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA5.jpg";
 
+// Remodelaciones - Prosegur Alarma & Teleperformance
+import salaDescanso1 from "@/assets/imagenes-proyectos/ITSE/adecuacion de la sala de descanso Prosegur alarma1.jpg";
+import salaDescanso2 from "@/assets/imagenes-proyectos/ITSE/adecuacion de la sala de descanso Prosegur alarma2.jpg";
+import salaDescanso3 from "@/assets/imagenes-proyectos/ITSE/adecuacion de la sala de descanso Prosegur alarma3.jpg";
+import salaDescanso4 from "@/assets/imagenes-proyectos/ITSE/adecuacion de la sala de descanso Prosegur alarma4.jpg";
+import salaDescanso5 from "@/assets/imagenes-proyectos/ITSE/adecuacion de la sala de descanso Prosegur alarma5.jpg";
+
+import teleperformance1 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE1.jpg";
+import teleperformance2 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE2.jpg";
+import teleperformance3 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE3.jpg";
+import teleperformance4 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE4.jpg";
+import teleperformance5 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE5.jpg";
+
 import {
   Dialog,
   DialogContent,
@@ -112,14 +125,24 @@ import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 const projects = [
   {
-    id: 2,
-    title: "Remodelación Nuevo Soc Security Perú",
-    client: "PROSEGUR SURCO",
-    description: "Remodelación completa de instalaciones para adecuación de nuevos estándares de seguridad y operatividad.",
-    image: heroImage,
+    id: 17,
+    title: "Adecuacion de la sala de descanso Prosegur alarma",
+    client: "PROSEGUR",
+    description: "Servicio de remodelación y adecuación de espacios para sala de descanso en sede Prosegur Alarma.",
+    image: salaDescanso1,
     category: "remodelaciones",
     categoryLabel: "Remodelaciones",
-    images: [heroImage, heroImage, heroImage, heroImage]
+    images: [salaDescanso1, salaDescanso2, salaDescanso3, salaDescanso4, salaDescanso5]
+  },
+  {
+    id: 18,
+    title: "TELEPERFORMANCE",
+    client: "TELEPERFORMANCE",
+    description: "Proyecto de adecuación y remodelación de instalaciones corporativas para Teleperformance.",
+    image: teleperformance1,
+    category: "remodelaciones",
+    categoryLabel: "Remodelaciones",
+    images: [teleperformance1, teleperformance2, teleperformance3, teleperformance4, teleperformance5]
   },
   {
     id: 4,
