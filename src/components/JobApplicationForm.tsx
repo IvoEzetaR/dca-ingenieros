@@ -32,12 +32,14 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
             email: "",
             phone: "",
             docType: "dni",
+            docNumber: "",
             message: "",
             terms: false,
         }
     });
 
     const [showSuccess, setShowSuccess] = React.useState(false);
+    const selectedDocType = watch("docType");
 
     const onSubmit = async (data: any) => {
         setIsSubmitting(true);
@@ -150,7 +152,7 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
                 </div>
                 <div className="space-y-2">
                     <Label htmlFor="doc-type">Tipo de Documento</Label>
-                    <Select onValueChange={(value) => setValue("docType", value)}>
+                    <Select onValueChange={(value) => setValue("docType", value)} defaultValue="dni">
                         <SelectTrigger>
                             <SelectValue placeholder="Seleccionar" />
                         </SelectTrigger>
@@ -160,6 +162,14 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
                             <SelectItem value="pasaporte">Pasaporte</SelectItem>
                         </SelectContent>
                     </Select>
+                </div>
+                <div className="space-y-2 animate-in fade-in slide-in-from-left-2 duration-300">
+                    <Label htmlFor="docNumber">Número de {selectedDocType?.toUpperCase() || "Documento"}</Label>
+                    <Input
+                        id="docNumber"
+                        placeholder={`Ej. ${selectedDocType === 'dni' ? '12345678' : '001234567'}`}
+                        {...register("docNumber", { required: true })}
+                    />
                 </div>
             </div>
 

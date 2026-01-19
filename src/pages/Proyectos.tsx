@@ -33,12 +33,6 @@ import callao3 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO
 import callao4 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO4.jpg";
 import callao5 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO5.jpg";
 
-// ITSE Prosegur Cash Centro Bancario Images
-import bancario1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH CENTRO BANCARIO1.jpg";
-import bancario2 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH CENTRO BANCARIO2.jpg";
-import bancario3 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH CENTRO BANCARIO3.jpg";
-import bancario4 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH CENTRO BANCARIO4.jpg";
-import bancario5 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH CENTRO BANCARIO5.jpg";
 
 // ITSE Prosegur Cash Morro Solar Images
 import morro1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR1.jpg";
@@ -102,7 +96,13 @@ import teleperformance1 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE1.
 import teleperformance2 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE2.jpg";
 import teleperformance3 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE3.jpg";
 import teleperformance4 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE4.jpg";
-import teleperformance5 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE5.jpg";
+
+// Remodelación Oficina Panamá Images
+import panamaOficina1 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA1.jpg";
+import panamaOficina2 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA2.jpg";
+import panamaOficina3 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA3.jpg";
+import panamaOficina4 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA4.jpg";
+import panamaOficina5 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA5.jpg";
 
 // Construcción - Reforzamiento Estructural Panamá
 import panama1 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama1.jpg";
@@ -132,6 +132,16 @@ import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 const projects = [
   {
+    id: 20,
+    title: "REMODELACION OFICINA PANAMA",
+    client: "PANAMA",
+    description: "Proyecto integral de remodelación de oficinas corporativas, optimizando espacios y modernizando la infraestructura para mejorar el entorno laboral.",
+    image: panamaOficina1,
+    category: "remodelaciones",
+    categoryLabel: "Remodelaciones",
+    images: [panamaOficina1, panamaOficina2, panamaOficina3, panamaOficina4, panamaOficina5]
+  },
+  {
     id: 17,
     title: "Adecuacion de la sala de descanso Prosegur alarma",
     client: "PROSEGUR",
@@ -149,7 +159,7 @@ const projects = [
     image: teleperformance1,
     category: "remodelaciones",
     categoryLabel: "Remodelaciones",
-    images: [teleperformance1, teleperformance2, teleperformance3, teleperformance4, teleperformance5]
+    images: [teleperformance1, teleperformance2, teleperformance3, teleperformance4]
   },
   {
     id: 19,
@@ -200,16 +210,6 @@ const projects = [
     category: "levantamiento-itse",
     categoryLabel: "Levantamiento itse",
     images: [callao1, callao2, callao3, callao4, callao5]
-  },
-  {
-    id: 8,
-    title: "Levantamiento de observaciones ITSE - Prosegur Cash Centro Bancario",
-    client: "PROSEGUR CASH",
-    description: "Servicio de adecuación ITSE para el Centro Bancario de Prosegur Cash.",
-    image: bancario1,
-    category: "levantamiento-itse",
-    categoryLabel: "Levantamiento itse",
-    images: [bancario1, bancario2, bancario3, bancario4, bancario5]
   },
   {
     id: 9,

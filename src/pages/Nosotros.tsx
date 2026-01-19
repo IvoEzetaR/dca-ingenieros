@@ -186,8 +186,9 @@ const Nosotros = () => {
                     <div>
                       <h3 className="text-xl font-bold text-foreground mb-3">Nuestra Misión</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Brindar soluciones de ingeniería y construcción que <strong className="text-foreground">superen las expectativas del mercado</strong>,
-                        garantizando la seguridad operacional, la calidad técnica y el respeto absoluto por el medio ambiente en cada intervención.
+                        Brindar soluciones integrales de ingeniería, construcción, mantenimiento y
+                        servicios generales incorporando soluciones innovadoras; teniendo como
+                        filosofía la calidad, optimización y seguridad.
                       </p>
                     </div>
                   </div>
@@ -204,8 +205,9 @@ const Nosotros = () => {
                     <div>
                       <h3 className="text-xl font-bold text-foreground mb-3">Nuestra Visión</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Consolidarnos como el <strong className="text-foreground">socio estratégico líder</strong> en gestión de proyectos en el Perú,
-                        reconocidos por nuestra capacidad de respuesta, innovación en procesos y ética profesional inquebrantable.
+                        Ser reconocida a nivel nacional como una empresa consolidada por ser una
+                        organización confiable y honesta, con proyectos de excelente calidad, mejorando
+                        continuamente los procesos y fortaleciendo la competencia humana.
                       </p>
                     </div>
                   </div>

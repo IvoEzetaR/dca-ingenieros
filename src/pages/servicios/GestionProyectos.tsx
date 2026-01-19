@@ -82,7 +82,7 @@ const GestionProyectos = () => {
             <Header />
 
             {/* Hero Section */}
-            <section className="relative h-[85vh] min-h-[750px] flex items-center justify-center pt-96 pb-80 md:pt-80 md:pb-64 overflow-hidden">
+            <section className="relative h-[80vh] min-h-[750px] flex items-center justify-center pt-96 pb-80 md:pt-80 md:pb-64 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={heroImage}
@@ -111,10 +111,8 @@ const GestionProyectos = () => {
                             <span className="text-accent-light">PROYECTOS</span>
                         </h1>
 
-                        <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-                            Brindamos servicios de Gerencia y Dirección de Proyectos, orientados a asegurar el cumplimiento de alcance, plazo, costo, calidad y seguridad, aplicando buenas prácticas internacionales basadas en el PMI (Project Management Institute).
-                            <br className="hidden md:block" />
-                            Nuestro enfoque integra la planificación estratégica, la gestión de riesgos y el control permanente de los recursos, permitiendo a nuestros clientes ejecutar sus proyectos con mayor eficiencia, predictibilidad y control.
+                        <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+                            Brindamos servicios de Gerencia y Dirección de Proyectos, orientados a asegurar el cumplimiento de alcance, plazo, costo, calidad y seguridad, aplicando buenas prácticas internacionales basadas en el PMI.
                         </p>
 
                         <ContactDialog
