@@ -51,58 +51,270 @@ const beneficios = [
 const jobs = [
     {
         id: "1",
-        title: "Ingeniero de Proyectos Senior",
-        location: "Lima, Perú",
+        title: "Administrador(a) de Obra",
+        location: "Lima y Provincias",
         type: "Full-time",
-        department: "Ingeniería",
-        postedDate: "15 May 2024",
-        description: "Responsable de la gestión integral de proyectos de infraestructura minera y civil.",
+        department: "Administración",
+        postedDate: "19 Ene 2026",
+        description: "En DCA INGENIEROS SAC, cada día representa una oportunidad para crecer, aprender y asumir nuevos retos. Buscamos un profesional con experiencia liderando actividades administrativas y contables en obra, con capacidad de planificación, organización y negociación con proveedores.",
+        responsibilities: [
+            "Planificar, organizar y liderar las actividades del área administrativa del proyecto.",
+            "Gestionar y administrar las garantías financieras (cartas fianza y seguros) de subcontratos.",
+            "Aprobar valorizaciones y programar pagos a proveedores.",
+            "Elaborar y administrar contratos de proveedores de bienes y servicios.",
+            "Controlar y dar seguimiento a las facturas por pagar.",
+            "Supervisar los almacenes del proyecto."
+        ],
         requirements: [
-            "Colegiado en Ingeniería Civil.",
-            "Mínimo 8 años de experiencia en proyectos similares.",
-            "Conocimiento avanzado de MS Project y AutoCAD."
+            "Bachiller o titulado en Administración, Contabilidad o carreras afines.",
+            "Experiencia laboral mínima de 8 años en el área administrativa, contable y/o financiera.",
+            "Al menos 5 años en cargos de liderazgo administrativo o contable (pref. construcción).",
+            "Conocimientos indispensables en Excel avanzado y SAP (FI, MM)."
+        ],
+        benefits: [
+            "Remuneración competitiva acorde al mercado.",
+            "Ingreso a planilla con todos los beneficios de ley.",
+            "Oportunidades de desarrollo y crecimiento profesional.",
+            "Capacitación constante según el rol."
         ]
     },
     {
         id: "2",
-        title: "Arquitecto de Interiores",
-        location: "Lima, Perú",
+        title: "Auxiliar Logístico",
+        location: "Lima y Provincias",
         type: "Full-time",
-        department: "Arquitectura",
-        postedDate: "10 May 2024",
-        description: "Diseño y supervisión de acabados en proyectos corporativos de alta gama.",
+        department: "Logística",
+        postedDate: "19 Ene 2026",
+        description: "Buscamos un profesional organizado, proactivo y con experiencia en gestión logística, compras y control de almacenes, orientado al cumplimiento de plazos y estándares de seguridad.",
+        responsibilities: [
+            "Evaluar alternativas de compra y proveedores para los procesos logísticos.",
+            "Buscar, identificar y desarrollar proveedores competitivos de bienes y servicios.",
+            "Solicitar cotizaciones y elaborar cuadros comparativos.",
+            "Ejecutar compras de materiales, herramientas, equipos y servicios.",
+            "Garantizar la entrega oportuna de materiales a cada proyecto.",
+            "Gestionar el orden, limpieza e inventarios del almacén.",
+            "Supervisar el adecuado manejo y almacenamiento de materiales peligrosos."
+        ],
         requirements: [
-            "Bachiller o Titulado en Arquitectura.",
-            "Experiencia mínima de 3 años en diseño de interiores.",
-            "Dominio de Revit y Rhino."
+            "Estudios técnicos o universitarios en Administración, Logística, Ing. Industrial o afines.",
+            "Experiencia mínima de 2 a 3 años en funciones logísticas, compras o almacén.",
+            "Conocimientos en gestión de compras, negociación y control de inventarios.",
+            "Manejo de Excel intermedio o avanzado (deseable)."
+        ],
+        benefits: [
+            "Remuneración acorde al mercado.",
+            "Ingreso a planilla con todos los beneficios de ley.",
+            "Oportunidades de crecimiento y desarrollo profesional.",
+            "Capacitación constante según el rol."
         ]
     },
     {
         id: "3",
-        title: "Especialista SSOMA",
-        location: "Arequipa, Perú",
+        title: "Ingeniero(a) de Costos y Presupuestos",
+        location: "Lima y Provincias",
         type: "Full-time",
-        department: "Seguridad",
-        postedDate: "08 May 2024",
-        description: "Garantizar el cumplimiento de las normativas de seguridad, salud y medio ambiente en obra.",
+        department: "Área Técnica",
+        postedDate: "19 Ene 2026",
+        description: "Responsable de la correcta elaboración, control y seguimiento de los presupuestos de nuestros proyectos, garantizando una adecuada gestión de costos y rentabilidad.",
+        responsibilities: [
+            "Elaborar presupuestos de partidas eléctricas, sanitarias, HVAC y demás especialidades.",
+            "Desarrollar el presupuesto base y el presupuesto meta de los proyectos.",
+            "Elaborar el plan de costos del proyecto y proyectar precios.",
+            "Realizar metrados y cubicaciones de las diferentes especialidades.",
+            "Desarrollar el Análisis de Precios Unitarios (APU).",
+            "Realizar el seguimiento y control del cumplimiento de los presupuestos asignados.",
+            "Identificar riesgos ambientales y proponer medidas correctivas."
+        ],
         requirements: [
-            "Ingeniero Industrial, Ambiental o afines.",
-            "Diplomado o especialización en Seguridad Minera.",
-            "Disponibilidad para trabajar bajo régimen."
+            "Bachiller o Titulado en Ingeniería Civil, Eléctrica, Sanitaria o afines.",
+            "Experiencia mínima de 02 años en costos, presupuestos o funciones similares.",
+            "Dominio de herramientas de estimación de costos (S10 u otro software similar).",
+            "Manejo de AutoCAD Civil 3D – nivel intermedio.",
+            "Conocimientos en Revit and/or SketchUp y MS Project."
+        ],
+        benefits: [
+            "Remuneración acorde al mercado.",
+            "Ingreso a planilla con todos los beneficios de ley.",
+            "Oportunidades de desarrollo profesional y línea de carrera.",
+            "Capacitación constante según el rol."
         ]
     },
     {
         id: "4",
-        title: "Administrador de Obra",
-        location: "Cusco, Perú",
+        title: "Asistente de Costos y Presupuestos",
+        location: "Lima y Provincias",
         type: "Full-time",
-        department: "Administración",
-        postedDate: "05 May 2024",
-        description: "Control administrativo, logístico y de personal en proyectos locales.",
+        department: "Área Técnica",
+        postedDate: "19 Ene 2026",
+        description: "Brinda soporte al Área Técnica en la elaboración, análisis y control de presupuestos, contribuyendo a la correcta estimación de costos de nuestros proyectos.",
+        responsibilities: [
+            "Analizar los requerimientos del cliente para identificar el alcance de los proyectos.",
+            "Realizar visitas de campo para el levantamiento de información.",
+            "Elaborar el itemizado y la estructura del presupuesto por partidas.",
+            "Realizar metrados de las distintas especialidades.",
+            "Mantener actualizada la base de datos de presupuestos.",
+            "Realizar seguimiento a las cotizaciones enviadas."
+        ],
         requirements: [
-            "Titulado en Administración, Contabilidad o afines.",
-            "Experiencia de 5 años en administración de contratos de construcción.",
-            "Excel nivel avanzado."
+            "Egresado(a) universitario(a) de Ingeniería Civil, Industrial, Arquitectura o afines.",
+            "Experiencia mínima de 01 año en funciones relacionadas a costos, presupuestos o metrados.",
+            "Manejo de MS Project y AutoCAD Civil – nivel intermedio.",
+            "Dominio de Microsoft Excel (tablas dinámicas, filtros).",
+            "Conocimiento en estructura de costos."
+        ],
+        benefits: [
+            "Remuneración acorde al mercado.",
+            "Ingreso a planilla con todos los beneficios de ley.",
+            "Oportunidades de aprendizaje y desarrollo profesional.",
+            "Capacitación constante según el rol."
+        ]
+    },
+    {
+        id: "5",
+        title: "Ingeniero(a) SSOMA",
+        location: "Lima y Provincias",
+        type: "Full-time",
+        department: "Seguridad",
+        postedDate: "19 Ene 2026",
+        description: "Garantiza el cumplimiento de los estándares de Seguridad, Salud Ocupacional y Medio Ambiente en nuestras operaciones a nivel nacional.",
+        responsibilities: [
+            "Verificar que todo el personal haya recibido la Inducción de Hombre Nuevo.",
+            "Asegurar la correcta entrega, uso y control de los EPP.",
+            "Identificar, evaluar riesgos y proponer medidas correctivas y preventivas.",
+            "Supervisar el correcto llenado de los ATS previo al inicio de actividades.",
+            "Realizar y liderar charlas diarias de seguridad.",
+            "Elaborar el Plan SSOMA e IPERC específicos por proyecto.",
+            "Brindar capacitaciones en SST al personal."
+        ],
+        requirements: [
+            "Titulado(a) en Ingeniería Industrial, Ambiental, Civil o afines con especialización en SST.",
+            "Experiencia mínima de 01 año en funciones SSOMA o Prevencionista.",
+            "Capacitación en trabajos de alto riesgo (altura, caliente, eléctrico, confinados).",
+            "Certificación en Primeros Auxilios y Control de Incendios.",
+            "Conocimientos en investigación de accidentes."
+        ],
+        benefits: [
+            "Remuneración acorde al mercado.",
+            "Ingreso a planilla con todos los beneficios de ley.",
+            "Desarrollo profesional y capacitación continua en SSOMA.",
+            "Participación en proyectos a nivel nacional."
+        ]
+    },
+    {
+        id: "6",
+        title: "Ingeniero(a) de Producción",
+        location: "Lima y Provincias",
+        type: "Full-time",
+        department: "Producción",
+        postedDate: "19 Ene 2026",
+        description: "Liderar y supervisar las actividades productivas en obra, asegurando el correcto desarrollo de los proyectos asignados.",
+        responsibilities: [
+            "Supervisar las labores diarias para asegurar el cumplimiento de plazos y calidad.",
+            "Verificar en campo la producción, rendimiento de equipos, personal y materiales.",
+            "Ejecutar y supervisar acciones correctivas identificadas.",
+            "Elaborar valorizaciones y liquidaciones de obra.",
+            "Realizar supervisión permanente en campo de las actividades operativas.",
+            "Monitorear el cumplimiento de normativas ambientales y de seguridad."
+        ],
+        requirements: [
+            "Bachiller o Titulado(a) en Ingeniería Civil.",
+            "Experiencia mínima de 02 años en funciones similares como Ing. de Producción.",
+            "Manejo de AutoCAD Civil – nivel intermedio.",
+            "Conocimientos en S10, MS Project y metodología BIM (deseable).",
+            "No contar con antecedentes policiales ni penales."
+        ],
+        benefits: [
+            "Remuneración acorde al mercado.",
+            "Ingreso a planilla con todos los beneficios de ley.",
+            "Oportunidades de desarrollo profesional y crecimiento.",
+            "Participación en proyectos a nivel nacional."
+        ]
+    },
+    {
+        id: "7",
+        title: "Ingeniero(a) Residente de Obra",
+        location: "Lima y Provincias",
+        type: "Full-time",
+        department: "Operaciones",
+        postedDate: "19 Ene 2026",
+        description: "Responsable de la ejecución integral de los proyectos en campo, garantizando el cumplimiento de plazos, costos, calidad y normativas vigentes.",
+        responsibilities: [
+            "Supervisar la ejecución de la obra asegurando cumplimiento de planos y EETT.",
+            "Controlar que la obra se ejecute dentro del plazo y presupuesto establecidos.",
+            "Coordinar y gestionar las actividades del personal y subcontratistas.",
+            "Administrar los recursos materiales y humanos eficientemente.",
+            "Velar por el cumplimiento de normativas SST y medio ambiente.",
+            "Identificar y resolver problemas técnicos, operativos o logísticos."
+        ],
+        requirements: [
+            "Titulado(a) en Ingeniería Civil, Arquitectura o afines.",
+            "Experiencia mínima de 03 años como Ingeniero Residente en obras de construcción.",
+            "Conocimientos en gestión de proyectos, presupuestos y control de costos.",
+            "Manejo de software de gestión de obras y planificación.",
+            "Normativa de seguridad y medio ambiente."
+        ],
+        benefits: [
+            "Remuneración acorde al mercado.",
+            "Ingreso a planilla con todos los beneficios de ley.",
+            "Oportunidades de desarrollo profesional y crecimiento.",
+            "Participación en proyectos a nivel nacional."
+        ]
+    },
+    {
+        id: "8",
+        title: "Operarios (Múltiples Especialidades)",
+        location: "Lima y Provincias",
+        type: "Por Proyecto",
+        department: "Operaciones",
+        postedDate: "19 Ene 2026",
+        description: "Buscamos Operarios especializados (Electricista, Pintor, Soldador, Albañil, Mantenimiento, Drywall, Aire Acondicionado, Sanitario) para integrarse a proyectos a nivel nacional.",
+        responsibilities: [
+            "Interpretar planos, diagramas y especificaciones técnicas según especialidad.",
+            "Ejecutar los trabajos de manera ordenada, limpia y eficiente.",
+            "Instalar equipos, aparatos, accesorios y sistemas según el alcance.",
+            "Realizar tareas de mantenimiento y reparaciones requeridas.",
+            "Cumplir estrictamente con las normas SSOMA y uso de EPP."
+        ],
+        requirements: [
+            "Secundaria completa (deseable).",
+            "Experiencia mínima de 06 meses en la especialidad (indispensable).",
+            "Cursos o experiencia comprobada en la especialidad correspondiente.",
+            "Certificación de homologación para soldadores (deseable).",
+            "No contar con antecedentes policiales ni penales."
+        ],
+        benefits: [
+            "Remuneración acorde al mercado.",
+            "Ingreso a planilla con beneficios de ley (según régimen).",
+            "Estabilidad laboral por proyecto.",
+            "Capacitación en seguridad y procedimientos."
+        ]
+    },
+    {
+        id: "9",
+        title: "Ayudante de Obra",
+        location: "Lima y Provincias",
+        type: "Por Proyecto",
+        department: "Operaciones",
+        postedDate: "19 Ene 2026",
+        description: "Soporte operativo en nuestros proyectos, apoyando a ingenieros, técnicos y operarios especializados.",
+        responsibilities: [
+            "Apoyar en el registro de información para programas de trabajo.",
+            "Conservar en buen estado las herramientas y equipos.",
+            "Proteger muebles, materiales y áreas antes y durante los trabajos.",
+            "Apoyar en trabajos de pintura, mezclas y asistencia a especialistas.",
+            "Cumplir con las normas de SSOMA y participar en charlas de seguridad."
+        ],
+        requirements: [
+            "Secundaria completa.",
+            "Experiencia mínima de 03 meses en labores similares (deseable).",
+            "Capacidad para trabajo físico y en equipo.",
+            "No contar con antecedentes policiales ni penales."
+        ],
+        benefits: [
+            "Remuneración acorde al mercado.",
+            "Ingreso a planilla con beneficios de ley (según régimen).",
+            "Oportunidad de aprendizaje y crecimiento en obra.",
+            "Capacitación constante en seguridad y trabajos operativos."
         ]
     }
 ];
@@ -368,10 +580,75 @@ const Talento = () => {
                     </div>
                     <div className="p-8 pb-12">
                         {selectedJob && (
-                            <JobApplicationForm
-                                jobTitle={selectedJob.title}
-                                onSuccess={() => setIsDialogOpen(false)}
-                            />
+                            <div className="space-y-8 mb-10">
+                                <div>
+                                    <h4 className="text-xl font-bold text-secondary-900 mb-3 flex items-center gap-2">
+                                        <Briefcase className="w-5 h-5 text-primary" />
+                                        Descripción del Puesto
+                                    </h4>
+                                    <p className="text-muted-foreground leading-relaxed">
+                                        {selectedJob.description}
+                                    </p>
+                                </div>
+
+                                {selectedJob.responsibilities && (
+                                    <div>
+                                        <h4 className="text-xl font-bold text-secondary-900 mb-4 flex items-center gap-2">
+                                            <CheckCircle2 className="w-5 h-5 text-primary" />
+                                            Responsabilidades
+                                        </h4>
+                                        <ul className="grid grid-cols-1 gap-3">
+                                            {selectedJob.responsibilities.map((resp, i) => (
+                                                <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                                                    <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 shrink-0" />
+                                                    {resp}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+
+                                <div>
+                                    <h4 className="text-xl font-bold text-secondary-900 mb-4 flex items-center gap-2">
+                                        <GraduationCap className="w-5 h-5 text-primary" />
+                                        Requisitos
+                                    </h4>
+                                    <ul className="grid grid-cols-1 gap-3">
+                                        {selectedJob.requirements.map((req, i) => (
+                                            <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                                                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
+                                                {req}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                {selectedJob.benefits && (
+                                    <div className="bg-primary/5 p-6 rounded-2xl border border-primary/10">
+                                        <h4 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                                            <Star className="w-5 h-5" />
+                                            ¿Qué ofrecemos?
+                                        </h4>
+                                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                            {selectedJob.benefits.map((benefit, i) => (
+                                                <li key={i} className="flex items-center gap-2 text-secondary-800 font-medium">
+                                                    <CheckCircle2 className="w-4 h-4 text-accent" />
+                                                    {benefit}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+
+                                <div className="border-t border-border pt-10">
+                                    <h3 className="text-2xl font-bold text-secondary-900 mb-2">Postulación Directa</h3>
+                                    <p className="text-muted-foreground mb-6">Envía tus datos y CV para ser evaluado por nuestro equipo.</p>
+                                    <JobApplicationForm
+                                        jobTitle={selectedJob.title}
+                                        onSuccess={() => setIsDialogOpen(false)}
+                                    />
+                                </div>
+                            </div>
                         )}
                     </div>
                 </DialogContent>
