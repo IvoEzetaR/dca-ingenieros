@@ -1,6 +1,5 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 import logo1 from "@/assets/Logos/Logo1.png";
-import logo2 from "@/assets/Logos/Logo2.png";
 import logo3 from "@/assets/Logos/Logo3.png";
 import logo4 from "@/assets/Logos/Logo4.png";
 import logo5 from "@/assets/Logos/Logo5.png";
@@ -12,17 +11,16 @@ import logo10 from "@/assets/Logos/Logo10.png";
 import logo11 from "@/assets/Logos/Logo11.png";
 
 const clients = [
-  { name: "Prosegur", logo: logo1 },
-  { name: "Banco de la Nación", logo: logo2 },
-  { name: "San Fernando", logo: logo3 },
-  { name: "Senati", logo: logo4 },
-  { name: "Grupo ATV", logo: logo5 },
+  { name: "ALESE KIA", logo: logo1 },
+  { name: "Grupo ATV", logo: logo3 },
+  { name: "Medifarma", logo: logo4 },
+  { name: "MegaPlaza", logo: logo5 },
   { name: "Cad & Lan", logo: logo6 },
-  { name: "Teleperformance", logo: logo7 },
-  { name: "Incalpaca", logo: logo8 },
-  { name: "Oechsle", logo: logo9 },
-  { name: "Real Plaza", logo: logo10 },
-  { name: "Promart", logo: logo11 },
+  { name: "Academia ADUNI", logo: logo7 },
+  { name: "MERCK", logo: logo8 },
+  { name: "Banco de la Nación", logo: logo9 },
+  { name: "Cineplanet", logo: logo10 },
+  { name: "COVISOL", logo: logo11 },
 ];
 
 export const ClientsSection = () => {
