@@ -42,6 +42,12 @@ const navItems = [
         isRoute: true,
         description: "Soluciones logísticas y productos importados.",
       },
+      {
+        label: "Gerencia de Proyectos",
+        href: "/servicios/gestion-proyectos",
+        isRoute: true,
+        description: "Control de alcance, costo y cronograma.",
+      },
     ],
   },
   {
@@ -50,52 +56,28 @@ const navItems = [
     isRoute: true,
     children: [
       {
-        label: "Planificación y Control de Proyectos",
-        href: "/proyectos/planificacion-y-control",
+        label: "Levantamiento itse",
+        href: "/proyectos/levantamiento-itse",
         isRoute: true,
-        description: "Optimización de tiempos y recursos para el éxito de su obra.",
+        description: "Adecuación de infraestructura para cumplimiento de normativas ITSE.",
       },
       {
-        label: "Gestión de Riesgos y Oportunidades",
-        href: "/proyectos/gestion-de-riesgos",
+        label: "Remodelaciones",
+        href: "/proyectos/remodelaciones",
         isRoute: true,
-        description: "Identificación y mitigación proactiva de posibles contingencias.",
+        description: "Transformación y modernización de espacios comerciales y residenciales.",
       },
       {
-        label: "Gestión de Comunicaciones y Stakeholders",
-        href: "/proyectos/gestion-de-comunicaciones",
+        label: "Construcción",
+        href: "/proyectos/construccion",
         isRoute: true,
-        description: "Coordinación efectiva entre clientes, contratistas y equipos de trabajo, asegurando una comunicación clara y alineada a los objetivos del proyecto.",
+        description: "Ejecución de obras civiles con los más altos estándares de calidad.",
       },
       {
-        label: "Gestión del Alcance y Control de Cambios",
-        href: "/proyectos/gestion-del-alcance",
+        label: "Servicios generales",
+        href: "/proyectos/servicios-generales",
         isRoute: true,
-        description: "Aseguramos el cumplimiento de los objetivos pactados.",
-      },
-      {
-        label: "Gestión de Costos y Presupuestos",
-        href: "/proyectos/gestion-de-costos",
-        isRoute: true,
-        description: "Control riguroso financiero y eficiencia presupuestaria.",
-      },
-      {
-        label: "Supervisión y Coordinación de Obras",
-        href: "/proyectos/supervision-y-coordinacion",
-        isRoute: true,
-        description: "Seguimiento técnico detallado en cada etapa constructiva.",
-      },
-      {
-        label: "Gestión de Seguridad, Calidad y Medio Ambiente",
-        href: "/proyectos/seguridad-y-medio-ambiente",
-        isRoute: true,
-        description: "Compromiso con la excelencia operativa y sostenibilidad.",
-      },
-      {
-        label: "Ver Portafolio de Proyectos",
-        href: "/proyectos",
-        isRoute: true,
-        description: "Explore nuestra trayectoria y casos de éxito.",
+        description: "Mantenimiento integral y soluciones operativas para su empresa.",
       },
     ],
   },
@@ -160,13 +142,13 @@ export const Header = () => {
           }`}
       >
         <div className="section-container">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-28">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
               <img
                 src={logoDCA}
                 alt="DCA Ingenieros Logo"
-                className="h-14 w-auto object-contain"
+                className="h-24 w-auto object-contain"
               />
             </Link>
 

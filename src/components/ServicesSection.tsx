@@ -1,4 +1,4 @@
-import { Building, Hammer, Wrench, Settings, Truck, Globe, ArrowRight } from "lucide-react";
+import { Building, Hammer, Wrench, Settings, Truck, Globe, ArrowRight, Briefcase } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RevealOnScroll } from "./RevealOnScroll";
 import { motion } from "framer-motion";
@@ -8,6 +8,7 @@ import imageConstruccion from "@/assets/servicios-construccion.png";
 import imageFerreteria from "@/assets/servicios-ferreteria.png";
 import imageMaquinaria from "@/assets/servicios-maquinaria.png";
 import imageImportacion from "@/assets/servicios-importacion.png";
+import imageGerencia from "@/assets/servicios-gerencia.png";
 
 const services = [
   {
@@ -54,6 +55,15 @@ const services = [
     href: "/servicios/importacion",
     image: imageImportacion,
     color: "cyan",
+  },
+  {
+    icon: Briefcase,
+    title: "Gerencia de Proyectos",
+    description:
+      "Aseguramos el éxito de su proyecto mediante el control de alcance, costo, plazo y calidad, aplicando estándares internacionales del PMI.",
+    href: "/servicios/gestion-proyectos",
+    image: imageGerencia,
+    color: "purple",
   },
 ];
 
@@ -129,20 +139,7 @@ export const ServicesSection = () => {
             </RevealOnScroll>
           ))}
 
-          {/* Decorative Card to fill space or just leave as is */}
-          <div className="hidden lg:flex flex-col h-full bg-primary rounded-2xl p-8 justify-center items-center text-center text-white shadow-xl relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16 blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full translate-y-16 -translate-x-16 blur-3xl" />
 
-            <h3 className="text-3xl font-bold mb-4 relative z-10 text-white">¿Listo para empezar su proyecto?</h3>
-            <p className="text-primary-foreground/90 mb-8 relative z-10">Conversemos sobre cómo podemos ayudarle a alcanzar sus objetivos.</p>
-            <a
-              href="#contacto"
-              className="px-8 py-3 bg-white text-primary font-bold rounded-full hover:bg-slate-100 transition-colors relative z-10"
-            >
-              Contáctanos
-            </a>
-          </div>
         </div>
       </div>
     </section>

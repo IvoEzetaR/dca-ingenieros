@@ -30,8 +30,9 @@ const projects = [
     client: "GRUPO ATV BARRANCO",
     description: "Servicio integral de mantenimiento y reparación de estructuras metálicas para garantizar la seguridad y durabilidad.",
     image: heroImage,
-    category: "Mantenimiento",
-    images: [heroImage, heroImage, heroImage, heroImage] // Real images would go here
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [heroImage, heroImage, heroImage, heroImage]
   },
   {
     id: 2,
@@ -39,7 +40,8 @@ const projects = [
     client: "PROSEGUR SURCO",
     description: "Remodelación completa de instalaciones para adecuación de nuevos estándares de seguridad y operatividad.",
     image: heroImage,
-    category: "Remodelación",
+    category: "remodelaciones",
+    categoryLabel: "Remodelaciones",
     images: [heroImage, heroImage, heroImage, heroImage]
   },
   {
@@ -48,7 +50,8 @@ const projects = [
     client: "ADUNI ATE",
     description: "Intervención correctiva en infraestructura educativa para asegurar el óptimo funcionamiento de las instalaciones.",
     image: heroImage,
-    category: "Mantenimiento",
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
     images: [heroImage, heroImage, heroImage, heroImage]
   },
   {
@@ -57,7 +60,8 @@ const projects = [
     client: "PROSEGUR MIRAFLORES",
     description: "Adecuación de infraestructura para cumplimiento de normativas de Inspección Técnica de Seguridad en Edificaciones.",
     image: heroImage,
-    category: "Seguridad",
+    category: "levantamiento-itse",
+    categoryLabel: "Levantamiento itse",
     images: [heroImage, heroImage, heroImage, heroImage]
   },
   {
@@ -66,7 +70,8 @@ const projects = [
     client: "PROSEGUR CHIMBOTE",
     description: "Implementación de mejoras y correcciones según requerimientos de ITSE para certificación de seguridad.",
     image: heroImage,
-    category: "Seguridad",
+    category: "levantamiento-itse",
+    categoryLabel: "Levantamiento itse",
     images: [heroImage, heroImage, heroImage, heroImage]
   }
 ];
@@ -135,7 +140,7 @@ const Proyectos = () => {
                       </div>
                       <div className="absolute top-4 left-4">
                         <span className="bg-primary/90 text-primary-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm shadow-sm">
-                          {project.category}
+                          {project.categoryLabel}
                         </span>
                       </div>
                     </div>

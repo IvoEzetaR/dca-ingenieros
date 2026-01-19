@@ -14,53 +14,64 @@ import {
     CheckCircle2,
     BarChart4,
     ClipboardCheck,
-    Search
+    Search,
+    MessageSquare,
+    Ruler,
+    DollarSign,
+    Users
 } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg"; // Reusing high-quality construction image
 import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 const subServices = [
     {
-        icon: Timer,
-        title: "Planificación y Control",
+        icon: BarChart4,
+        title: "Planificación",
         subtitle: "Planificación y Control de Proyectos",
-        description: "Establecemos cronogramas detallados y mecanismos de seguimiento rigurosos para asegurar el cumplimiento de hitos y plazos contractuales.",
-        keywords: ["Cronogramas", "Hitos", "Seguimiento"]
+        description: "Elaboración y seguimiento de cronogramas, presupuestos, curvas S, KPIs y reportes de avance para una toma de decisiones oportuna.",
+        keywords: ["Cronogramas", "KPIs", "Curvas S"]
     },
     {
         icon: ShieldAlert,
-        title: "Riesgos y Oportunidades",
+        title: "Riesgos",
         subtitle: "Gestión de Riesgos y Oportunidades",
-        description: "Identificamos, analizamos y mitigamos proactivamente riesgos potenciales mientras capitalizamos oportunidades de mejora durante el ciclo de vida del proyecto.",
-        keywords: ["Mitigación", "Análisis", "Prevención"]
+        description: "Identificación, análisis y control de riesgos del proyecto, minimizando impactos negativos y potenciando oportunidades de mejora.",
+        keywords: ["Análisis", "Mitigación", "Oportunidades"]
     },
     {
-        icon: ListChecks,
-        title: "Alcance y Cambios",
+        icon: MessageSquare,
+        title: "Comunicaciones",
+        subtitle: "Gestión de Comunicaciones y Stakeholders",
+        description: "Coordinación efectiva entre clientes, contratistas y equipos de trabajo, asegurando una comunicación clara y alineada a los objetivos del proyecto.",
+        keywords: ["Stakeholders", "Coordinación", "Claridad"]
+    },
+    {
+        icon: Ruler,
+        title: "Alcance",
         subtitle: "Gestión del Alcance y Control de Cambios",
-        description: "Definimos con precisión los límites del proyecto y gestionamos cualquier modificación de manera estructurada para evitar desviaciones críticas.",
-        keywords: ["Línea base", "Control", "Objetivos"]
+        description: "Definición del alcance, control de modificaciones y administración de órdenes de cambio, evitando desviaciones en plazo y costo.",
+        keywords: ["Alcance", "Cambios", "Control"]
     },
     {
-        icon: Calculator,
-        title: "Costos y Presupuestos",
+        icon: DollarSign,
+        title: "Costos",
         subtitle: "Gestión de Costos y Presupuestos",
-        description: "Optimizamos el uso de recursos financieros mediante un control presupuestario estricto y un análisis de valor ganado constante.",
-        keywords: ["Eficiencia", "Presupuesto", "Rentabilidad"]
+        description: "Control financiero del proyecto, análisis de desviaciones, optimización de recursos y gestión de presupuestos meta.",
+        keywords: ["Costos", "Presupuesto", "Finanzas"]
     },
     {
         icon: HardHat,
-        title: "Supervisión y Coordinación",
+        title: "Supervisión",
         subtitle: "Supervisión y Coordinación de Obras",
-        description: "Aseguramos una ejecución técnica impecable mediante la coordinación efectiva de subcontratistas y la supervisión directa en campo.",
-        keywords: ["Campo", "Coordinación", "Calidad"]
+        description: "Seguimiento técnico y administrativo de la ejecución, asegurando el cumplimiento de especificaciones técnicas, normativas y estándares de calidad.",
+        keywords: ["Ejecución", "Normativas", "Calidad"]
     },
     {
         icon: Leaf,
-        title: "Seguridad y Medio Ambiente",
+        title: "Seguridad y Calidad",
         subtitle: "Gestión de Seguridad, Calidad y Medio Ambiente",
-        description: "Implementamos los más altos estándares de seguridad (SST), aseguramiento de calidad y respeto al entorno ambiental.",
-        keywords: ["ISO", "SST", "Sostenibilidad"]
+        description: "Implementación de sistemas de seguridad y calidad en obra, alineados a normativas vigentes y buenas prácticas del sector.",
+        keywords: ["SSOMA", "Calidad", "Normativas"]
     }
 ];
 
@@ -70,7 +81,7 @@ const GestionProyectos = () => {
             <Header />
 
             {/* Hero Section */}
-            <section className="relative h-[60vh] min-h-[550px] flex items-center justify-center pt-56 pb-32 md:pt-48 md:pb-32 overflow-hidden">
+            <section className="relative h-[85vh] min-h-[750px] flex items-center justify-center pt-96 pb-80 md:pt-80 md:pb-64 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={heroImage}
@@ -95,12 +106,14 @@ const GestionProyectos = () => {
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-                            Gestión Integral de <br />
-                            <span className="text-accent-light">Proyectos de Ingeniería</span>
+                            GERENCIA DE <br />
+                            <span className="text-accent-light">PROYECTOS</span>
                         </h1>
 
-                        <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Metodologías avanzadas y control riguroso para garantizar el éxito, la rentabilidad y la puntualidad de cada obra.
+                        <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+                            Brindamos servicios de Gerencia y Dirección de Proyectos, orientados a asegurar el cumplimiento de alcance, plazo, costo, calidad y seguridad, aplicando buenas prácticas internacionales basadas en el PMI (Project Management Institute).
+                            <br className="hidden md:block" />
+                            Nuestro enfoque integra la planificación estratégica, la gestión de riesgos y el control permanente de los recursos, permitiendo a nuestros clientes ejecutar sus proyectos con mayor eficiencia, predictibilidad y control.
                         </p>
 
                         <Button size="lg" className="text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform">

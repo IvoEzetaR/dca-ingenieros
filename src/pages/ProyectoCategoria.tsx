@@ -22,13 +22,10 @@ import {
 import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 const categoryMap: Record<string, string> = {
-    "planificacion-y-control": "Planificación y Control de Proyectos",
-    "gestion-de-riesgos": "Gestión de Riesgos y Oportunidades",
-    "gestion-de-comunicaciones": "Gestión de Comunicaciones y Stakeholders",
-    "gestion-del-alcance": "Gestión del Alcance y Control de Cambios",
-    "gestion-de-costos": "Gestión de Costos y Presupuestos",
-    "supervision-y-coordinacion": "Supervisión y Coordinación de Obras",
-    "seguridad-y-medio-ambiente": "Gestión de Seguridad, Calidad y Medio Ambiente",
+    "levantamiento-itse": "Levantamiento itse",
+    "remodelaciones": "Remodelaciones",
+    "construccion": "Construcción",
+    "servicios-generales": "Servicios generales",
 };
 
 const projects = [
@@ -38,7 +35,8 @@ const projects = [
         client: "GRUPO ATV BARRANCO",
         description: "Servicio integral de mantenimiento y reparación de estructuras metálicas para garantizar la seguridad y durabilidad.",
         image: heroImage,
-        category: "Mantenimiento",
+        category: "servicios-generales",
+        categoryLabel: "Servicios generales",
         images: [heroImage, heroImage, heroImage, heroImage]
     },
     {
@@ -47,7 +45,8 @@ const projects = [
         client: "PROSEGUR SURCO",
         description: "Remodelación completa de instalaciones para adecuación de nuevos estándares de seguridad y operatividad.",
         image: heroImage,
-        category: "Remodelación",
+        category: "remodelaciones",
+        categoryLabel: "Remodelaciones",
         images: [heroImage, heroImage, heroImage, heroImage]
     },
     {
@@ -56,7 +55,8 @@ const projects = [
         client: "ADUNI ATE",
         description: "Intervención correctiva en infraestructura educativa para asegurar el óptimo funcionamiento de las instalaciones.",
         image: heroImage,
-        category: "Mantenimiento",
+        category: "servicios-generales",
+        categoryLabel: "Servicios generales",
         images: [heroImage, heroImage, heroImage, heroImage]
     },
     {
@@ -65,16 +65,18 @@ const projects = [
         client: "PROSEGUR MIRAFLORES",
         description: "Adecuación de infraestructura para cumplimiento de normativas de Inspección Técnica de Seguridad en Edificaciones.",
         image: heroImage,
-        category: "Seguridad",
+        category: "levantamiento-itse",
+        categoryLabel: "Levantamiento itse",
         images: [heroImage, heroImage, heroImage, heroImage]
     },
     {
         id: 5,
         title: "Levantamiento de Observaciones ITSE",
         client: "PROSEGUR CHIMBOTE",
-        description: "Implementación de mejoras y correcciones según requerimientos de ITSE para certificación de seguridad.",
+        description: "Implementación de mejoras and correcciones según requerimientos de ITSE para certificación de seguridad.",
         image: heroImage,
-        category: "Seguridad",
+        category: "levantamiento-itse",
+        categoryLabel: "Levantamiento itse",
         images: [heroImage, heroImage, heroImage, heroImage]
     }
 ];
@@ -91,6 +93,10 @@ const ProyectoCategoria = () => {
             setPageTitle("Proyectos");
         }
     }, [category]);
+
+    const filteredProjects = category
+        ? projects.filter(p => p.category === category)
+        : projects;
 
     return (
         <div className="min-h-screen bg-background">
@@ -112,7 +118,7 @@ const ProyectoCategoria = () => {
                             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full mb-6 border border-primary/30 mx-auto">
                                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                                 <span className="text-sm font-medium text-primary-foreground">
-                                    Especialidad de Gestión
+                                    Portafolio de Especialidad
                                 </span>
                             </div>
 
@@ -133,12 +139,12 @@ const ProyectoCategoria = () => {
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Experiencia Comprobada</h2>
                             <p className="text-muted-foreground max-w-2xl mx-auto">
-                                Resultados tangibles y cumplimiento de objetivos en cada una de nuestras intervenciones.
+                                Resultados tangibles y cumplimiento de objetivos en cada una de nuestras intervenciones en {pageTitle}.
                             </p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {projects.map((project, index) => (
+                            {filteredProjects.map((project, index) => (
                                 <RevealOnScroll
                                     key={project.id}
                                     delay={index * 0.1}
@@ -160,7 +166,7 @@ const ProyectoCategoria = () => {
                                             </div>
                                             <div className="absolute top-4 left-4">
                                                 <span className="bg-primary/90 text-primary-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm shadow-sm">
-                                                    {project.category}
+                                                    {project.categoryLabel}
                                                 </span>
                                             </div>
                                         </div>
