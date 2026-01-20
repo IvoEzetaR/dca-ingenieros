@@ -54,7 +54,7 @@ export const ClientsSection = () => {
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 scale-110 group-hover:scale-125"
+                    className="max-w-full max-h-full object-contain transition-all duration-300 scale-110 group-hover:scale-125"
                   />
                 </div>
               </div>
@@ -69,7 +69,7 @@ export const ClientsSection = () => {
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 scale-110 group-hover:scale-125"
+                    className="max-w-full max-h-full object-contain transition-all duration-300 scale-110 group-hover:scale-125"
                   />
                 </div>
               </div>

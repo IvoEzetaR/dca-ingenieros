@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const WhatsAppButton = () => {
     // Número de WhatsApp
-    const phoneNumber = "51936306566";
+    const phoneNumber = "51925277375";
     const message = "Hola, me gustaría recibir más información sobre sus servicios.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
