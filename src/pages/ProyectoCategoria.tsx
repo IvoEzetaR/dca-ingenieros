@@ -16,9 +16,11 @@ import alarma5 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma5.jpg"
 // ITSE Prosegur Cash Piura Images
 import cash1 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura1.jpg";
 import cash2 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura2.jpg";
-import cash3 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura3.jpg";
+import cash3 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura3.jpeg";
 import cash4 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura4.jpg";
-import cash5 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura5.jpg";
+import cash5 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura5.jpeg";
+import cash6 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura6.jpeg";
+import cash7 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura7.jpeg";
 
 // ITSE Prosegur Cajero Miraflores Images
 import miraflores1 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES1.jpg";
@@ -194,7 +196,7 @@ const projects = [
         image: cash1,
         category: "levantamiento-itse",
         categoryLabel: "Levantamiento itse",
-        images: [cash1, cash2, cash3, cash4, cash5]
+        images: [cash1, cash2, cash3, cash4, cash5, cash6, cash7]
     },
     {
         id: 6,
