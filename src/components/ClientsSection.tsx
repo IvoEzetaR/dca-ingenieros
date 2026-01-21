@@ -9,6 +9,8 @@ import logo8 from "@/assets/Logos/Logo8.png";
 import logo9 from "@/assets/Logos/Logo9.png";
 import logo10 from "@/assets/Logos/Logo10.png";
 import logo11 from "@/assets/Logos/Logo11.png";
+import prosegurLogo from "@/assets/Logos/logo prosegur.jpeg";
+import senatiLogo from "@/assets/Logos/senati.jpeg";
 
 const clients = [
   { name: "ALESE KIA", logo: logo1 },
@@ -21,6 +23,8 @@ const clients = [
   { name: "Banco de la Nación", logo: logo9 },
   { name: "Cineplanet", logo: logo10 },
   { name: "COVISOL", logo: logo11 },
+  { name: "Prosegur", logo: prosegurLogo },
+  { name: "Senati", logo: senatiLogo },
 ];
 
 export const ClientsSection = () => {
