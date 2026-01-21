@@ -110,6 +110,9 @@ import teleperformance5 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE5.
 import teleperformance6 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE6.jpeg";
 import teleperformance7 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE7.jpeg";
 import teleperformance8 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE8.jpeg";
+import teleperformance9 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE9.jpeg";
+import teleperformance10 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE10.jpeg";
+import teleperformance11 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE11.jpeg";
 
 // Remodelación Oficina Panamá Images
 import panamaOficina1 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA1.jpg";
@@ -181,7 +184,7 @@ const projects = [
         image: teleperformance1,
         category: "remodelaciones",
         categoryLabel: "Remodelaciones",
-        images: [teleperformance1, teleperformance2, teleperformance3, teleperformance4, teleperformance5, teleperformance6, teleperformance7, teleperformance8]
+        images: [teleperformance1, teleperformance2, teleperformance3, teleperformance4, teleperformance5, teleperformance6, teleperformance7, teleperformance8, teleperformance9, teleperformance10, teleperformance11]
     },
     {
         id: 19,
