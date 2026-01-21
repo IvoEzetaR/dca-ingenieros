@@ -81,7 +81,7 @@ export const AboutSection = () => {
                   <CheckCircle2 className="h-8 w-8 text-accent-foreground" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-foreground">4+</div>
+                  <div className="text-2xl font-bold text-foreground">10+</div>
                   <div className="text-sm text-muted-foreground">
                     Años de Experiencia
                   </div>

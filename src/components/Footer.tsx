@@ -1,5 +1,5 @@
 import { Building2, MapPin, Mail, Phone, FileText, ExternalLink } from "lucide-react";
-import logoDCA from "@/assets/Logo DCA.png";
+import logoDCA from "@/assets/LOGO-DCA-BLANCO-POSITIVO.png";
 
 const quickLinks = [
   { label: "Grupo DCA", href: "/" },
@@ -20,7 +20,7 @@ export const Footer = () => {
               <img
                 src={logoDCA}
                 alt="DCA Ingenieros Logo"
-                className="h-12 w-auto object-contain"
+                className="h-32 md:h-40 w-auto object-contain"
               />
             </div>
             <p className="text-primary-foreground/70 mb-4 md:mb-6 max-w-md leading-relaxed">
@@ -97,7 +97,9 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/libro-de-reclamaciones"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 mt-4 bg-accent/20 hover:bg-accent/30 rounded-lg text-accent-light font-medium transition-colors"
                 >
                   <FileText className="h-4 w-4" />

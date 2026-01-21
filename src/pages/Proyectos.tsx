@@ -335,7 +335,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Levantamiento de observaciones ITSE Prosegur alarma",
+    title: "Levantamiento de observaciones ITSE Prosegur alarmas",
     client: "PROSEGUR",
     description: "Adecuación de infraestructura y sistemas de alarma para cumplimiento de normativas de Inspección Técnica de Seguridad en Edificaciones.",
     image: alarma1,

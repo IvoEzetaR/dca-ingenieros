@@ -89,7 +89,7 @@ const ObrasServiciosGenerales = () => {
                 <div className="absolute inset-0 z-0">
                     <img
                         src={heroImage}
-                        alt="Obras y Servicios Generales"
+                        alt="Mantenimiento y Servicios Generales"
                         className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-hero-overlay/95 via-hero-overlay/80 to-hero-overlay/60" />
@@ -111,7 +111,7 @@ const ObrasServiciosGenerales = () => {
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
                             Mantenimiento y Calidad: <br />
-                            <span className="text-accent-light">Obras y Servicios Generales</span>
+                            <span className="text-accent-light">Mantenimiento y Servicios Generales</span>
                         </h1>
 
                         <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto leading-relaxed">

@@ -14,7 +14,7 @@ const navItems = [
     isRoute: false,
     children: [
       {
-        label: "Obras y servicios generales",
+        label: "Mantenimiento y Servicios Generales",
         href: "/servicios/obras-servicios-generales",
         isRoute: true,
         description: "Mantenimiento y servicios generales para empresas.",
