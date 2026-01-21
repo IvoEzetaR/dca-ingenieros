@@ -1,4 +1,5 @@
 import { Building2, MapPin, Mail, Phone, FileText, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 import logoDCA from "@/assets/LOGO-DCA-BLANCO-POSITIVO.png";
 
 const quickLinks = [
@@ -16,14 +17,14 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-4 md:mb-6">
+            <div className="flex items-center gap-3">
               <img
                 src={logoDCA}
                 alt="DCA Ingenieros Logo"
-                className="h-32 md:h-40 w-auto object-contain"
+                className="h-44 md:h-56 w-auto object-contain -ml-2"
               />
             </div>
-            <p className="text-primary-foreground/70 mb-4 md:mb-6 max-w-md leading-relaxed">
+            <p className="text-primary-foreground/70 mb-2 max-w-md leading-relaxed -mt-10 md:-mt-12">
               Empresa líder en gestión integral de proyectos de ingeniería,
               comprometidos con la calidad, seguridad y cumplimiento de plazos.
             </p>
@@ -61,13 +62,13 @@ export const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-primary-foreground/70 hover:text-accent-light transition-colors inline-flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 bg-accent rounded-full" />
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -78,22 +79,22 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-3 md:mb-6">Legal</h4>
             <ul className="space-y-2 md:space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/politica"
                   className="text-primary-foreground/70 hover:text-accent-light transition-colors inline-flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 bg-accent rounded-full" />
                   Política de Privacidad
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/terminos"
                   className="text-primary-foreground/70 hover:text-accent-light transition-colors inline-flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 bg-accent rounded-full" />
                   Términos y Condiciones
-                </a>
+                </Link>
               </li>
               <li>
                 <a

@@ -343,12 +343,12 @@ const LibroReclamaciones = () => {
                                 {isSubmitting ? (
                                     <div className="flex items-center gap-3">
                                         <div className="w-5 h-5 border-3 border-white/30 border-t-white rounded-full animate-spin" />
-                                        Enviando Reclamación...
+                                        ENVIANDO RECLAMO...
                                     </div>
                                 ) : (
                                     <div className="flex items-center gap-3">
                                         <Send className="w-6 h-6" />
-                                        Enviar Reclamación
+                                        ENVIAR RECLAMO
                                     </div>
                                 )}
                             </Button>
