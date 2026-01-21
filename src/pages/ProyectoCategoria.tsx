@@ -12,6 +12,8 @@ import alarma2 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma2.jpg"
 import alarma3 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma3.jpg";
 import alarma4 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma4.jpg";
 import alarma5 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma5.jpg";
+import alarma6 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma6.jpeg";
+import alarma7 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma7.jpeg";
 
 // ITSE Prosegur Cash Piura Images
 import cash1 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura1.jpg";
@@ -24,25 +26,29 @@ import cash7 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura7.jpeg";
 
 // ITSE Prosegur Cajero Miraflores Images
 import miraflores1 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES1.jpg";
-import miraflores2 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES2.jpg";
+import miraflores2 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES2.jpeg";
 import miraflores3 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES3.jpg";
-import miraflores4 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES4.jpg";
-import miraflores5 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES5.jpg";
+import miraflores4 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES4.jpeg";
+import miraflores5 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES5.jpeg";
+import miraflores6 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES6.jpeg";
 
 // ITSE Proseguridad Callao Images
-import callao1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO1.jpg";
+import callao1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO1.jpeg";
 import callao2 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO2.jpg";
 import callao3 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO3.jpg";
 import callao4 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO4.jpg";
 import callao5 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO5.jpg";
+import callao6 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD CALLAO6.jpeg";
 
 
 // ITSE Prosegur Cash Morro Solar Images
-import morro1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR1.jpg";
+import morro1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR1.jpeg";
 import morro2 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR2.jpg";
 import morro3 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR3.jpeg";
 import morro4 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR4.jpeg";
 import morro5 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR5.jpeg";
+import morro6 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR6.jpeg";
+import morro7 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR7.jpeg";
 
 // ITSE Proseguridad Huanuco Images
 import huanuco1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO1.jpg";
@@ -59,10 +65,11 @@ import bnCarmen4 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIE
 import bnCarmen5 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO5.jpg";
 
 import bnGraco1 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE1.jpg";
-import bnGraco2 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE2.jpg";
-import bnGraco3 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE3.jpg";
+import bnGraco2 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE2.jpeg";
+import bnGraco3 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE3.jpeg";
 import bnGraco4 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE4.jpg";
 import bnGraco5 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE5.jpg";
+import bnGraco6 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE6.jpeg";
 
 import bnMexico1 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA1.jpg";
 import bnMexico2 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA2.jpg";
@@ -99,6 +106,10 @@ import teleperformance1 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE1.
 import teleperformance2 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE2.jpg";
 import teleperformance3 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE3.jpg";
 import teleperformance4 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE4.jpg";
+import teleperformance5 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE5.jpeg";
+import teleperformance6 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE6.jpeg";
+import teleperformance7 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE7.jpeg";
+import teleperformance8 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE8.jpeg";
 
 // Remodelación Oficina Panamá Images
 import panamaOficina1 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA1.jpg";
@@ -106,6 +117,10 @@ import panamaOficina2 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICIN
 import panamaOficina3 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA3.jpg";
 import panamaOficina4 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA4.jpg";
 import panamaOficina5 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA5.jpg";
+import panamaOficina6 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA6.jpg";
+import panamaOficina7 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA7.jpeg";
+import panamaOficina8 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA8.jpeg";
+import panamaOficina9 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA9.jpeg";
 
 // Construcción - Reforzamiento Estructural Panamá
 import panama1 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama1.jpg";
@@ -146,7 +161,7 @@ const projects = [
         image: panamaOficina1,
         category: "remodelaciones",
         categoryLabel: "Remodelaciones",
-        images: [panamaOficina1, panamaOficina2, panamaOficina3, panamaOficina4, panamaOficina5]
+        images: [panamaOficina1, panamaOficina2, panamaOficina3, panamaOficina4, panamaOficina5, panamaOficina6, panamaOficina7, panamaOficina8, panamaOficina9]
     },
     {
         id: 17,
@@ -166,7 +181,7 @@ const projects = [
         image: teleperformance1,
         category: "remodelaciones",
         categoryLabel: "Remodelaciones",
-        images: [teleperformance1, teleperformance2, teleperformance3, teleperformance4]
+        images: [teleperformance1, teleperformance2, teleperformance3, teleperformance4, teleperformance5, teleperformance6, teleperformance7, teleperformance8]
     },
     {
         id: 19,
@@ -186,7 +201,7 @@ const projects = [
         image: alarma1,
         category: "levantamiento-itse",
         categoryLabel: "Levantamiento itse",
-        images: [alarma1, alarma2, alarma3, alarma4, alarma5]
+        images: [alarma1, alarma2, alarma3, alarma4, alarma5, alarma6, alarma7]
     },
     {
         id: 5,
@@ -206,7 +221,7 @@ const projects = [
         image: miraflores1,
         category: "levantamiento-itse",
         categoryLabel: "Levantamiento itse",
-        images: [miraflores1, miraflores2, miraflores3, miraflores4, miraflores5]
+        images: [miraflores1, miraflores2, miraflores3, miraflores4, miraflores5, miraflores6]
     },
     {
         id: 7,
@@ -216,7 +231,7 @@ const projects = [
         image: callao1,
         category: "levantamiento-itse",
         categoryLabel: "Levantamiento itse",
-        images: [callao1, callao2, callao3, callao4, callao5]
+        images: [callao1, callao2, callao3, callao4, callao5, callao6]
     },
     {
         id: 9,
@@ -226,7 +241,7 @@ const projects = [
         image: morro1,
         category: "levantamiento-itse",
         categoryLabel: "Levantamiento itse",
-        images: [morro1, morro2, morro3, morro4, morro5]
+        images: [morro1, morro2, morro3, morro4, morro5, morro6, morro7]
     },
     {
         id: 10,
@@ -246,7 +261,7 @@ const projects = [
         image: bnGraco1,
         category: "servicios-generales",
         categoryLabel: "Servicios generales",
-        images: [bnGraco1, bnGraco2, bnGraco3, bnGraco4, bnGraco5]
+        images: [bnGraco1, bnGraco2, bnGraco3, bnGraco4, bnGraco5, bnGraco6]
     },
     {
         id: 12,
