@@ -6,32 +6,33 @@ import { ChevronRight } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg";
 
 // ITSE Prosegur Alarma Images
-import alarma1 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma1.jpg";
-import alarma2 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma2.jpg";
-import alarma3 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma3.jpg";
-import alarma4 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma4.jpg";
-import alarma5 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma5.jpg";
-import alarma6 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma6.jpeg";
+import alarma1 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma1.jpeg";
+import alarma2 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma2.jpeg";
+import alarma3 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma3.jpeg";
+import alarma4 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma4.jpeg";
+import alarma5 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma5.jpeg";
+import alarma6 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma6.png";
 import alarma7 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma7.jpeg";
+import alarma8 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma8.png";
 
 // ITSE Prosegur Cash Piura Images
 import cash1 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura1.jpg";
 import cash2 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura2.jpg";
 import cash3 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura3.jpeg";
 import cash4 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura4.jpg";
-import cash5 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura5.jpeg";
+import cash5 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura5.png";
 import cash6 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura6.jpeg";
 import cash7 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura7.jpeg";
-import cash8 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura8.jpeg";
+import cash8 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura8.png";
 import cash9 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura9.jpeg";
 import cash10 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura10.jpeg";
 import cash11 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura11.jpeg";
-import cash12 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura12.jpeg";
+import cash12 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura12.png";
 
 // ITSE Prosegur Cajero Miraflores Images
 import miraflores1 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES1.jpg";
 import miraflores2 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES2.jpeg";
-import miraflores3 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES3.jpg";
+import miraflores3 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES3.jpeg";
 import miraflores4 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES4.jpeg";
 import miraflores5 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES5.jpeg";
 import miraflores6 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES6.jpeg";
@@ -55,11 +56,35 @@ import morro6 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO 
 import morro7 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR7.jpeg";
 
 // ITSE Proseguridad Huanuco Images
-import huanuco1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO1.jpg";
+import huanuco1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO1.jpeg";
 import huanuco2 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO2.jpg";
 import huanuco3 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO3.jpg";
 import huanuco4 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO4.jpg";
 import huanuco5 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO5.jpg";
+
+// ITSE Proceres Images
+import proceres1 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres1.jpeg";
+import proceres2 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres2.jpeg";
+import proceres3 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres3.jpeg";
+import proceres4 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres4.jpeg";
+import proceres5 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres5.jpeg";
+import proceres6 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres6.jpeg";
+import proceres7 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres7.jpeg";
+import proceres8 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres8.jpeg";
+
+// Acondicionamiento Bases Móviles Prosegur Cash Huacho Images
+import huacho1 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO1.jpeg";
+import huacho2 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO2.jpeg";
+import huacho3 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO3.jpeg";
+import huacho4 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO4.jpeg";
+import huacho5 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO5.jpeg";
+import huacho6 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO6.jpeg";
+import huacho7 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO7.jpeg";
+import huacho8 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO8.jpeg";
+import huacho9 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO9.jpeg";
+import huacho10 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO10.jpeg";
+import huacho11 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO11.jpeg";
+import huacho12 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO12.jpeg";
 
 
 
@@ -86,17 +111,17 @@ import bnDorado5 from "@/assets/imagenes-proyectos/ITSE/Banco de la nacion el do
 import bnSanBorja1 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA1.jpeg";
 import bnSanBorja2 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA2.jpeg";
 import bnSanBorja3 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA3.jpg";
-import bnSanBorja4 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA4.jpg";
+import bnSanBorja4 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA4.jpeg";
 import bnSanBorja5 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA5.jpg";
 import bnSanBorja6 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA6.jpeg";
 import bnSanBorja7 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA7.jpeg";
 import bnSanBorja8 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA8.jpeg";
 import bnSanBorja9 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA9.jpeg";
-import bnSanBorja10 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA10.jpeg";
-import bnSanBorja11 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA11.jpeg";
+import bnSanBorja10 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA10.png";
+import bnSanBorja11 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA11.png";
 import bnSanBorja12 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA12.jpeg";
-import bnSanBorja13 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA13.jpeg";
-import bnSanBorja14 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA14.jpeg";
+import bnSanBorja13 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA13.png";
+import bnSanBorja14 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA14.png";
 import bnSanBorja15 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA15.jpeg";
 
 // Remodelaciones - Prosegur Alarma & Teleperformance
@@ -191,17 +216,23 @@ import panama2 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural 
 import panama3 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama3.jpg";
 import panama4 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama4.jpg";
 import panama5 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama5.jpg";
+import panama6 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama6.jpeg";
+import panama7 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama7.jpeg";
+import panama8 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama8.jpeg";
+import panama9 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama9.jpeg";
 
 // Construcción - Implementacion SOC Segurity Prosegur Images
 import soc1 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur1.jpeg";
 import soc2 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur2.jpeg";
-import soc3 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur3.jpeg";
+import soc3 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur3.png";
 import soc4 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur4.jpeg";
 import soc5 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur5.jpeg";
 import soc6 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur6.jpeg";
 import soc7 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur7.jpeg";
 import soc8 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur8.jpeg";
 import soc9 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur9.jpeg";
+import soc10 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur10.jpeg";
+import soc11 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur11.png";
 
 import {
   Dialog,
@@ -223,6 +254,26 @@ import { RevealOnScroll } from "@/components/RevealOnScroll";
 // For now, I'll use a placeholder div or reuse existing images to demonstrate the layout
 
 const projects = [
+  {
+    id: 29,
+    title: "ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO",
+    client: "PROSEGUR CASH",
+    description: "Servicio especializado de acondicionamiento de bases móviles para Prosegur Cash en la sede Huacho, asegurando estándares de seguridad y funcionalidad.",
+    image: huacho1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [huacho1, huacho2, huacho3, huacho4, huacho5, huacho6, huacho7, huacho8, huacho9, huacho10, huacho11, huacho12]
+  },
+  {
+    id: 28,
+    title: "Levantamiento de observaciones ITSE - Proceres",
+    client: "PROSEGUR",
+    description: "Implementación de mejoras y cumplimiento normativo ITSE en la sede Proceres.",
+    image: proceres1,
+    category: "levantamiento-itse",
+    categoryLabel: "Levantamiento itse",
+    images: [proceres1, proceres2, proceres3, proceres4, proceres5, proceres6, proceres7, proceres8]
+  },
   {
     id: 27,
     title: "MANTENIMIENTO DE FACHADA - TAPA JUNTAS DE ACERO INOXIDABLE - ACADEMIAS ADUNI VALLEJO SEDE DE SJL",
@@ -281,7 +332,7 @@ const projects = [
     image: soc1,
     category: "construccion",
     categoryLabel: "Construcción",
-    images: [soc1, soc2, soc3, soc4, soc5, soc6, soc7, soc8, soc9]
+    images: [soc1, soc2, soc3, soc4, soc5, soc6, soc7, soc8, soc9, soc10, soc11]
   },
   {
     id: 21,
@@ -331,7 +382,7 @@ const projects = [
     image: panama1,
     category: "construccion",
     categoryLabel: "Construcción",
-    images: [panama1, panama2, panama3, panama4, panama5]
+    images: [panama1, panama2, panama3, panama4, panama5, panama6, panama7, panama8, panama9]
   },
   {
     id: 4,
@@ -341,7 +392,7 @@ const projects = [
     image: alarma1,
     category: "levantamiento-itse",
     categoryLabel: "Levantamiento itse",
-    images: [alarma1, alarma2, alarma3, alarma4, alarma5, alarma6, alarma7]
+    images: [alarma1, alarma2, alarma3, alarma4, alarma5, alarma6, alarma7, alarma8]
   },
   {
     id: 5,
