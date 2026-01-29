@@ -266,8 +266,8 @@ const projects = [
         client: "PROSEGUR CASH",
         description: "Servicio especializado de acondicionamiento de bases móviles para Prosegur Cash en la sede Huacho, asegurando estándares de seguridad y funcionalidad.",
         image: huacho1,
-        category: "servicios-generales",
-        categoryLabel: "Servicios generales",
+        category: "construccion",
+        categoryLabel: "Construcción",
         images: [huacho1, huacho2, huacho3, huacho4, huacho5, huacho6, huacho7, huacho8, huacho9, huacho10, huacho11, huacho12]
     },
     {
