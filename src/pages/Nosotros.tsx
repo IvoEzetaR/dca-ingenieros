@@ -81,7 +81,7 @@ const Nosotros = () => {
             <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-full mb-8 text-left">
               <BadgeCheck className="w-4 h-4 text-accent-light shrink-0" />
               <span className="text-sm font-medium text-primary-foreground">
-                +4 Años de Excelencia en el Mercado Peruano
+                10 Años de Excelencia en el Mercado Peruano
               </span>
             </div>
           </RevealOnScroll>

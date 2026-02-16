@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Mail, Search, Send, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, Mail, Search, Send, ChevronDown, Facebook, Instagram, Linkedin } from "lucide-react";
 import logoDCA from "@/assets/Logo DCA.png";
 import { cn } from "@/lib/utils";
 import { ContactDialog } from "./ContactDialog";
@@ -14,7 +14,7 @@ const navItems = [
     isRoute: false,
     children: [
       {
-        label: "Obras y servicios generales",
+        label: "Mantenimiento y Servicios Generales",
         href: "/servicios/obras-servicios-generales",
         isRoute: true,
         description: "Mantenimiento y servicios generales para empresas.",
@@ -126,13 +126,34 @@ export const Header = () => {
               </a>
             </div>
           </div>
-          <div className="flex items-center gap-1">
-            <div className="bg-[#00BCD4] w-7 h-7 flex items-center justify-center cursor-pointer hover:bg-[#00acc1] transition-colors rounded-sm">
-              <Search className="h-4 w-4 text-white" />
-            </div>
-            <div className="bg-[#1B316E] w-7 h-7 flex items-center justify-center cursor-pointer hover:bg-[#2a4595] transition-colors rounded-sm border border-white/20">
-              <Send className="h-3.5 w-3.5 text-white -rotate-45 ml-0.5 mt-0.5" />
-            </div>
+          <div className="flex items-center gap-2">
+            <a
+              href="https://www.facebook.com/dcaingenieros"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/10 w-7 h-7 flex items-center justify-center cursor-pointer hover:bg-white/20 transition-colors rounded-sm border border-white/10"
+              aria-label="Facebook"
+            >
+              <Facebook className="h-4 w-4 text-white" />
+            </a>
+            <a
+              href="https://www.instagram.com/dcaingenieros"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/10 w-7 h-7 flex items-center justify-center cursor-pointer hover:bg-white/20 transition-colors rounded-sm border border-white/10"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-4 w-4 text-white" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/dca-ingenieros-sac"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/10 w-7 h-7 flex items-center justify-center cursor-pointer hover:bg-white/20 transition-colors rounded-sm border border-white/10"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-4 w-4 text-white" />
+            </a>
           </div>
         </div>
       </div>

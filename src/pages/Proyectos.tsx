@@ -6,27 +6,33 @@ import { ChevronRight } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg";
 
 // ITSE Prosegur Alarma Images
-import alarma1 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma1.jpg";
-import alarma2 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma2.jpg";
-import alarma3 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma3.jpg";
-import alarma4 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma4.jpg";
-import alarma5 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma5.jpg";
-import alarma6 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma6.jpeg";
+import alarma1 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma1.jpeg";
+import alarma2 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma2.jpeg";
+import alarma3 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma3.jpeg";
+import alarma4 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma4.jpeg";
+import alarma5 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma5.jpeg";
+import alarma6 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma6.png";
 import alarma7 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma7.jpeg";
+import alarma8 from "@/assets/imagenes-proyectos/ITSE/Itse prosegur alarma8.png";
 
 // ITSE Prosegur Cash Piura Images
 import cash1 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura1.jpg";
 import cash2 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura2.jpg";
 import cash3 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura3.jpeg";
 import cash4 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura4.jpg";
-import cash5 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura5.jpeg";
+import cash5 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura5.png";
 import cash6 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura6.jpeg";
 import cash7 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura7.jpeg";
+import cash8 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura8.png";
+import cash9 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura9.jpeg";
+import cash10 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura10.jpeg";
+import cash11 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura11.jpeg";
+import cash12 from "@/assets/imagenes-proyectos/ITSE/Prosegur Cash Piura12.png";
 
 // ITSE Prosegur Cajero Miraflores Images
 import miraflores1 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES1.jpg";
 import miraflores2 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES2.jpeg";
-import miraflores3 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES3.jpg";
+import miraflores3 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES3.jpeg";
 import miraflores4 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES4.jpeg";
 import miraflores5 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES5.jpeg";
 import miraflores6 from "@/assets/imagenes-proyectos/ITSE/05. ITSE - PROSEGUR CAJERO MIRAFLORES6.jpeg";
@@ -50,18 +56,37 @@ import morro6 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO 
 import morro7 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGUR CASH MORRO SOLAR7.jpeg";
 
 // ITSE Proseguridad Huanuco Images
-import huanuco1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO1.jpg";
+import huanuco1 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO1.jpeg";
 import huanuco2 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO2.jpg";
 import huanuco3 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO3.jpg";
 import huanuco4 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO4.jpg";
 import huanuco5 from "@/assets/imagenes-proyectos/ITSE/ITSE - PROSEGURIDAD HUANUCO5.jpg";
 
-// Servicios Generales - Banco de la Nación Images
-import bnCarmen1 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO1.jpg";
-import bnCarmen2 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO2.jpg";
-import bnCarmen3 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO3.jpg";
-import bnCarmen4 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO4.jpg";
-import bnCarmen5 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO5.jpg";
+// ITSE Proceres Images
+import proceres1 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres1.jpeg";
+import proceres2 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres2.jpeg";
+import proceres3 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres3.jpeg";
+import proceres4 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres4.jpeg";
+import proceres5 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres5.jpeg";
+import proceres6 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres6.jpeg";
+import proceres7 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres7.jpeg";
+import proceres8 from "@/assets/imagenes-proyectos/ITSE/ITSE proceres8.jpeg";
+
+// Acondicionamiento Bases Móviles Prosegur Cash Huacho Images
+import huacho1 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO1.jpeg";
+import huacho2 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO2.jpeg";
+import huacho3 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO3.jpeg";
+import huacho4 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO4.jpeg";
+import huacho5 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO5.jpeg";
+import huacho6 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO6.jpeg";
+import huacho7 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO7.jpeg";
+import huacho8 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO8.jpeg";
+import huacho9 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO9.jpeg";
+import huacho10 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO10.jpeg";
+import huacho11 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO11.jpeg";
+import huacho12 from "@/assets/imagenes-proyectos/ITSE/ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO12.jpeg";
+
+
 
 import bnGraco1 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE1.jpg";
 import bnGraco2 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE2.jpeg";
@@ -70,11 +95,6 @@ import bnGraco4 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIEN
 import bnGraco5 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE5.jpg";
 import bnGraco6 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION GRIFO GRACO - ATE6.jpeg";
 
-import bnMexico1 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA1.jpg";
-import bnMexico2 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA2.jpg";
-import bnMexico3 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA3.jpg";
-import bnMexico4 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA4.jpg";
-import bnMexico5 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA5.jpg";
 
 import bnMegaplaza1 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEGAPLAZA  - INDEPENDENCIA1.jpg";
 import bnMegaplaza2 from "@/assets/imagenes-proyectos/ITSE/PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEGAPLAZA  - INDEPENDENCIA2.jpg";
@@ -88,11 +108,21 @@ import bnDorado3 from "@/assets/imagenes-proyectos/ITSE/Banco de la nacion el do
 import bnDorado4 from "@/assets/imagenes-proyectos/ITSE/Banco de la nacion el dorado4.jpg";
 import bnDorado5 from "@/assets/imagenes-proyectos/ITSE/Banco de la nacion el dorado5.jpg";
 
-import bnSanBorja1 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA1.jpg";
-import bnSanBorja2 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA2.jpg";
+import bnSanBorja1 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA1.jpeg";
+import bnSanBorja2 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA2.jpeg";
 import bnSanBorja3 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA3.jpg";
-import bnSanBorja4 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA4.jpg";
+import bnSanBorja4 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA4.jpeg";
 import bnSanBorja5 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA5.jpg";
+import bnSanBorja6 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA6.jpeg";
+import bnSanBorja7 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA7.jpeg";
+import bnSanBorja8 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA8.jpeg";
+import bnSanBorja9 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA9.jpeg";
+import bnSanBorja10 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA10.png";
+import bnSanBorja11 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA11.png";
+import bnSanBorja12 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA12.jpeg";
+import bnSanBorja13 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA13.png";
+import bnSanBorja14 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA14.png";
+import bnSanBorja15 from "@/assets/imagenes-proyectos/ITSE/IMPLEMENTACION BANCO DE LA NACION - SAN BORJA15.jpeg";
 
 // Remodelaciones - Prosegur Alarma & Teleperformance
 import salaDescanso1 from "@/assets/imagenes-proyectos/ITSE/adecuacion de la sala de descanso Prosegur alarma1.jpg";
@@ -100,6 +130,53 @@ import salaDescanso2 from "@/assets/imagenes-proyectos/ITSE/adecuacion de la sal
 import salaDescanso3 from "@/assets/imagenes-proyectos/ITSE/adecuacion de la sala de descanso Prosegur alarma3.jpg";
 import salaDescanso4 from "@/assets/imagenes-proyectos/ITSE/adecuacion de la sala de descanso Prosegur alarma4.jpg";
 import salaDescanso5 from "@/assets/imagenes-proyectos/ITSE/adecuacion de la sala de descanso Prosegur alarma5.jpg";
+
+// Servicios Generales - Adecuaciones Portones Prosegur Morro del Solar Images
+import porton1 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR1.jpeg";
+import porton2 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR2.jpeg";
+import porton3 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR3.jpeg";
+import porton5 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR5.jpeg";
+import porton6 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR6.jpeg";
+import porton7 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR7.jpeg";
+import porton8 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR8.jpeg";
+import porton9 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR9.jpeg";
+import porton10 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR10.jpeg";
+import porton11 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR11.jpeg";
+import porton12 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR12.jpeg";
+import porton13 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR13.jpeg";
+import porton14 from "@/assets/imagenes-proyectos/ITSE/PROYECTO ADECUACIONES DE PORTONES DE ESCLUSA VEHICULAR INTERIOR Y EXTERIOR PROSEGUR MORRO DEL SOLAR14.jpeg";
+
+// Servicios Generales - Mantenimiento de Coberturas Prosegur Morro del Solar
+import techo1 from "@/assets/imagenes-proyectos/ITSE/MANTAMIENTO DE COBERTURAS E IMPERMEABILICION DE TECHOS PROSEGUR MORRO DEL SOLAR1.jpeg";
+import techo2 from "@/assets/imagenes-proyectos/ITSE/MANTAMIENTO DE COBERTURAS E IMPERMEABILICION DE TECHOS PROSEGUR MORRO DEL SOLAR2.jpeg";
+import techo3 from "@/assets/imagenes-proyectos/ITSE/MANTAMIENTO DE COBERTURAS E IMPERMEABILICION DE TECHOS PROSEGUR MORRO DEL SOLAR3.jpeg";
+import techo5 from "@/assets/imagenes-proyectos/ITSE/MANTAMIENTO DE COBERTURAS E IMPERMEABILICION DE TECHOS PROSEGUR MORRO DEL SOLAR5.jpeg";
+import techo6 from "@/assets/imagenes-proyectos/ITSE/MANTAMIENTO DE COBERTURAS E IMPERMEABILICION DE TECHOS PROSEGUR MORRO DEL SOLAR6.jpeg";
+import techo7 from "@/assets/imagenes-proyectos/ITSE/MANTAMIENTO DE COBERTURAS E IMPERMEABILICION DE TECHOS PROSEGUR MORRO DEL SOLAR7.jpeg";
+
+// Servicios Generales - Grupo ATV Structures Images
+import atv1 from "@/assets/imagenes-proyectos/ITSE/MANTENIMIENTO Y FAFRICACION DE ESCTRUCTURAS METALICAS – GRUPO ATV1.jpeg";
+import atv2 from "@/assets/imagenes-proyectos/ITSE/MANTENIMIENTO Y FAFRICACION DE ESCTRUCTURAS METALICAS – GRUPO ATV2.jpeg";
+import atv3 from "@/assets/imagenes-proyectos/ITSE/MANTENIMIENTO Y FAFRICACION DE ESCTRUCTURAS METALICAS – GRUPO ATV3.jpeg";
+import atv4 from "@/assets/imagenes-proyectos/ITSE/MANTENIMIENTO Y FAFRICACION DE ESCTRUCTURAS METALICAS – GRUPO ATV4.jpeg";
+import atv5 from "@/assets/imagenes-proyectos/ITSE/MANTENIMIENTO Y FAFRICACION DE ESCTRUCTURAS METALICAS – GRUPO ATV5.jpeg";
+import atv6 from "@/assets/imagenes-proyectos/ITSE/MANTENIMIENTO Y FAFRICACION DE ESCTRUCTURAS METALICAS – GRUPO ATV6.jpeg";
+
+// Servicios Generales - Inrubi Aislamiento Acústico Images
+import inrubi1 from "@/assets/imagenes-proyectos/ITSE/Cliente Inrubi1.jpeg";
+import inrubi2 from "@/assets/imagenes-proyectos/ITSE/Cliente Inrubi2.jpeg";
+import inrubi3 from "@/assets/imagenes-proyectos/ITSE/Cliente Inrubi3.jpeg";
+import inrubi4 from "@/assets/imagenes-proyectos/ITSE/Cliente Inrubi4.jpeg";
+import inrubi5 from "@/assets/imagenes-proyectos/ITSE/Cliente Inrubi5.jpeg";
+import inrubi6 from "@/assets/imagenes-proyectos/ITSE/Cliente Inrubi6.jpeg";
+
+// Servicios Generales - Aduni Vallejo Facade Maintenance Images
+import aduni1 from "@/assets/imagenes-proyectos/ITSE/Mantenimiento de fachada - Tapa juntas de acero inoxidable1.jpeg";
+import aduni2 from "@/assets/imagenes-proyectos/ITSE/Mantenimiento de fachada - Tapa juntas de acero inoxidable2.jpeg";
+import aduni3 from "@/assets/imagenes-proyectos/ITSE/Mantenimiento de fachada - Tapa juntas de acero inoxidable3.jpeg";
+import aduni4 from "@/assets/imagenes-proyectos/ITSE/Mantenimiento de fachada - Tapa juntas de acero inoxidable4.jpeg";
+import aduni5 from "@/assets/imagenes-proyectos/ITSE/Mantenimiento de fachada - Tapa juntas de acero inoxidable5.jpeg";
+import aduni6 from "@/assets/imagenes-proyectos/ITSE/Mantenimiento de fachada - Tapa juntas de acero inoxidable6.jpeg";
 
 import teleperformance1 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE1.jpg";
 import teleperformance2 from "@/assets/imagenes-proyectos/ITSE/TELEPERFORMANCE2.jpg";
@@ -124,12 +201,38 @@ import panamaOficina7 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICIN
 import panamaOficina8 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA8.jpeg";
 import panamaOficina9 from "@/assets/imagenes-proyectos/ITSE/REMODELACION OFICINA PANAMA9.jpeg";
 
+// Remodelación Banco de la Nación Sepahua Images
+import bnSepahua1 from "@/assets/imagenes-proyectos/ITSE/Banco de la nación Sepahua1.jpeg";
+import bnSepahua2 from "@/assets/imagenes-proyectos/ITSE/Banco de la nación Sepahua2.jpeg";
+import bnSepahua3 from "@/assets/imagenes-proyectos/ITSE/Banco de la nación Sepahua3.jpeg";
+import bnSepahua4 from "@/assets/imagenes-proyectos/ITSE/Banco de la nación Sepahua4.jpeg";
+import bnSepahua5 from "@/assets/imagenes-proyectos/ITSE/Banco de la nación Sepahua5.jpeg";
+import bnSepahua6 from "@/assets/imagenes-proyectos/ITSE/Banco de la nación Sepahua6.jpeg";
+import bnSepahua7 from "@/assets/imagenes-proyectos/ITSE/Banco de la nación Sepahua7.jpeg";
+
 // Construcción - Reforzamiento Estructural Panamá
 import panama1 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama1.jpg";
 import panama2 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama2.jpg";
 import panama3 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama3.jpg";
 import panama4 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama4.jpg";
 import panama5 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama5.jpg";
+import panama6 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama6.jpeg";
+import panama7 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama7.jpeg";
+import panama8 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama8.jpeg";
+import panama9 from "@/assets/imagenes-proyectos/ITSE/Reforzamiento estructural Panama9.jpeg";
+
+// Construcción - Implementacion SOC Segurity Prosegur Images
+import soc1 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur1.jpeg";
+import soc2 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur2.jpeg";
+import soc3 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur3.png";
+import soc4 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur4.jpeg";
+import soc5 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur5.jpeg";
+import soc6 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur6.jpeg";
+import soc7 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur7.jpeg";
+import soc8 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur8.jpeg";
+import soc9 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur9.jpeg";
+import soc10 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur10.jpeg";
+import soc11 from "@/assets/imagenes-proyectos/ITSE/Implementacion SOC Segurity Prosegur11.png";
 
 import {
   Dialog,
@@ -151,6 +254,96 @@ import { RevealOnScroll } from "@/components/RevealOnScroll";
 // For now, I'll use a placeholder div or reuse existing images to demonstrate the layout
 
 const projects = [
+  {
+    id: 29,
+    title: "ACONDICIONAMIENTO DE BASES MÓVILES – PROSEGUR CASH HUACHO",
+    client: "PROSEGUR CASH",
+    description: "Servicio especializado de acondicionamiento de bases móviles para Prosegur Cash en la sede Huacho, asegurando estándares de seguridad y funcionalidad.",
+    image: huacho1,
+    category: "construccion",
+    categoryLabel: "Construcción",
+    images: [huacho1, huacho2, huacho3, huacho4, huacho5, huacho6, huacho7, huacho8, huacho9, huacho10, huacho11, huacho12]
+  },
+  {
+    id: 28,
+    title: "Levantamiento de observaciones ITSE - Proceres",
+    client: "PROSEGUR",
+    description: "Implementación de mejoras y cumplimiento normativo ITSE en la sede Proceres.",
+    image: proceres1,
+    category: "levantamiento-itse",
+    categoryLabel: "Levantamiento itse",
+    images: [proceres1, proceres2, proceres3, proceres4, proceres5, proceres6, proceres7, proceres8]
+  },
+  {
+    id: 27,
+    title: "MANTENIMIENTO DE FACHADA - TAPA JUNTAS DE ACERO INOXIDABLE - ACADEMIAS ADUNI VALLEJO SEDE DE SJL",
+    client: "ACADEMIAS ADUNI VALLEJO",
+    description: "Proyecto integral de mantenimiento de fachada, incluyendo la instalación y adecuación de tapa juntas de acero inoxidable en la sede San Juan de Lurigancho de las Academias Aduni Vallejo.",
+    image: aduni1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [aduni1, aduni2, aduni3, aduni4, aduni5, aduni6]
+  },
+  {
+    id: 26,
+    title: "INRUBI - EDIFICIO GRIMALDO DEL SOLAR AISLAMIENTO ACÚSTICO PARA GRUPO ELECTRÓGENO",
+    client: "INRUBI",
+    description: "Servicio de implementación de aislamiento acústico especializado para el grupo electrógeno del Edificio Grimaldo del Solar, garantizando la reducción efectiva de niveles sonoros y cumplimiento normativo.",
+    image: inrubi1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [inrubi1, inrubi2, inrubi3, inrubi4, inrubi5, inrubi6]
+  },
+  {
+    id: 25,
+    title: "MANTENIMIENTO Y FABRICACIÓN DE ESTRUCTURAS METÁLICAS – GRUPO ATV",
+    client: "GRUPO ATV",
+    description: "Servicio especializado de diseño, fabricación y mantenimiento de estructuras metálicas a medida, asegurando la máxima resistencia y calidad en cada componente para el Grupo ATV.",
+    image: atv1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [atv1, atv2, atv3, atv4, atv5, atv6]
+  },
+  {
+    id: 24,
+    title: "MANTENIMIENTO DE COBERTURAS E IMPERMEABILIZACIÓN DE TECHOS PROSEGUR MORRO DEL SOLAR",
+    client: "PROSEGUR",
+    description: "Servicio especializado de mantenimiento correctivo y preventivo de coberturas, incluyendo trabajos de impermeabilización técnica para asegurar la integridad estructural y protección contra filtraciones en la sede Morro del Solar.",
+    image: techo1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [techo1, techo2, techo3, techo5, techo6, techo7]
+  },
+  {
+    id: 23,
+    title: "ADECUACIÓN DE PORTONES DE ESCLUSA VEHICULAR PROSEGUR",
+    client: "PROSEGUR",
+    description: "Servicio especializado de mantenimiento y adecuación técnica de portones de esclusa vehicular (interior y exterior) en la sede Morro del Solar, garantizando la operatividad y seguridad del acceso.",
+    image: porton1,
+    category: "servicios-generales",
+    categoryLabel: "Servicios generales",
+    images: [porton1, porton2, porton3, porton5, porton6, porton7, porton8, porton9, porton10, porton11, porton12, porton13, porton14]
+  },
+  {
+    id: 22,
+    title: "IMPLEMENTACIÓN SOC SECURITY PROSEGUR",
+    client: "PROSEGUR",
+    description: "Proyecto especializado de construcción e implementación del centro de control SOC Security para Prosegur, integrando infraestructura técnica avanzada y acabados de alta calidad para operaciones críticas.",
+    image: soc1,
+    category: "construccion",
+    categoryLabel: "Construcción",
+    images: [soc1, soc2, soc3, soc4, soc5, soc6, soc7, soc8, soc9, soc10, soc11]
+  },
+  {
+    id: 21,
+    title: "BANCO DE LA NACIÓN SEPAHUA",
+    client: "BANCO DE LA NACIÓN",
+    description: "Proyecto integral de remodelación y adecuación de la sede del Banco de la Nación en Sepahua, optimizando los espacios de atención y modernizando la infraestructura institucional.",
+    image: bnSepahua1,
+    category: "remodelaciones",
+    categoryLabel: "Remodelaciones",
+    images: [bnSepahua1, bnSepahua2, bnSepahua3, bnSepahua4, bnSepahua5, bnSepahua6, bnSepahua7]
+  },
   {
     id: 20,
     title: "REMODELACION OFICINA PANAMA",
@@ -189,17 +382,17 @@ const projects = [
     image: panama1,
     category: "construccion",
     categoryLabel: "Construcción",
-    images: [panama1, panama2, panama3, panama4, panama5]
+    images: [panama1, panama2, panama3, panama4, panama5, panama6, panama7, panama8, panama9]
   },
   {
     id: 4,
-    title: "Levantamiento de observaciones ITSE Prosegur alarma",
+    title: "Levantamiento de observaciones ITSE Prosegur alarmas",
     client: "PROSEGUR",
     description: "Adecuación de infraestructura y sistemas de alarma para cumplimiento de normativas de Inspección Técnica de Seguridad en Edificaciones.",
     image: alarma1,
     category: "levantamiento-itse",
     categoryLabel: "Levantamiento itse",
-    images: [alarma1, alarma2, alarma3, alarma4, alarma5, alarma6, alarma7]
+    images: [alarma1, alarma2, alarma3, alarma4, alarma5, alarma6, alarma7, alarma8]
   },
   {
     id: 5,
@@ -209,7 +402,7 @@ const projects = [
     image: cash1,
     category: "levantamiento-itse",
     categoryLabel: "Levantamiento itse",
-    images: [cash1, cash2, cash3, cash4, cash5, cash6, cash7]
+    images: [cash1, cash2, cash3, cash4, cash5, cash6, cash7, cash8, cash9, cash10, cash11, cash12]
   },
   {
     id: 6,
@@ -262,26 +455,6 @@ const projects = [
     images: [bnGraco1, bnGraco2, bnGraco3, bnGraco4, bnGraco5, bnGraco6]
   },
   {
-    id: 12,
-    title: "PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEXICO - LA VICTORIA",
-    client: "BANCO DE LA NACIÓN",
-    description: "Ejecución del plan anual de mantenimiento para la sede México en La Victoria.",
-    image: bnMexico1,
-    category: "servicios-generales",
-    categoryLabel: "Servicios generales",
-    images: [bnMexico1, bnMexico2, bnMexico3, bnMexico4, bnMexico5]
-  },
-  {
-    id: 13,
-    title: "PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION CARMEN ALTO - AYACUCHO",
-    client: "BANCO DE LA NACIÓN",
-    description: "Servicios de mantenimiento especializado para la sede Carmen Alto en Ayacucho.",
-    image: bnCarmen1,
-    category: "servicios-generales",
-    categoryLabel: "Servicios generales",
-    images: [bnCarmen1, bnCarmen2, bnCarmen3, bnCarmen4, bnCarmen5]
-  },
-  {
     id: 14,
     title: "PLAN ANUAL DE MANTENIMIENTO BANCO DE LA NACION MEGAPLAZA - INDEPENDENCIA",
     client: "BANCO DE LA NACIÓN",
@@ -303,13 +476,13 @@ const projects = [
   },
   {
     id: 16,
-    title: "IMPLEMENTACION BANCO DE LA NACION - SAN BORJA",
+    title: "PROYECTO MUDANZA Y ACONDICIONAMIENTO DE BANCO DE LA NACION SAN BORJA",
     client: "BANCO DE LA NACIÓN",
-    description: "Servicio de implementación y adecuación de espacios para la sede San Borja.",
+    description: "Servicio integral de mudanza, adecuación y acondicionamiento de espacios corporativos para la sede San Borja del Banco de la Nación.",
     image: bnSanBorja1,
-    category: "servicios-generales",
-    categoryLabel: "Servicios generales",
-    images: [bnSanBorja1, bnSanBorja2, bnSanBorja3, bnSanBorja4, bnSanBorja5]
+    category: "remodelaciones",
+    categoryLabel: "Remodelaciones",
+    images: [bnSanBorja1, bnSanBorja2, bnSanBorja3, bnSanBorja4, bnSanBorja5, bnSanBorja6, bnSanBorja7, bnSanBorja8, bnSanBorja9, bnSanBorja10, bnSanBorja11, bnSanBorja12, bnSanBorja13, bnSanBorja14, bnSanBorja15]
   }
 ];
 
@@ -439,7 +612,7 @@ const Proyectos = () => {
                               <img
                                 src={img}
                                 alt={`${selectedProject.title} - Imagen ${index + 1}`}
-                                className="w-full h-full object-cover"
+                                className={`w-full h-full ${(img === bnMegaplaza2 || img === bnMegaplaza3) ? 'object-contain bg-black/5' : 'object-cover'}`}
                               />
                             </div>
                           </div>

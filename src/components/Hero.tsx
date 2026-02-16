@@ -25,7 +25,7 @@ export const Hero = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 backdrop-blur-sm rounded-full mb-6 border border-accent/30">
             <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
             <span className="text-sm font-medium text-primary-foreground/90">
-              Más de 4 años de experiencia
+              Más de 10 años de experiencia
             </span>
           </div>
 
@@ -38,7 +38,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl leading-relaxed">
-            Más de 4 años brindando calidad, optimización y seguridad en
+            Más de 10 años brindando calidad, optimización y seguridad en
             proyectos de envergadura nacional.
           </p>
 

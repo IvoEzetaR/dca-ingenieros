@@ -14,6 +14,9 @@ import GestionProyectos from "./pages/servicios/GestionProyectos";
 import Noticias from "./pages/Noticias";
 import Talento from "./pages/Talento";
 import ProyectoCategoria from "./pages/ProyectoCategoria";
+import LibroReclamaciones from "./pages/LibroReclamaciones";
+import Terminos from "./pages/Terminos";
+import Politica from "./pages/Politica";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -40,6 +43,9 @@ const App = () => (
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/talento" element={<Talento />} />
           <Route path="/proyectos/:category" element={<ProyectoCategoria />} />
+          <Route path="/libro-de-reclamaciones" element={<LibroReclamaciones />} />
+          <Route path="/terminos" element={<Terminos />} />
+          <Route path="/politica" element={<Politica />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
