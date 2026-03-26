@@ -1,0 +1,223 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - img [ref=e9]
+            - link "925277375 / 994627900" [ref=e11] [cursor=pointer]:
+              - /url: tel:+51925277375
+          - generic [ref=e12]:
+            - generic [ref=e13]: "|"
+            - img [ref=e14]
+            - link "proyectos@dcaingenieros.com" [ref=e17] [cursor=pointer]:
+              - /url: mailto:proyectos@dcaingenieros.com
+        - generic [ref=e18]:
+          - link "Facebook" [ref=e19] [cursor=pointer]:
+            - /url: https://www.facebook.com/dcaingenieros
+            - img [ref=e20]
+          - link "Instagram" [ref=e22] [cursor=pointer]:
+            - /url: https://www.instagram.com/dcaingenieros
+            - img [ref=e23]
+          - link "LinkedIn" [ref=e26] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/dca-ingenieros-sac
+            - img [ref=e27]
+      - generic [ref=e33]:
+        - link "DCA Ingenieros Logo" [ref=e34] [cursor=pointer]:
+          - /url: /
+          - img "DCA Ingenieros Logo" [ref=e35]
+        - generic [ref=e36]:
+          - link "Grupo DCA" [ref=e38] [cursor=pointer]:
+            - /url: /
+          - link "Líneas de Negocio" [ref=e40] [cursor=pointer]:
+            - /url: /#servicios
+            - text: Líneas de Negocio
+            - img [ref=e41]
+          - link "Proyectos" [ref=e44] [cursor=pointer]:
+            - /url: /proyectos
+            - text: Proyectos
+            - img [ref=e45]
+          - link "Noticias" [ref=e48] [cursor=pointer]:
+            - /url: /noticias
+          - link "Talento" [ref=e50] [cursor=pointer]:
+            - /url: /talento
+    - main [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - img [ref=e55]
+            - generic [ref=e57]: Atención al Cliente
+          - heading "Libro de Reclamaciones" [level=1] [ref=e58]
+          - paragraph [ref=e59]: Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, ponemos a su disposición nuestro libro de reclamaciones virtual.
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - img [ref=e65]
+              - heading "1. Identificación del Consumidor" [level=2] [ref=e68]
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - text: Nombres y Apellidos *
+                - textbox "Nombres y Apellidos *" [ref=e71]:
+                  - /placeholder: Ej. Juan Pérez García
+              - generic [ref=e72]:
+                - text: Correo Electrónico *
+                - textbox "Correo Electrónico *" [ref=e73]:
+                  - /placeholder: juan.perez@ejemplo.com
+            - generic [ref=e74]:
+              - text: Domicilio *
+              - textbox "Domicilio *" [ref=e75]:
+                - /placeholder: Av. Los Olivos 123, Urb. Villa Azul
+            - generic [ref=e76]:
+              - generic [ref=e77]:
+                - text: Tipo de Documento *
+                - combobox [ref=e78] [cursor=pointer]:
+                  - generic: DNI
+                  - img [ref=e79]
+                - combobox [ref=e81]
+              - generic [ref=e82]:
+                - text: Número de Documento *
+                - textbox "Número de Documento *" [ref=e83]:
+                  - /placeholder: "12345678"
+              - generic [ref=e84]:
+                - text: Teléfono / Celular *
+                - textbox "Teléfono / Celular *" [ref=e85]:
+                  - /placeholder: "987654321"
+            - generic [ref=e86]:
+              - text: Si eres menor de edad, datos del padre o representante legal
+              - textbox "Si eres menor de edad, datos del padre o representante legal" [ref=e87]:
+                - /placeholder: Nombre y DNI del padre/madre/tutor
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - img [ref=e91]
+              - heading "2. Identificación del Bien Contratado" [level=2] [ref=e94]
+            - generic [ref=e95]:
+              - text: Producto o Servicio contratado *
+              - radiogroup [ref=e96]:
+                - generic [ref=e97]:
+                  - radio "Producto" [ref=e98] [cursor=pointer]
+                  - radio
+                  - generic [ref=e99] [cursor=pointer]: Producto
+                - generic [ref=e100]:
+                  - radio "Servicio" [checked] [ref=e101] [cursor=pointer]:
+                    - img [ref=e103]
+                  - radio [checked]
+                  - generic [ref=e105] [cursor=pointer]: Servicio
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - text: Monto Reclamado (S/.)
+                - spinbutton "Monto Reclamado (S/.)" [ref=e108]
+              - generic [ref=e109]:
+                - text: Descripción del Bien
+                - textbox "Descripción del Bien" [ref=e110]:
+                  - /placeholder: Ej. Servicio de mantenimiento preventivo, Materiales de ferretería...
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - img [ref=e114]
+              - heading "3. Detalle de la Reclamación" [level=2] [ref=e116]
+            - generic [ref=e117]:
+              - text: Tipo de Disconformidad *
+              - radiogroup [ref=e118]:
+                - generic [ref=e119]:
+                  - radio "Reclamo" [checked] [ref=e120] [cursor=pointer]:
+                    - img [ref=e122]
+                  - radio [checked]
+                  - generic [ref=e124]:
+                    - text: Reclamo
+                    - paragraph [ref=e125]: Disconformidad relacionada a los productos o servicios.
+                - generic [ref=e126]:
+                  - radio "Queja" [ref=e127] [cursor=pointer]
+                  - radio
+                  - generic [ref=e128]:
+                    - text: Queja
+                    - paragraph [ref=e129]: Disconformidad no relacionada a los productos/servicios o malestar/descontento en la atención.
+            - generic [ref=e130]:
+              - text: Detalle del reclamo o queja *
+              - textbox "Detalle del reclamo o queja *" [ref=e131]:
+                - /placeholder: Describa lo sucedido con el mayor detalle posible...
+            - generic [ref=e132]:
+              - text: Pedido (Lo que solicita) *
+              - textbox "Pedido (Lo que solicita) *" [ref=e133]:
+                - /placeholder: ¿Qué solución espera recibir por parte de la empresa?
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - img [ref=e136]
+              - list [ref=e138]:
+                - listitem [ref=e139]: La respuesta de su reclamo o queja será notificada a la dirección o E-mail indicado.
+                - listitem [ref=e140]: La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI.
+                - listitem [ref=e141]: El proveedor deberá dar respuesta al reclamo en un plazo no mayor de quince (15) días hábiles improrrogables.
+            - generic [ref=e142]:
+              - checkbox "He leído y acepto la Política de Privacidad y el tratamiento de mis datos personales para la atención de este reclamo. *" [ref=e143] [cursor=pointer]
+              - checkbox
+              - generic [ref=e145] [cursor=pointer]: He leído y acepto la Política de Privacidad y el tratamiento de mis datos personales para la atención de este reclamo. *
+          - button "ENVIAR RECLAMO" [ref=e146] [cursor=pointer]:
+            - generic [ref=e147]:
+              - img
+              - text: ENVIAR RECLAMO
+          - paragraph [ref=e148]: (*) Campos obligatorios
+    - contentinfo [ref=e149]:
+      - generic [ref=e151]:
+        - img "DCA Ingenieros Logo" [ref=e153]
+        - generic [ref=e154]:
+          - heading "Nosotros" [level=4] [ref=e155]
+          - paragraph [ref=e156]: Empresa líder en gestión integral de proyectos de ingeniería, comprometidos con la calidad, seguridad y cumplimiento de plazos.
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - img [ref=e159]
+              - generic [ref=e162]: Jr. Rio Huaura 5522, Urb. Villa del Norte - Los Olivos
+            - generic [ref=e163]:
+              - img [ref=e164]
+              - link "proyectos@dcaingenieros.com" [ref=e167] [cursor=pointer]:
+                - /url: mailto:proyectos@dcaingenieros.com
+            - generic [ref=e168]:
+              - img [ref=e169]
+              - link "925277375 / 994627900" [ref=e171] [cursor=pointer]:
+                - /url: tel:+51925277375
+        - generic [ref=e172]:
+          - heading "Enlaces Rápidos" [level=4] [ref=e173]
+          - list [ref=e174]:
+            - listitem [ref=e175]:
+              - link "Grupo DCA" [ref=e176] [cursor=pointer]:
+                - /url: /
+                - text: Grupo DCA
+            - listitem [ref=e178]:
+              - link "Servicios" [ref=e179] [cursor=pointer]:
+                - /url: /#servicios
+                - text: Servicios
+            - listitem [ref=e181]:
+              - link "Noticias" [ref=e182] [cursor=pointer]:
+                - /url: /noticias
+                - text: Noticias
+            - listitem [ref=e184]:
+              - link "Talento" [ref=e185] [cursor=pointer]:
+                - /url: /talento
+                - text: Talento
+        - generic [ref=e187]:
+          - heading "Legal" [level=4] [ref=e188]
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - link "Política de Privacidad" [ref=e191] [cursor=pointer]:
+                - /url: /politica
+                - text: Política de Privacidad
+            - listitem [ref=e193]:
+              - link "Términos y Condiciones" [ref=e194] [cursor=pointer]:
+                - /url: /terminos
+                - text: Términos y Condiciones
+            - listitem [ref=e196]:
+              - link "Libro de Reclamaciones" [ref=e197] [cursor=pointer]:
+                - /url: /libro-de-reclamaciones
+                - img [ref=e198]
+                - text: Libro de Reclamaciones
+      - generic [ref=e203]:
+        - paragraph [ref=e204]: © 2025 DCA INGENIEROS S.A.C. Todos los derechos reservados.
+        - paragraph [ref=e205]:
+          - text: Diseñado por
+          - link "IDE Agency" [ref=e206] [cursor=pointer]:
+            - /url: https://ideagency.pro
+  - generic [ref=e207]:
+    - generic: ¡Contáctanos por WhatsApp!
+    - link "Contactar por WhatsApp" [ref=e208] [cursor=pointer]:
+      - /url: https://wa.me/51925277375?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.
+      - img [ref=e210]

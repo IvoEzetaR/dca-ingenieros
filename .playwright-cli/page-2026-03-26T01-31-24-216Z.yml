@@ -1,0 +1,559 @@
+- generic:
+  - generic:
+    - list
+    - region "Notifications alt+T"
+    - generic:
+      - banner:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img
+                - link:
+                  - /url: tel:+51925277375
+                  - text: 925277375 / 994627900
+              - generic:
+                - generic: "|"
+                - img
+                - link:
+                  - /url: mailto:proyectos@dcaingenieros.com
+                  - text: proyectos@dcaingenieros.com
+            - generic:
+              - link:
+                - /url: https://www.facebook.com/dcaingenieros
+                - img
+              - link:
+                - /url: https://www.instagram.com/dcaingenieros
+                - img
+              - link:
+                - /url: https://www.linkedin.com/company/dca-ingenieros-sac
+                - img
+        - generic:
+          - generic:
+            - generic:
+              - link:
+                - /url: /
+                - img
+              - generic:
+                - generic:
+                  - link:
+                    - /url: /
+                    - text: Grupo DCA
+                - generic:
+                  - link:
+                    - /url: /#servicios
+                    - text: Líneas de Negocio
+                    - img
+                - generic:
+                  - link:
+                    - /url: /proyectos
+                    - text: Proyectos
+                    - img
+                - generic:
+                  - link:
+                    - /url: /noticias
+                    - text: Noticias
+                - generic:
+                  - link:
+                    - /url: /talento
+                    - text: Talento
+      - main:
+        - generic:
+          - generic:
+            - img
+          - generic:
+            - generic:
+              - generic:
+                - generic: Más de 10 años de experiencia
+              - heading [level=1]: "Construyendo Ideas: Soluciones Integrales de Ingeniería y Construcción"
+              - paragraph: Más de 10 años brindando calidad, optimización y seguridad en proyectos de envergadura nacional.
+              - generic:
+                - link:
+                  - /url: "#servicios"
+                  - text: Conoce nuestros servicios
+                  - img
+                - button [expanded]:
+                  - img
+                  - text: Contáctanos
+              - generic:
+                - generic:
+                  - generic: 50+
+                  - generic: Proyectos completados
+                - generic:
+                  - generic: 100%
+                  - generic: Clientes satisfechos
+                - generic:
+                  - generic: "3"
+                  - generic: Certificaciones ISO
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Sobre Nosotros
+                - generic:
+                  - generic:
+                    - heading [level=2]: Excelencia en Gestión Integral de Proyectos
+                - generic:
+                  - generic:
+                    - paragraph: DCA INGENIEROS es una empresa dedicada a la gestión integral de proyectos de ingeniería, abarcando diseño, construcción y mantenimiento. Nos respaldan profesionales con amplia experiencia, comprometidos con la calidad, seguridad y cumplimiento de plazos.
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                        - generic: Certificación Trinorma (ISO 9001, 14001, 45001)
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                        - generic: Profesionales altamente calificados
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                        - generic: Cumplimiento estricto de plazos
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                      - generic:
+                        - generic: 10+
+                        - generic: Años de Experiencia
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                      - generic:
+                        - heading [level=3]: Misión
+                        - paragraph: Brindar soluciones integrales de ingeniería, construcción, mantenimiento y servicios generales incorporando soluciones innovadoras; teniendo como filosofía la calidad, optimización y seguridad.
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                      - generic:
+                        - heading [level=3]: Visión
+                        - paragraph: Ser reconocida a nivel nacional como una empresa consolidada por ser una organización confiable y honesta, con proyectos de excelente calidad, mejorando continuamente los procesos y fortaleciendo la competencia humana.
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic: Nuestros Sectores
+                - heading [level=2]: Líneas de Negocio
+                - paragraph: Soluciones estratégicas e integrales diseñadas para potenciar la eficiencia en cada etapa de sus proyectos.
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic:
+                          - img
+                    - generic:
+                      - heading [level=3]: Obras y Servicios Generales
+                      - paragraph: Soluciones integrales en obras civiles, mantenimiento y servicios generales para empresas e instituciones. Garantizamos altos estándares de calidad, seguridad y cumplimiento de plazos.
+                      - generic:
+                        - link:
+                          - /url: /servicios/obras-servicios-generales
+                          - generic: CONOCER MÁS
+                          - img
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic:
+                          - img
+                    - generic:
+                      - heading [level=3]: Construcción
+                      - paragraph: Planificación, ejecución y supervisión de proyectos de construcción. Expertos en obras nuevas, remodelaciones y refuerzos estructurales bajo normativas técnicas vigentes.
+                      - generic:
+                        - link:
+                          - /url: /servicios/ingenieria-construccion
+                          - generic: CONOCER MÁS
+                          - img
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic:
+                          - img
+                    - generic:
+                      - heading [level=3]: Ferretería
+                      - paragraph: Suministro especializado de materiales, equipos y herramientas para la construcción. Trabajamos con marcas líderes, brindando asesoría técnica y disponibilidad inmediata.
+                      - generic:
+                        - link:
+                          - /url: /servicios/ferreteria-integral
+                          - generic: CONOCER MÁS
+                          - img
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic:
+                          - img
+                    - generic:
+                      - heading [level=3]: Alquiler de Maquinarias y Herramientas
+                      - paragraph: Alquiler de maquinaria pesada y herramientas en óptimas condiciones. Optimizamos sus costos operativos con equipos seguros, mantenimiento constante y soporte técnico.
+                      - generic:
+                        - link:
+                          - /url: /servicios/alquiler-maquinarias
+                          - generic: CONOCER MÁS
+                          - img
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic:
+                          - img
+                    - generic:
+                      - heading [level=3]: Importaciones
+                      - paragraph: Gestión estratégica de importación de materiales y equipos especializados. Aseguramos calidad y cumplimiento de estándares internacionales para optimizar su abastecimiento.
+                      - generic:
+                        - link:
+                          - /url: /servicios/importacion
+                          - generic: CONOCER MÁS
+                          - img
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic:
+                          - img
+                    - generic:
+                      - heading [level=3]: Gerencia de Proyectos
+                      - paragraph: Aseguramos el éxito de su proyecto mediante el control de alcance, costo, plazo y calidad, aplicando estándares internacionales del PMI.
+                      - generic:
+                        - link:
+                          - /url: /servicios/gestion-proyectos
+                          - generic: CONOCER MÁS
+                          - img
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic: Metodología
+                - heading [level=2]: Nuestro Proceso de Trabajo
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: "01"
+                    - img
+                  - heading [level=3]: Diagnóstico
+                  - paragraph: Evaluación técnica del sitio y requerimientos del cliente.
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - generic: "02"
+                    - img
+                  - heading [level=3]: Planificación
+                  - paragraph: Diseño, presupuesto y cronograma detallado del proyecto.
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - generic: "03"
+                    - img
+                  - heading [level=3]: Ejecución ISO
+                  - paragraph: Construcción bajo estándares de calidad y seguridad certificados.
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - generic: "04"
+                    - img
+                  - heading [level=3]: Post-Venta
+                  - paragraph: Garantía, mantenimiento y soporte continuo post-entrega.
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic: Alcance
+                - heading [level=2]: Sectores que Atendemos
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - paragraph: Retail
+                  - paragraph: Tiendas y centros comerciales
+                - generic:
+                  - generic:
+                    - img
+                  - paragraph: Industrial
+                  - paragraph: Plantas y almacenes
+                - generic:
+                  - generic:
+                    - img
+                  - paragraph: Corporativo
+                  - paragraph: Oficinas y edificios
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                  - generic: Certificaciones
+                - heading [level=2]: Calidad y Seguridad Certificada
+                - paragraph: Empresa homologada con estándares internacionales.
+            - generic:
+              - generic:
+                - generic:
+                  - link:
+                    - /url: /src/assets/UAF%20Americo-ISO%209001-DCA%20INGENIEROS%20S.A.C.%20(1)%20(1)%20(1).pdf
+                    - generic:
+                      - generic:
+                        - img
+                      - heading [level=3]: ISO 9001
+                      - generic: Calidad
+                      - paragraph: Sistema de Gestión de Calidad
+                      - generic:
+                        - generic: Ver certificado
+                        - img
+              - generic:
+                - generic:
+                  - link:
+                    - /url: /src/assets/UAF%20Americo-ISO%2014001-DCA%20INGENIEROS%20S.A.C.%20(1)%20(1).pdf
+                    - generic:
+                      - generic:
+                        - img
+                      - heading [level=3]: ISO 14001
+                      - generic: Medio Ambiente
+                      - paragraph: Sistema de Gestión Ambiental
+                      - generic:
+                        - generic: Ver certificado
+                        - img
+              - generic:
+                - generic:
+                  - link:
+                    - /url: /src/assets/UAF%20Americo-ISO%2045001-DCA%20INGENIEROS%20S.A.C.%20(1)%20(1).pdf
+                    - generic:
+                      - generic:
+                        - img
+                      - heading [level=3]: ISO 45001
+                      - generic: Seguridad
+                      - paragraph: Sistema de Gestión de SST
+                      - generic:
+                        - generic: Ver certificado
+                        - img
+            - generic:
+              - generic:
+                - img
+                - generic: Certificación Trinorma Vigente
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic: Nuestros Clientes
+                - heading [level=2]: Clientes que confían en nosotros
+                - paragraph: Trabajamos con empresas líderes en diversos sectores de la industria nacional.
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+      - contentinfo:
+        - generic:
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - heading [level=4]: Nosotros
+              - paragraph: Empresa líder en gestión integral de proyectos de ingeniería, comprometidos con la calidad, seguridad y cumplimiento de plazos.
+              - generic:
+                - generic:
+                  - img
+                  - generic: Jr. Rio Huaura 5522, Urb. Villa del Norte - Los Olivos
+                - generic:
+                  - img
+                  - link:
+                    - /url: mailto:proyectos@dcaingenieros.com
+                    - text: proyectos@dcaingenieros.com
+                - generic:
+                  - img
+                  - link:
+                    - /url: tel:+51925277375
+                    - text: 925277375 / 994627900
+            - generic:
+              - heading [level=4]: Enlaces Rápidos
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /
+                    - text: Grupo DCA
+                - listitem:
+                  - link:
+                    - /url: /#servicios
+                    - text: Servicios
+                - listitem:
+                  - link:
+                    - /url: /noticias
+                    - text: Noticias
+                - listitem:
+                  - link:
+                    - /url: /talento
+                    - text: Talento
+            - generic:
+              - heading [level=4]: Legal
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /politica
+                    - text: Política de Privacidad
+                - listitem:
+                  - link:
+                    - /url: /terminos
+                    - text: Términos y Condiciones
+                - listitem:
+                  - link:
+                    - /url: /libro-de-reclamaciones
+                    - img
+                    - text: Libro de Reclamaciones
+        - generic:
+          - generic:
+            - generic:
+              - paragraph: © 2025 DCA INGENIEROS S.A.C. Todos los derechos reservados.
+              - paragraph:
+                - text: Diseñado por
+                - link:
+                  - /url: https://ideagency.pro
+                  - text: IDE Agency
+    - generic:
+      - generic: ¡Contáctanos por WhatsApp!
+      - link:
+        - /url: https://wa.me/51925277375?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.
+        - img
+  - dialog "¡Trabajemos Juntos!" [ref=e574]:
+    - generic [ref=e575]:
+      - generic [ref=e576]: Contacto Directo
+      - heading "¡Trabajemos Juntos!" [level=2] [ref=e577]
+      - paragraph [ref=e578]: Déjanos tus datos y nos pondremos en contacto contigo para asesorarte en tu próximo proyecto.
+    - generic [ref=e580]:
+      - generic [ref=e581]:
+        - generic [ref=e582]:
+          - text: Nombres y Apellidos
+          - textbox "Nombres y Apellidos" [active] [ref=e583]:
+            - /placeholder: Ej. Juan Pérez
+        - generic [ref=e584]:
+          - text: Correo Electrónico
+          - textbox "Correo Electrónico" [ref=e585]:
+            - /placeholder: juan.perez@ejemplo.com
+      - generic [ref=e586]:
+        - generic [ref=e587]:
+          - text: Teléfono / WhatsApp
+          - textbox "Teléfono / WhatsApp" [ref=e588]:
+            - /placeholder: +51 987 654 321
+        - generic [ref=e589]:
+          - text: Empresa (Opcional)
+          - textbox "Empresa (Opcional)" [ref=e590]:
+            - /placeholder: Nombre de tu empresa
+      - generic [ref=e591]:
+        - text: Asunto / Proyecto
+        - textbox "Asunto / Proyecto" [ref=e592]:
+          - /placeholder: Ej. Remodelación de oficinas, Mantenimiento preventivo...
+      - generic [ref=e593]:
+        - text: Mensaje Adicional
+        - textbox "Mensaje Adicional" [ref=e594]:
+          - /placeholder: Cuéntanos más detalles sobre tu requerimiento...
+      - button "Enviar Mensaje" [ref=e595] [cursor=pointer]:
+        - generic [ref=e596]:
+          - img
+          - text: Enviar Mensaje
+    - button "Close" [ref=e597] [cursor=pointer]:
+      - img [ref=e598]
+      - generic [ref=e601]: Close

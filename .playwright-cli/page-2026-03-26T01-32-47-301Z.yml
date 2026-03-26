@@ -1,0 +1,360 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - img [ref=e9]
+            - link "925277375 / 994627900" [ref=e11] [cursor=pointer]:
+              - /url: tel:+51925277375
+          - generic [ref=e12]:
+            - generic [ref=e13]: "|"
+            - img [ref=e14]
+            - link "proyectos@dcaingenieros.com" [ref=e17] [cursor=pointer]:
+              - /url: mailto:proyectos@dcaingenieros.com
+        - generic [ref=e18]:
+          - link "Facebook" [ref=e19] [cursor=pointer]:
+            - /url: https://www.facebook.com/dcaingenieros
+            - img [ref=e20]
+          - link "Instagram" [ref=e22] [cursor=pointer]:
+            - /url: https://www.instagram.com/dcaingenieros
+            - img [ref=e23]
+          - link "LinkedIn" [ref=e26] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/dca-ingenieros-sac
+            - img [ref=e27]
+      - generic [ref=e33]:
+        - link "DCA Ingenieros Logo" [ref=e34] [cursor=pointer]:
+          - /url: /
+          - img "DCA Ingenieros Logo" [ref=e35]
+        - generic [ref=e36]:
+          - link "Grupo DCA" [ref=e38] [cursor=pointer]:
+            - /url: /
+          - link "Líneas de Negocio" [ref=e40] [cursor=pointer]:
+            - /url: /#servicios
+            - text: Líneas de Negocio
+            - img [ref=e41]
+          - link "Proyectos" [ref=e44] [cursor=pointer]:
+            - /url: /proyectos
+            - text: Proyectos
+            - img [ref=e45]
+          - link "Noticias" [ref=e48] [cursor=pointer]:
+            - /url: /noticias
+          - link "Talento" [ref=e50] [cursor=pointer]:
+            - /url: /talento
+    - main [ref=e51]:
+      - generic [ref=e52]:
+        - img "Proyecto de construcción moderna" [ref=e54]
+        - generic [ref=e57]:
+          - generic [ref=e60]: Más de 10 años de experiencia
+          - 'heading "Construyendo Ideas: Soluciones Integrales de Ingeniería y Construcción" [level=1] [ref=e61]'
+          - paragraph [ref=e62]: Más de 10 años brindando calidad, optimización y seguridad en proyectos de envergadura nacional.
+          - generic [ref=e63]:
+            - link "Conoce nuestros servicios" [ref=e64] [cursor=pointer]:
+              - /url: "#servicios"
+              - text: Conoce nuestros servicios
+              - img
+            - button "Contáctanos" [active] [ref=e65] [cursor=pointer]:
+              - img
+              - text: Contáctanos
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - generic [ref=e68]: 50+
+              - generic [ref=e69]: Proyectos completados
+            - generic [ref=e70]:
+              - generic [ref=e71]: 100%
+              - generic [ref=e72]: Clientes satisfechos
+            - generic [ref=e73]:
+              - generic [ref=e74]: "3"
+              - generic [ref=e75]: Certificaciones ISO
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e85]: Sobre Nosotros
+          - heading "Excelencia en Gestión Integral de Proyectos" [level=2] [ref=e88]
+          - paragraph [ref=e91]: DCA INGENIEROS es una empresa dedicada a la gestión integral de proyectos de ingeniería, abarcando diseño, construcción y mantenimiento. Nos respaldan profesionales con amplia experiencia, comprometidos con la calidad, seguridad y cumplimiento de plazos.
+          - generic [ref=e92]:
+            - generic [ref=e95]:
+              - img [ref=e97]
+              - generic [ref=e100]: Certificación Trinorma (ISO 9001, 14001, 45001)
+            - generic [ref=e103]:
+              - img [ref=e105]
+              - generic [ref=e110]: Profesionales altamente calificados
+            - generic [ref=e113]:
+              - img [ref=e115]
+              - generic [ref=e118]: Cumplimiento estricto de plazos
+        - generic [ref=e120]:
+          - img "Equipo de ingenieros en reunión de planificación" [ref=e122]
+          - generic [ref=e125]:
+            - img [ref=e127]
+            - generic [ref=e130]:
+              - generic [ref=e131]: 10+
+              - generic [ref=e132]: Años de Experiencia
+      - generic [ref=e135]:
+        - generic [ref=e139]:
+          - img [ref=e141]
+          - generic [ref=e145]:
+            - heading "Misión" [level=3] [ref=e146]
+            - paragraph [ref=e147]: Brindar soluciones integrales de ingeniería, construcción, mantenimiento y servicios generales incorporando soluciones innovadoras; teniendo como filosofía la calidad, optimización y seguridad.
+        - generic [ref=e151]:
+          - img [ref=e153]
+          - generic [ref=e156]:
+            - heading "Visión" [level=3] [ref=e157]
+            - paragraph [ref=e158]: Ser reconocida a nivel nacional como una empresa consolidada por ser una organización confiable y honesta, con proyectos de excelente calidad, mejorando continuamente los procesos y fortaleciendo la competencia humana.
+      - generic [ref=e160]:
+        - generic [ref=e162]:
+          - generic [ref=e163]: Nuestros Sectores
+          - heading "Líneas de Negocio" [level=2] [ref=e164]
+          - paragraph [ref=e165]: Soluciones estratégicas e integrales diseñadas para potenciar la eficiencia en cada etapa de sus proyectos.
+        - generic [ref=e166]:
+          - generic [ref=e169]:
+            - generic [ref=e170]:
+              - img "Obras y Servicios Generales" [ref=e171]
+              - img [ref=e175]
+            - generic [ref=e178]:
+              - heading "Obras y Servicios Generales" [level=3] [ref=e179]
+              - paragraph [ref=e180]: Soluciones integrales en obras civiles, mantenimiento y servicios generales para empresas e instituciones. Garantizamos altos estándares de calidad, seguridad y cumplimiento de plazos.
+              - link "CONOCER MÁS" [ref=e182] [cursor=pointer]:
+                - /url: /servicios/obras-servicios-generales
+                - generic [ref=e183]: CONOCER MÁS
+                - img [ref=e184]
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - img "Construcción" [ref=e190]
+              - img [ref=e194]
+            - generic [ref=e197]:
+              - heading "Construcción" [level=3] [ref=e198]
+              - paragraph [ref=e199]: Planificación, ejecución y supervisión de proyectos de construcción. Expertos en obras nuevas, remodelaciones y refuerzos estructurales bajo normativas técnicas vigentes.
+              - link "CONOCER MÁS" [ref=e201] [cursor=pointer]:
+                - /url: /servicios/ingenieria-construccion
+                - generic [ref=e202]: CONOCER MÁS
+                - img [ref=e203]
+          - generic [ref=e207]:
+            - generic [ref=e208]:
+              - img "Ferretería" [ref=e209]
+              - img [ref=e213]
+            - generic [ref=e215]:
+              - heading "Ferretería" [level=3] [ref=e216]
+              - paragraph [ref=e217]: Suministro especializado de materiales, equipos y herramientas para la construcción. Trabajamos con marcas líderes, brindando asesoría técnica y disponibilidad inmediata.
+              - link "CONOCER MÁS" [ref=e219] [cursor=pointer]:
+                - /url: /servicios/ferreteria-integral
+                - generic [ref=e220]: CONOCER MÁS
+                - img [ref=e221]
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - img "Alquiler de Maquinarias y Herramientas" [ref=e227]
+              - img [ref=e231]
+            - generic [ref=e236]:
+              - heading "Alquiler de Maquinarias y Herramientas" [level=3] [ref=e237]
+              - paragraph [ref=e238]: Alquiler de maquinaria pesada y herramientas en óptimas condiciones. Optimizamos sus costos operativos con equipos seguros, mantenimiento constante y soporte técnico.
+              - link "CONOCER MÁS" [ref=e240] [cursor=pointer]:
+                - /url: /servicios/alquiler-maquinarias
+                - generic [ref=e241]: CONOCER MÁS
+                - img [ref=e242]
+          - generic [ref=e246]:
+            - generic [ref=e247]:
+              - img "Importaciones" [ref=e248]
+              - img [ref=e252]
+            - generic [ref=e255]:
+              - heading "Importaciones" [level=3] [ref=e256]
+              - paragraph [ref=e257]: Gestión estratégica de importación de materiales y equipos especializados. Aseguramos calidad y cumplimiento de estándares internacionales para optimizar su abastecimiento.
+              - link "CONOCER MÁS" [ref=e259] [cursor=pointer]:
+                - /url: /servicios/importacion
+                - generic [ref=e260]: CONOCER MÁS
+                - img [ref=e261]
+          - generic [ref=e265]:
+            - generic [ref=e266]:
+              - img "Gerencia de Proyectos" [ref=e267]
+              - img [ref=e271]
+            - generic [ref=e274]:
+              - heading "Gerencia de Proyectos" [level=3] [ref=e275]
+              - paragraph [ref=e276]: Aseguramos el éxito de su proyecto mediante el control de alcance, costo, plazo y calidad, aplicando estándares internacionales del PMI.
+              - link "CONOCER MÁS" [ref=e278] [cursor=pointer]:
+                - /url: /servicios/gestion-proyectos
+                - generic [ref=e279]: CONOCER MÁS
+                - img [ref=e280]
+      - generic [ref=e283]:
+        - generic [ref=e285]:
+          - generic [ref=e286]: Metodología
+          - heading "Nuestro Proceso de Trabajo" [level=2] [ref=e287]
+        - generic [ref=e290]:
+          - generic [ref=e291]:
+            - generic [ref=e292]:
+              - generic [ref=e293]: "01"
+              - img [ref=e294]
+            - heading "Diagnóstico" [level=3] [ref=e298]
+            - paragraph [ref=e299]: Evaluación técnica del sitio y requerimientos del cliente.
+            - img [ref=e301]
+          - generic [ref=e303]:
+            - generic [ref=e304]:
+              - generic [ref=e305]: "02"
+              - img [ref=e306]
+            - heading "Planificación" [level=3] [ref=e309]
+            - paragraph [ref=e310]: Diseño, presupuesto y cronograma detallado del proyecto.
+            - img [ref=e312]
+          - generic [ref=e314]:
+            - generic [ref=e315]:
+              - generic [ref=e316]: "03"
+              - img [ref=e317]
+            - heading "Ejecución ISO" [level=3] [ref=e322]
+            - paragraph [ref=e323]: Construcción bajo estándares de calidad y seguridad certificados.
+            - img [ref=e325]
+          - generic [ref=e327]:
+            - generic [ref=e328]:
+              - generic [ref=e329]: "04"
+              - img [ref=e330]
+            - heading "Post-Venta" [level=3] [ref=e332]
+            - paragraph [ref=e333]: Garantía, mantenimiento y soporte continuo post-entrega.
+      - generic [ref=e337]:
+        - generic [ref=e338]:
+          - generic [ref=e339]: Alcance
+          - heading "Sectores que Atendemos" [level=2] [ref=e340]
+        - generic [ref=e341]:
+          - generic [ref=e342]:
+            - img [ref=e344]
+            - paragraph [ref=e349]: Retail
+            - paragraph [ref=e350]: Tiendas y centros comerciales
+          - generic [ref=e351]:
+            - img [ref=e353]
+            - paragraph [ref=e355]: Industrial
+            - paragraph [ref=e356]: Plantas y almacenes
+          - generic [ref=e357]:
+            - img [ref=e359]
+            - paragraph [ref=e363]: Corporativo
+            - paragraph [ref=e364]: Oficinas y edificios
+      - generic [ref=e366]:
+        - generic [ref=e368]:
+          - generic [ref=e369]:
+            - img [ref=e370]
+            - generic [ref=e373]: Certificaciones
+          - heading "Calidad y Seguridad Certificada" [level=2] [ref=e374]
+          - paragraph [ref=e375]: Empresa homologada con estándares internacionales.
+        - generic [ref=e376]:
+          - link "Certificación Logo ISO 9001 Calidad Sistema de Gestión de Calidad Ver certificado" [ref=e379] [cursor=pointer]:
+            - /url: /src/assets/UAF%20Americo-ISO%209001-DCA%20INGENIEROS%20S.A.C.%20(1)%20(1)%20(1).pdf
+            - generic [ref=e380]:
+              - img "Certificación Logo" [ref=e382]
+              - heading "ISO 9001" [level=3] [ref=e383]
+              - generic [ref=e384]: Calidad
+              - paragraph [ref=e385]: Sistema de Gestión de Calidad
+              - generic [ref=e386]:
+                - generic [ref=e387]: Ver certificado
+                - img [ref=e388]
+          - link "Certificación Logo ISO 14001 Medio Ambiente Sistema de Gestión Ambiental Ver certificado" [ref=e394] [cursor=pointer]:
+            - /url: /src/assets/UAF%20Americo-ISO%2014001-DCA%20INGENIEROS%20S.A.C.%20(1)%20(1).pdf
+            - generic [ref=e395]:
+              - img "Certificación Logo" [ref=e397]
+              - heading "ISO 14001" [level=3] [ref=e398]
+              - generic [ref=e399]: Medio Ambiente
+              - paragraph [ref=e400]: Sistema de Gestión Ambiental
+              - generic [ref=e401]:
+                - generic [ref=e402]: Ver certificado
+                - img [ref=e403]
+          - link "Certificación Logo ISO 45001 Seguridad Sistema de Gestión de SST Ver certificado" [ref=e409] [cursor=pointer]:
+            - /url: /src/assets/UAF%20Americo-ISO%2045001-DCA%20INGENIEROS%20S.A.C.%20(1)%20(1).pdf
+            - generic [ref=e410]:
+              - img "Certificación Logo" [ref=e412]
+              - heading "ISO 45001" [level=3] [ref=e413]
+              - generic [ref=e414]: Seguridad
+              - paragraph [ref=e415]: Sistema de Gestión de SST
+              - generic [ref=e416]:
+                - generic [ref=e417]: Ver certificado
+                - img [ref=e418]
+        - generic [ref=e423]:
+          - img [ref=e424]
+          - generic [ref=e426]: Certificación Trinorma Vigente
+      - generic [ref=e428]:
+        - generic [ref=e430]:
+          - generic [ref=e431]: Nuestros Clientes
+          - heading "Clientes que confían en nosotros" [level=2] [ref=e432]
+          - paragraph [ref=e433]: Trabajamos con empresas líderes en diversos sectores de la industria nacional.
+        - generic [ref=e435]:
+          - img "ALESE KIA" [ref=e438]
+          - img "Grupo ATV" [ref=e441]
+          - img "Medifarma" [ref=e444]
+          - img "MegaPlaza" [ref=e447]
+          - img "Cad & Lan" [ref=e450]
+          - img "Academia ADUNI" [ref=e453]
+          - img "MERCK" [ref=e456]
+          - img "Banco de la Nación" [ref=e459]
+          - img "Cineplanet" [ref=e462]
+          - img "COVISOL" [ref=e465]
+          - img "Prosegur" [ref=e468]
+          - img "Senati" [ref=e471]
+          - img "ALESE KIA" [ref=e474]
+          - img "Grupo ATV" [ref=e477]
+          - img "Medifarma" [ref=e480]
+          - img "MegaPlaza" [ref=e483]
+          - img "Cad & Lan" [ref=e486]
+          - img "Academia ADUNI" [ref=e489]
+          - img "MERCK" [ref=e492]
+          - img "Banco de la Nación" [ref=e495]
+          - img "Cineplanet" [ref=e498]
+          - img "COVISOL" [ref=e501]
+          - img "Prosegur" [ref=e504]
+          - img "Senati" [ref=e507]
+    - contentinfo [ref=e510]:
+      - generic [ref=e512]:
+        - img "DCA Ingenieros Logo" [ref=e514]
+        - generic [ref=e515]:
+          - heading "Nosotros" [level=4] [ref=e516]
+          - paragraph [ref=e517]: Empresa líder en gestión integral de proyectos de ingeniería, comprometidos con la calidad, seguridad y cumplimiento de plazos.
+          - generic [ref=e518]:
+            - generic [ref=e519]:
+              - img [ref=e520]
+              - generic [ref=e523]: Jr. Rio Huaura 5522, Urb. Villa del Norte - Los Olivos
+            - generic [ref=e524]:
+              - img [ref=e525]
+              - link "proyectos@dcaingenieros.com" [ref=e528] [cursor=pointer]:
+                - /url: mailto:proyectos@dcaingenieros.com
+            - generic [ref=e529]:
+              - img [ref=e530]
+              - link "925277375 / 994627900" [ref=e532] [cursor=pointer]:
+                - /url: tel:+51925277375
+        - generic [ref=e533]:
+          - heading "Enlaces Rápidos" [level=4] [ref=e534]
+          - list [ref=e535]:
+            - listitem [ref=e536]:
+              - link "Grupo DCA" [ref=e537] [cursor=pointer]:
+                - /url: /
+                - text: Grupo DCA
+            - listitem [ref=e539]:
+              - link "Servicios" [ref=e540] [cursor=pointer]:
+                - /url: /#servicios
+                - text: Servicios
+            - listitem [ref=e542]:
+              - link "Noticias" [ref=e543] [cursor=pointer]:
+                - /url: /noticias
+                - text: Noticias
+            - listitem [ref=e545]:
+              - link "Talento" [ref=e546] [cursor=pointer]:
+                - /url: /talento
+                - text: Talento
+        - generic [ref=e548]:
+          - heading "Legal" [level=4] [ref=e549]
+          - list [ref=e550]:
+            - listitem [ref=e551]:
+              - link "Política de Privacidad" [ref=e552] [cursor=pointer]:
+                - /url: /politica
+                - text: Política de Privacidad
+            - listitem [ref=e554]:
+              - link "Términos y Condiciones" [ref=e555] [cursor=pointer]:
+                - /url: /terminos
+                - text: Términos y Condiciones
+            - listitem [ref=e557]:
+              - link "Libro de Reclamaciones" [ref=e558] [cursor=pointer]:
+                - /url: /libro-de-reclamaciones
+                - img [ref=e559]
+                - text: Libro de Reclamaciones
+      - generic [ref=e564]:
+        - paragraph [ref=e565]: © 2025 DCA INGENIEROS S.A.C. Todos los derechos reservados.
+        - paragraph [ref=e566]:
+          - text: Diseñado por
+          - link "IDE Agency" [ref=e567] [cursor=pointer]:
+            - /url: https://ideagency.pro
+  - generic [ref=e568]:
+    - generic: ¡Contáctanos por WhatsApp!
+    - link "Contactar por WhatsApp" [ref=e569] [cursor=pointer]:
+      - /url: https://wa.me/51925277375?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.
+      - img [ref=e571]

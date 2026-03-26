@@ -1,0 +1,326 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - img [ref=e9]
+            - link "925277375 / 994627900" [ref=e11] [cursor=pointer]:
+              - /url: tel:+51925277375
+          - generic [ref=e12]:
+            - generic [ref=e13]: "|"
+            - img [ref=e14]
+            - link "proyectos@dcaingenieros.com" [ref=e17] [cursor=pointer]:
+              - /url: mailto:proyectos@dcaingenieros.com
+        - generic [ref=e18]:
+          - link "Facebook" [ref=e19] [cursor=pointer]:
+            - /url: https://www.facebook.com/dcaingenieros
+            - img [ref=e20]
+          - link "Instagram" [ref=e22] [cursor=pointer]:
+            - /url: https://www.instagram.com/dcaingenieros
+            - img [ref=e23]
+          - link "LinkedIn" [ref=e26] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/dca-ingenieros-sac
+            - img [ref=e27]
+      - generic [ref=e33]:
+        - link "DCA Ingenieros Logo" [ref=e34] [cursor=pointer]:
+          - /url: /
+          - img "DCA Ingenieros Logo" [ref=e35]
+        - generic [ref=e36]:
+          - link "Grupo DCA" [ref=e38] [cursor=pointer]:
+            - /url: /
+          - link "Líneas de Negocio" [ref=e40] [cursor=pointer]:
+            - /url: /#servicios
+            - text: Líneas de Negocio
+            - img [ref=e41]
+          - link "Proyectos" [ref=e44] [cursor=pointer]:
+            - /url: /proyectos
+            - text: Proyectos
+            - img [ref=e45]
+          - link "Noticias" [ref=e48] [cursor=pointer]:
+            - /url: /noticias
+          - link "Talento" [ref=e50] [cursor=pointer]:
+            - /url: /talento
+    - generic [ref=e51]:
+      - img "Talento DCA" [ref=e53]
+      - generic [ref=e56]:
+        - generic [ref=e59]: Únete a nuestro equipo de élite
+        - heading "Construye tu futuro con Grupo DCA" [level=1] [ref=e60]
+        - paragraph [ref=e61]: No solo construimos estructuras, construimos carreras. Buscamos el talento que transformará la ingeniería en el Perú.
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - heading "¿Por qué DCA?" [level=2] [ref=e65]
+        - paragraph [ref=e67]: En Grupo DCA, el talento humano es nuestra base más sólida. Ofrecemos un ecosistema de innovación donde cada proyecto es un reto y cada colaborador un protagonista.
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - img [ref=e71]
+          - heading "Desarrollo Profesional" [level=3] [ref=e73]
+          - paragraph [ref=e74]: Programas de capacitación continua y planes de carrera claros para que crezcas con nosotros.
+        - generic [ref=e75]:
+          - img [ref=e77]
+          - heading "Ambiente Colaborativo" [level=3] [ref=e82]
+          - paragraph [ref=e83]: Trabajamos en un entorno de respeto, innovación y apoyo mutuo entre colegas.
+        - generic [ref=e84]:
+          - img [ref=e86]
+          - heading "Liderazgo y Mentores" [level=3] [ref=e89]
+          - paragraph [ref=e90]: Aprende de los mejores profesionales del sector ingeniería y construcción.
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - heading "Oportunidades de Carrera" [level=2] [ref=e95]
+          - paragraph [ref=e96]: Encuentra tu próximo desafío profesional. Si no ves una vacante que se ajuste a ti, puedes postular de forma general.
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - img [ref=e99]
+            - textbox "Buscar por puesto o palabra clave..." [ref=e102]
+          - button "Filtrar" [ref=e103] [cursor=pointer]:
+            - img
+            - text: Filtrar
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - generic [ref=e108]: Administración
+              - generic [ref=e109]:
+                - img [ref=e110]
+                - text: 19 Ene 2026
+            - heading "Administrador(a) de Obra" [level=3] [ref=e113]
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - img [ref=e116]
+                - text: Lima y Provincias
+              - generic [ref=e120]:
+                - img [ref=e121]
+                - text: Full-time
+          - button "Postular Ahora" [ref=e124] [cursor=pointer]:
+            - text: Postular Ahora
+            - img
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - generic [ref=e128]: Logística
+              - generic [ref=e129]:
+                - img [ref=e130]
+                - text: 19 Ene 2026
+            - heading "Auxiliar Logístico" [level=3] [ref=e133]
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - img [ref=e136]
+                - text: Lima y Provincias
+              - generic [ref=e140]:
+                - img [ref=e141]
+                - text: Full-time
+          - button "Postular Ahora" [ref=e144] [cursor=pointer]:
+            - text: Postular Ahora
+            - img
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - generic [ref=e147]:
+              - generic [ref=e148]: Área Técnica
+              - generic [ref=e149]:
+                - img [ref=e150]
+                - text: 19 Ene 2026
+            - heading "Ingeniero(a) de Costos y Presupuestos" [level=3] [ref=e153]
+            - generic [ref=e154]:
+              - generic [ref=e155]:
+                - img [ref=e156]
+                - text: Lima y Provincias
+              - generic [ref=e160]:
+                - img [ref=e161]
+                - text: Full-time
+          - button "Postular Ahora" [ref=e164] [cursor=pointer]:
+            - text: Postular Ahora
+            - img
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - generic [ref=e168]: Área Técnica
+              - generic [ref=e169]:
+                - img [ref=e170]
+                - text: 19 Ene 2026
+            - heading "Asistente de Costos y Presupuestos" [level=3] [ref=e173]
+            - generic [ref=e174]:
+              - generic [ref=e175]:
+                - img [ref=e176]
+                - text: Lima y Provincias
+              - generic [ref=e180]:
+                - img [ref=e181]
+                - text: Full-time
+          - button "Postular Ahora" [ref=e184] [cursor=pointer]:
+            - text: Postular Ahora
+            - img
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e187]:
+              - generic [ref=e188]: Seguridad
+              - generic [ref=e189]:
+                - img [ref=e190]
+                - text: 19 Ene 2026
+            - heading "Ingeniero(a) SSOMA" [level=3] [ref=e193]
+            - generic [ref=e194]:
+              - generic [ref=e195]:
+                - img [ref=e196]
+                - text: Lima y Provincias
+              - generic [ref=e200]:
+                - img [ref=e201]
+                - text: Full-time
+          - button "Postular Ahora" [ref=e204] [cursor=pointer]:
+            - text: Postular Ahora
+            - img
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - generic [ref=e207]:
+              - generic [ref=e208]: Producción
+              - generic [ref=e209]:
+                - img [ref=e210]
+                - text: 19 Ene 2026
+            - heading "Ingeniero(a) de Producción" [level=3] [ref=e213]
+            - generic [ref=e214]:
+              - generic [ref=e215]:
+                - img [ref=e216]
+                - text: Lima y Provincias
+              - generic [ref=e220]:
+                - img [ref=e221]
+                - text: Full-time
+          - button "Postular Ahora" [ref=e224] [cursor=pointer]:
+            - text: Postular Ahora
+            - img
+        - generic [ref=e225]:
+          - generic [ref=e226]:
+            - generic [ref=e227]:
+              - generic [ref=e228]: Operaciones
+              - generic [ref=e229]:
+                - img [ref=e230]
+                - text: 19 Ene 2026
+            - heading "Ingeniero(a) Residente de Obra" [level=3] [ref=e233]
+            - generic [ref=e234]:
+              - generic [ref=e235]:
+                - img [ref=e236]
+                - text: Lima y Provincias
+              - generic [ref=e240]:
+                - img [ref=e241]
+                - text: Full-time
+          - button "Postular Ahora" [ref=e244] [cursor=pointer]:
+            - text: Postular Ahora
+            - img
+        - generic [ref=e245]:
+          - generic [ref=e246]:
+            - generic [ref=e247]:
+              - generic [ref=e248]: Operaciones
+              - generic [ref=e249]:
+                - img [ref=e250]
+                - text: 19 Ene 2026
+            - heading "Operarios (Múltiples Especialidades)" [level=3] [ref=e253]
+            - generic [ref=e254]:
+              - generic [ref=e255]:
+                - img [ref=e256]
+                - text: Lima y Provincias
+              - generic [ref=e260]:
+                - img [ref=e261]
+                - text: Por Proyecto
+          - button "Postular Ahora" [ref=e264] [cursor=pointer]:
+            - text: Postular Ahora
+            - img
+        - generic [ref=e265]:
+          - generic [ref=e266]:
+            - generic [ref=e267]:
+              - generic [ref=e268]: Operaciones
+              - generic [ref=e269]:
+                - img [ref=e270]
+                - text: 19 Ene 2026
+            - heading "Ayudante de Obra" [level=3] [ref=e273]
+            - generic [ref=e274]:
+              - generic [ref=e275]:
+                - img [ref=e276]
+                - text: Lima y Provincias
+              - generic [ref=e280]:
+                - img [ref=e281]
+                - text: Por Proyecto
+          - button "Postular Ahora" [ref=e284] [cursor=pointer]:
+            - text: Postular Ahora
+            - img
+    - generic [ref=e289]:
+      - generic [ref=e290]:
+        - generic [ref=e291]:
+          - img [ref=e292]
+          - generic [ref=e294]: Postulación General
+        - heading "¿No ves una posición abierta?" [level=2] [ref=e295]
+        - paragraph [ref=e296]: En DCA siempre hay espacio para el talento genuino. Envíanos tu información y sé parte de nuestra base de datos para futuros proyectos estratégicos.
+        - generic [ref=e297]:
+          - generic [ref=e298]:
+            - img [ref=e299]
+            - generic [ref=e302]: Selección Meritocrática
+          - generic [ref=e303]:
+            - img [ref=e304]
+            - generic [ref=e307]: Ambiente Inclusivo
+        - button "Enviar Postulación General" [ref=e308] [cursor=pointer]:
+          - text: Enviar Postulación General
+          - img
+      - img [ref=e311]
+    - contentinfo [ref=e314]:
+      - generic [ref=e316]:
+        - img "DCA Ingenieros Logo" [ref=e318]
+        - generic [ref=e319]:
+          - heading "Nosotros" [level=4] [ref=e320]
+          - paragraph [ref=e321]: Empresa líder en gestión integral de proyectos de ingeniería, comprometidos con la calidad, seguridad y cumplimiento de plazos.
+          - generic [ref=e322]:
+            - generic [ref=e323]:
+              - img [ref=e324]
+              - generic [ref=e327]: Jr. Rio Huaura 5522, Urb. Villa del Norte - Los Olivos
+            - generic [ref=e328]:
+              - img [ref=e329]
+              - link "proyectos@dcaingenieros.com" [ref=e332] [cursor=pointer]:
+                - /url: mailto:proyectos@dcaingenieros.com
+            - generic [ref=e333]:
+              - img [ref=e334]
+              - link "925277375 / 994627900" [ref=e336] [cursor=pointer]:
+                - /url: tel:+51925277375
+        - generic [ref=e337]:
+          - heading "Enlaces Rápidos" [level=4] [ref=e338]
+          - list [ref=e339]:
+            - listitem [ref=e340]:
+              - link "Grupo DCA" [ref=e341] [cursor=pointer]:
+                - /url: /
+                - text: Grupo DCA
+            - listitem [ref=e343]:
+              - link "Servicios" [ref=e344] [cursor=pointer]:
+                - /url: /#servicios
+                - text: Servicios
+            - listitem [ref=e346]:
+              - link "Noticias" [ref=e347] [cursor=pointer]:
+                - /url: /noticias
+                - text: Noticias
+            - listitem [ref=e349]:
+              - link "Talento" [ref=e350] [cursor=pointer]:
+                - /url: /talento
+                - text: Talento
+        - generic [ref=e352]:
+          - heading "Legal" [level=4] [ref=e353]
+          - list [ref=e354]:
+            - listitem [ref=e355]:
+              - link "Política de Privacidad" [ref=e356] [cursor=pointer]:
+                - /url: /politica
+                - text: Política de Privacidad
+            - listitem [ref=e358]:
+              - link "Términos y Condiciones" [ref=e359] [cursor=pointer]:
+                - /url: /terminos
+                - text: Términos y Condiciones
+            - listitem [ref=e361]:
+              - link "Libro de Reclamaciones" [ref=e362] [cursor=pointer]:
+                - /url: /libro-de-reclamaciones
+                - img [ref=e363]
+                - text: Libro de Reclamaciones
+      - generic [ref=e368]:
+        - paragraph [ref=e369]: © 2025 DCA INGENIEROS S.A.C. Todos los derechos reservados.
+        - paragraph [ref=e370]:
+          - text: Diseñado por
+          - link "IDE Agency" [ref=e371] [cursor=pointer]:
+            - /url: https://ideagency.pro
+  - generic [ref=e372]:
+    - generic: ¡Contáctanos por WhatsApp!
+    - link "Contactar por WhatsApp" [ref=e373] [cursor=pointer]:
+      - /url: https://wa.me/51925277375?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.
+      - img [ref=e375]

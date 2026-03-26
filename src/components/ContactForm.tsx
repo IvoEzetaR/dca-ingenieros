@@ -39,7 +39,7 @@ export const ContactForm = ({ onSuccess, source = "General" }: ContactFormProps)
                 submittedAt: new Date().toISOString(),
             };
 
-            const response = await fetch("https://n8n-n8n.op5xvn.easypanel.host/webhook/DCA", {
+            const response = await fetch("https://n8n-n8n.pje9qc.easypanel.host/webhook/form-DCA", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

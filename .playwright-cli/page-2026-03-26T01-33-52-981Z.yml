@@ -1,0 +1,457 @@
+- generic:
+  - generic:
+    - list
+    - region "Notifications alt+T"
+    - generic:
+      - banner:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img
+                - link:
+                  - /url: tel:+51925277375
+                  - text: 925277375 / 994627900
+              - generic:
+                - generic: "|"
+                - img
+                - link:
+                  - /url: mailto:proyectos@dcaingenieros.com
+                  - text: proyectos@dcaingenieros.com
+            - generic:
+              - link:
+                - /url: https://www.facebook.com/dcaingenieros
+                - img
+              - link:
+                - /url: https://www.instagram.com/dcaingenieros
+                - img
+              - link:
+                - /url: https://www.linkedin.com/company/dca-ingenieros-sac
+                - img
+        - generic:
+          - generic:
+            - generic:
+              - link:
+                - /url: /
+                - img
+              - generic:
+                - generic:
+                  - link:
+                    - /url: /
+                    - text: Grupo DCA
+                - generic:
+                  - link:
+                    - /url: /#servicios
+                    - text: Líneas de Negocio
+                    - img
+                - generic:
+                  - link:
+                    - /url: /proyectos
+                    - text: Proyectos
+                    - img
+                - generic:
+                  - link:
+                    - /url: /noticias
+                    - text: Noticias
+                - generic:
+                  - link:
+                    - /url: /talento
+                    - text: Talento
+      - generic:
+        - generic:
+          - img
+        - generic:
+          - generic:
+            - generic:
+              - generic: Únete a nuestro equipo de élite
+            - heading [level=1]: Construye tu futuro con Grupo DCA
+            - paragraph: No solo construimos estructuras, construimos carreras. Buscamos el talento que transformará la ingeniería en el Perú.
+      - generic:
+        - generic:
+          - generic:
+            - heading [level=2]: ¿Por qué DCA?
+            - paragraph: En Grupo DCA, el talento humano es nuestra base más sólida. Ofrecemos un ecosistema de innovación donde cada proyecto es un reto y cada colaborador un protagonista.
+          - generic:
+            - generic:
+              - generic:
+                - img
+              - heading [level=3]: Desarrollo Profesional
+              - paragraph: Programas de capacitación continua y planes de carrera claros para que crezcas con nosotros.
+            - generic:
+              - generic:
+                - img
+              - heading [level=3]: Ambiente Colaborativo
+              - paragraph: Trabajamos en un entorno de respeto, innovación y apoyo mutuo entre colegas.
+            - generic:
+              - generic:
+                - img
+              - heading [level=3]: Liderazgo y Mentores
+              - paragraph: Aprende de los mejores profesionales del sector ingeniería y construcción.
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=2]: Oportunidades de Carrera
+              - paragraph: Encuentra tu próximo desafío profesional. Si no ves una vacante que se ajuste a ti, puedes postular de forma general.
+            - generic:
+              - generic:
+                - img
+                - textbox:
+                  - /placeholder: Buscar por puesto o palabra clave...
+              - button:
+                - img
+                - text: Filtrar
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Administración
+                  - generic:
+                    - img
+                    - text: 19 Ene 2026
+                - heading [level=3]: Administrador(a) de Obra
+                - generic:
+                  - generic:
+                    - img
+                    - text: Lima y Provincias
+                  - generic:
+                    - img
+                    - text: Full-time
+              - button:
+                - text: Postular Ahora
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Logística
+                  - generic:
+                    - img
+                    - text: 19 Ene 2026
+                - heading [level=3]: Auxiliar Logístico
+                - generic:
+                  - generic:
+                    - img
+                    - text: Lima y Provincias
+                  - generic:
+                    - img
+                    - text: Full-time
+              - button:
+                - text: Postular Ahora
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Área Técnica
+                  - generic:
+                    - img
+                    - text: 19 Ene 2026
+                - heading [level=3]: Ingeniero(a) de Costos y Presupuestos
+                - generic:
+                  - generic:
+                    - img
+                    - text: Lima y Provincias
+                  - generic:
+                    - img
+                    - text: Full-time
+              - button:
+                - text: Postular Ahora
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Área Técnica
+                  - generic:
+                    - img
+                    - text: 19 Ene 2026
+                - heading [level=3]: Asistente de Costos y Presupuestos
+                - generic:
+                  - generic:
+                    - img
+                    - text: Lima y Provincias
+                  - generic:
+                    - img
+                    - text: Full-time
+              - button:
+                - text: Postular Ahora
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Seguridad
+                  - generic:
+                    - img
+                    - text: 19 Ene 2026
+                - heading [level=3]: Ingeniero(a) SSOMA
+                - generic:
+                  - generic:
+                    - img
+                    - text: Lima y Provincias
+                  - generic:
+                    - img
+                    - text: Full-time
+              - button:
+                - text: Postular Ahora
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Producción
+                  - generic:
+                    - img
+                    - text: 19 Ene 2026
+                - heading [level=3]: Ingeniero(a) de Producción
+                - generic:
+                  - generic:
+                    - img
+                    - text: Lima y Provincias
+                  - generic:
+                    - img
+                    - text: Full-time
+              - button:
+                - text: Postular Ahora
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Operaciones
+                  - generic:
+                    - img
+                    - text: 19 Ene 2026
+                - heading [level=3]: Ingeniero(a) Residente de Obra
+                - generic:
+                  - generic:
+                    - img
+                    - text: Lima y Provincias
+                  - generic:
+                    - img
+                    - text: Full-time
+              - button:
+                - text: Postular Ahora
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Operaciones
+                  - generic:
+                    - img
+                    - text: 19 Ene 2026
+                - heading [level=3]: Operarios (Múltiples Especialidades)
+                - generic:
+                  - generic:
+                    - img
+                    - text: Lima y Provincias
+                  - generic:
+                    - img
+                    - text: Por Proyecto
+              - button:
+                - text: Postular Ahora
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Operaciones
+                  - generic:
+                    - img
+                    - text: 19 Ene 2026
+                - heading [level=3]: Ayudante de Obra
+                - generic:
+                  - generic:
+                    - img
+                    - text: Lima y Provincias
+                  - generic:
+                    - img
+                    - text: Por Proyecto
+              - button:
+                - text: Postular Ahora
+                - img
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                  - generic: Postulación General
+                - heading [level=2]: ¿No ves una posición abierta?
+                - paragraph: En DCA siempre hay espacio para el talento genuino. Envíanos tu información y sé parte de nuestra base de datos para futuros proyectos estratégicos.
+                - generic:
+                  - generic:
+                    - img
+                    - generic: Selección Meritocrática
+                  - generic:
+                    - img
+                    - generic: Ambiente Inclusivo
+                - button:
+                  - text: Enviar Postulación General
+                  - img
+              - generic:
+                - img
+      - contentinfo:
+        - generic:
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - heading [level=4]: Nosotros
+              - paragraph: Empresa líder en gestión integral de proyectos de ingeniería, comprometidos con la calidad, seguridad y cumplimiento de plazos.
+              - generic:
+                - generic:
+                  - img
+                  - generic: Jr. Rio Huaura 5522, Urb. Villa del Norte - Los Olivos
+                - generic:
+                  - img
+                  - link:
+                    - /url: mailto:proyectos@dcaingenieros.com
+                    - text: proyectos@dcaingenieros.com
+                - generic:
+                  - img
+                  - link:
+                    - /url: tel:+51925277375
+                    - text: 925277375 / 994627900
+            - generic:
+              - heading [level=4]: Enlaces Rápidos
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /
+                    - text: Grupo DCA
+                - listitem:
+                  - link:
+                    - /url: /#servicios
+                    - text: Servicios
+                - listitem:
+                  - link:
+                    - /url: /noticias
+                    - text: Noticias
+                - listitem:
+                  - link:
+                    - /url: /talento
+                    - text: Talento
+            - generic:
+              - heading [level=4]: Legal
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /politica
+                    - text: Política de Privacidad
+                - listitem:
+                  - link:
+                    - /url: /terminos
+                    - text: Términos y Condiciones
+                - listitem:
+                  - link:
+                    - /url: /libro-de-reclamaciones
+                    - img
+                    - text: Libro de Reclamaciones
+        - generic:
+          - generic:
+            - generic:
+              - paragraph: © 2025 DCA INGENIEROS S.A.C. Todos los derechos reservados.
+              - paragraph:
+                - text: Diseñado por
+                - link:
+                  - /url: https://ideagency.pro
+                  - text: IDE Agency
+    - generic:
+      - generic: ¡Contáctanos por WhatsApp!
+      - link:
+        - /url: https://wa.me/51925277375?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.
+        - img
+  - dialog "Administrador(a) de Obra" [ref=e378]:
+    - generic [ref=e379]:
+      - button [active] [ref=e380] [cursor=pointer]:
+        - img
+      - generic [ref=e381]: Formulario de Postulación
+      - heading "Administrador(a) de Obra" [level=2] [ref=e382]
+      - paragraph [ref=e383]: Completa tus datos profesionales para iniciar el proceso de selección con nosotros.
+    - generic [ref=e385]:
+      - generic [ref=e386]:
+        - heading "Descripción del Puesto" [level=4] [ref=e387]:
+          - img [ref=e388]
+          - text: Descripción del Puesto
+        - paragraph [ref=e391]: En DCA INGENIEROS SAC, cada día representa una oportunidad para crecer, aprender y asumir nuevos retos. Buscamos un profesional con experiencia liderando actividades administrativas y contables en obra, con capacidad de planificación, organización y negociación con proveedores.
+      - generic [ref=e392]:
+        - heading "Responsabilidades" [level=4] [ref=e393]:
+          - img [ref=e394]
+          - text: Responsabilidades
+        - list [ref=e397]:
+          - listitem [ref=e398]: Planificar, organizar y liderar las actividades del área administrativa del proyecto.
+          - listitem [ref=e400]: Gestionar y administrar las garantías financieras (cartas fianza y seguros) de subcontratos.
+          - listitem [ref=e402]: Aprobar valorizaciones y programar pagos a proveedores.
+          - listitem [ref=e404]: Elaborar y administrar contratos de proveedores de bienes y servicios.
+          - listitem [ref=e406]: Controlar y dar seguimiento a las facturas por pagar.
+          - listitem [ref=e408]: Supervisar los almacenes del proyecto.
+      - generic [ref=e410]:
+        - heading "Requisitos" [level=4] [ref=e411]:
+          - img [ref=e412]
+          - text: Requisitos
+        - list [ref=e415]:
+          - listitem [ref=e416]: Bachiller o titulado en Administración, Contabilidad o carreras afines.
+          - listitem [ref=e418]: Experiencia laboral mínima de 8 años en el área administrativa, contable y/o financiera.
+          - listitem [ref=e420]: Al menos 5 años en cargos de liderazgo administrativo o contable (pref. construcción).
+          - listitem [ref=e422]: Conocimientos indispensables en Excel avanzado y SAP (FI, MM).
+      - generic [ref=e424]:
+        - heading "¿Qué ofrecemos?" [level=4] [ref=e425]:
+          - img [ref=e426]
+          - text: ¿Qué ofrecemos?
+        - list [ref=e428]:
+          - listitem [ref=e429]:
+            - img [ref=e430]
+            - text: Remuneración competitiva acorde al mercado.
+          - listitem [ref=e433]:
+            - img [ref=e434]
+            - text: Ingreso a planilla con todos los beneficios de ley.
+          - listitem [ref=e437]:
+            - img [ref=e438]
+            - text: Oportunidades de desarrollo y crecimiento profesional.
+          - listitem [ref=e441]:
+            - img [ref=e442]
+            - text: Capacitación constante según el rol.
+      - generic [ref=e445]:
+        - heading "Postulación Directa" [level=3] [ref=e446]
+        - paragraph [ref=e447]: Envía tus datos y CV para ser evaluado por nuestro equipo.
+        - generic [ref=e448]:
+          - generic [ref=e449]:
+            - generic [ref=e450]:
+              - text: Nombres y Apellidos
+              - textbox "Nombres y Apellidos" [ref=e451]:
+                - /placeholder: Ej. Juan Pérez
+            - generic [ref=e452]:
+              - text: Correo Electrónico
+              - textbox "Correo Electrónico" [ref=e453]:
+                - /placeholder: juan.perez@ejemplo.com
+          - generic [ref=e454]:
+            - generic [ref=e455]:
+              - text: Teléfono / WhatsApp
+              - textbox "Teléfono / WhatsApp" [ref=e456]:
+                - /placeholder: +51 987 654 321
+            - generic [ref=e457]:
+              - text: Tipo de Documento
+              - combobox [ref=e458] [cursor=pointer]:
+                - generic: DNI
+                - img [ref=e459]
+              - combobox [ref=e461]
+            - generic [ref=e462]:
+              - generic [ref=e463]: Número de DNI
+              - textbox "Número de DNI" [ref=e464]:
+                - /placeholder: Ej. 12345678
+          - generic [ref=e465]:
+            - text: ¿Por qué quieres unirte a DCA? (Opcional)
+            - textbox "¿Por qué quieres unirte a DCA? (Opcional)" [ref=e466]:
+              - /placeholder: Cuéntanos un poco sobre tu experiencia y motivación...
+          - generic [ref=e467]:
+            - text: Tu Currículum Vitae (CV)
+            - generic [ref=e470] [cursor=pointer]:
+              - img [ref=e471]
+              - generic [ref=e474]: Subir PDF o Word (Máx. 10MB)
+          - generic [ref=e475]:
+            - checkbox "Acepto los términos y condiciones y la política de privacidad de Grupo DCA." [ref=e476] [cursor=pointer]
+            - checkbox
+            - generic [ref=e477]: Acepto los términos y condiciones y la política de privacidad de Grupo DCA.
+          - button "Enviar Postulación" [ref=e478] [cursor=pointer]:
+            - generic [ref=e479]:
+              - img
+              - text: Enviar Postulación
+    - button "Close" [ref=e480] [cursor=pointer]:
+      - img [ref=e481]
+      - generic [ref=e484]: Close

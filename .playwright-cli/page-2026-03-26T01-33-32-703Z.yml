@@ -1,0 +1,120 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T":
+    - list:
+      - listitem [ref=e212]:
+        - img [ref=e214]
+        - generic [ref=e217]: Reclamación enviada con éxito
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - img [ref=e9]
+            - link "925277375 / 994627900" [ref=e11] [cursor=pointer]:
+              - /url: tel:+51925277375
+          - generic [ref=e12]:
+            - generic [ref=e13]: "|"
+            - img [ref=e14]
+            - link "proyectos@dcaingenieros.com" [ref=e17] [cursor=pointer]:
+              - /url: mailto:proyectos@dcaingenieros.com
+        - generic [ref=e18]:
+          - link "Facebook" [ref=e19] [cursor=pointer]:
+            - /url: https://www.facebook.com/dcaingenieros
+            - img [ref=e20]
+          - link "Instagram" [ref=e22] [cursor=pointer]:
+            - /url: https://www.instagram.com/dcaingenieros
+            - img [ref=e23]
+          - link "LinkedIn" [ref=e26] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/dca-ingenieros-sac
+            - img [ref=e27]
+      - generic [ref=e33]:
+        - link "DCA Ingenieros Logo" [ref=e34] [cursor=pointer]:
+          - /url: /
+          - img "DCA Ingenieros Logo" [ref=e35]
+        - generic [ref=e36]:
+          - link "Grupo DCA" [ref=e38] [cursor=pointer]:
+            - /url: /
+          - link "Líneas de Negocio" [ref=e40] [cursor=pointer]:
+            - /url: /#servicios
+            - text: Líneas de Negocio
+            - img [ref=e41]
+          - link "Proyectos" [ref=e44] [cursor=pointer]:
+            - /url: /proyectos
+            - text: Proyectos
+            - img [ref=e45]
+          - link "Noticias" [ref=e48] [cursor=pointer]:
+            - /url: /noticias
+          - link "Talento" [ref=e50] [cursor=pointer]:
+            - /url: /talento
+    - main [ref=e51]:
+      - generic [ref=e218]:
+        - img [ref=e221]
+        - heading "¡Hoja de Reclamo Registrada!" [level=3] [ref=e223]
+        - paragraph [ref=e224]: Su reclamo ha sido enviado correctamente. Conforme a ley, daremos respuesta en un plazo no mayor a quince (15) días hábiles.
+        - button "Volver al Inicio" [ref=e225] [cursor=pointer]
+    - contentinfo [ref=e149]:
+      - generic [ref=e151]:
+        - img "DCA Ingenieros Logo" [ref=e153]
+        - generic [ref=e154]:
+          - heading "Nosotros" [level=4] [ref=e155]
+          - paragraph [ref=e156]: Empresa líder en gestión integral de proyectos de ingeniería, comprometidos con la calidad, seguridad y cumplimiento de plazos.
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - img [ref=e159]
+              - generic [ref=e162]: Jr. Rio Huaura 5522, Urb. Villa del Norte - Los Olivos
+            - generic [ref=e163]:
+              - img [ref=e164]
+              - link "proyectos@dcaingenieros.com" [ref=e167] [cursor=pointer]:
+                - /url: mailto:proyectos@dcaingenieros.com
+            - generic [ref=e168]:
+              - img [ref=e169]
+              - link "925277375 / 994627900" [ref=e171] [cursor=pointer]:
+                - /url: tel:+51925277375
+        - generic [ref=e172]:
+          - heading "Enlaces Rápidos" [level=4] [ref=e173]
+          - list [ref=e174]:
+            - listitem [ref=e175]:
+              - link "Grupo DCA" [ref=e176] [cursor=pointer]:
+                - /url: /
+                - text: Grupo DCA
+            - listitem [ref=e178]:
+              - link "Servicios" [ref=e179] [cursor=pointer]:
+                - /url: /#servicios
+                - text: Servicios
+            - listitem [ref=e181]:
+              - link "Noticias" [ref=e182] [cursor=pointer]:
+                - /url: /noticias
+                - text: Noticias
+            - listitem [ref=e184]:
+              - link "Talento" [ref=e185] [cursor=pointer]:
+                - /url: /talento
+                - text: Talento
+        - generic [ref=e187]:
+          - heading "Legal" [level=4] [ref=e188]
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - link "Política de Privacidad" [ref=e191] [cursor=pointer]:
+                - /url: /politica
+                - text: Política de Privacidad
+            - listitem [ref=e193]:
+              - link "Términos y Condiciones" [ref=e194] [cursor=pointer]:
+                - /url: /terminos
+                - text: Términos y Condiciones
+            - listitem [ref=e196]:
+              - link "Libro de Reclamaciones" [ref=e197] [cursor=pointer]:
+                - /url: /libro-de-reclamaciones
+                - img [ref=e198]
+                - text: Libro de Reclamaciones
+      - generic [ref=e203]:
+        - paragraph [ref=e204]: © 2025 DCA INGENIEROS S.A.C. Todos los derechos reservados.
+        - paragraph [ref=e205]:
+          - text: Diseñado por
+          - link "IDE Agency" [ref=e206] [cursor=pointer]:
+            - /url: https://ideagency.pro
+  - generic [ref=e207]:
+    - generic: ¡Contáctanos por WhatsApp!
+    - link "Contactar por WhatsApp" [ref=e208] [cursor=pointer]:
+      - /url: https://wa.me/51925277375?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.
+      - img [ref=e210]
