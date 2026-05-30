@@ -100,6 +100,17 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-3 md:mb-6">Legal</h4>
             <ul className="space-y-2 md:space-y-3">
               <li>
+                <a
+                  href="/politica-sistema-integrado-gestion.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/70 hover:text-accent-light transition-colors inline-flex items-center gap-2"
+                >
+                  <span className="w-1.5 h-1.5 bg-accent rounded-full" />
+                  Política del sistema integrado de gestión
+                </a>
+              </li>
+              <li>
                 <Link
                   to="/politica"
                   className="text-primary-foreground/70 hover:text-accent-light transition-colors inline-flex items-center gap-2"
