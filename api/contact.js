@@ -1,22 +1,53 @@
-// DCA Ingenieros — contact form handler (Vercel serverless function)
-// Reemplaza el webhook n8n. Envia 1 email interno via Resend a proyectos@dcaingenieros.com.
+// DCA Ingenieros — unified form handler (Vercel serverless function)
+// Reemplaza el webhook n8n. Recibe payloads de los 3 forms:
+//   - ContactForm.tsx       (formType: "Contacto / Cotización")
+//   - JobApplicationForm    (formType: "Talento / Postulación")   + CV base64 attachment
+//   - LibroReclamaciones    (formType: "Libro de Reclamaciones")
+// Envia 1 email interno via Resend a proyectos@dcaingenieros.com.
 // Sender: noreply@ideagency.pro (dominio verificado IDE Agency en Resend).
-// Sin auto-reply al visitante — la UI de exito en la pagina es la unica confirmacion.
 
 const RESEND_ENDPOINT = "https://api.resend.com/emails";
 const FROM = "DCA Ingenieros <noreply@ideagency.pro>";
 const TEAM_INBOX = process.env.DCA_TEAM_INBOX || "proyectos@dcaingenieros.com";
 
-const MAX_LEN = {
-    fullname: 100,
-    email: 255,
-    phone: 30,
-    company: 150,
-    motive: 200,
-    message: 2000,
-    source: 80,
-    formType: 80,
+// Hard caps per field (anti-abuse)
+const CAPS = {
+    string: 2000,         // any individual string field
+    message: 6000,        // long-form fields (claim detail, claim request)
+    fileBytes: 4_500_000, // ~4.5 MB raw -> base64 sits ~6 MB which Vercel may reject; we keep CV under this
 };
+
+// Friendly labels for known keys (fallback to raw key for unknown ones)
+const LABELS = {
+    fullname: "Nombre",
+    email: "Email",
+    phone: "Telefono / WhatsApp",
+    company: "Empresa",
+    motive: "Asunto / Proyecto",
+    message: "Mensaje",
+    source: "Origen seccion",
+    formType: "Tipo de form",
+    submittedAt: "Enviado",
+    jobTitle: "Vacante",
+    docType: "Tipo de documento",
+    docNumber: "Numero de documento",
+    documentType: "Tipo de documento",
+    documentNumber: "Numero de documento",
+    address: "Domicilio",
+    parentDetails: "Padre / representante legal",
+    itemType: "Producto o servicio",
+    claimedAmount: "Monto reclamado (S/.)",
+    itemDescription: "Descripcion del bien",
+    disconformityType: "Tipo de disconformidad",
+    claimDetail: "Detalle del reclamo / queja",
+    claimRequest: "Pedido del consumidor",
+    terms: "Acepta terminos",
+    privacyAccepted: "Acepta privacidad",
+    cvName: "Archivo CV",
+};
+
+// Keys to NEVER render in the email body (sensitive / internal)
+const HIDDEN_KEYS = new Set(["cvData", "phone_alt"]);
 
 function escapeHtml(value) {
     return String(value ?? "")
@@ -27,9 +58,8 @@ function escapeHtml(value) {
         .replace(/'/g, "&#39;");
 }
 
-function sanitize(value, max) {
+function cleanString(value, max) {
     if (value === undefined || value === null) return "";
-    // strip ASCII control chars except \t \n \r, then trim + cap length
     return String(value)
         .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, "")
         .trim()
@@ -41,39 +71,74 @@ function isValidEmail(value) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
-function buildHtml(payload) {
-    const rows = [
-        ["Nombre", payload.fullname],
-        ["Email", payload.email],
-        ["Telefono / WhatsApp", payload.phone],
-        ["Empresa", payload.company || "(no indicada)"],
-        ["Asunto / Proyecto", payload.motive],
-        ["Origen seccion", payload.source || "General"],
-        ["Tipo de form", payload.formType || "Contacto / Cotizacion"],
-        ["Enviado", payload.submittedAt],
-    ]
+function humanizeKey(key) {
+    if (LABELS[key]) return LABELS[key];
+    return key
+        .replace(/([A-Z])/g, " $1")
+        .replace(/^./, (c) => c.toUpperCase())
+        .trim();
+}
+
+function formatValue(value) {
+    if (value === null || value === undefined || value === "") return "(no indicado)";
+    if (typeof value === "boolean") return value ? "Si" : "No";
+    if (typeof value === "object") {
+        try {
+            return JSON.stringify(value);
+        } catch {
+            return "(objeto no serializable)";
+        }
+    }
+    return String(value);
+}
+
+function buildSubject(payload) {
+    const ft = payload.formType || "Lead web";
+    if (ft === "Talento / Postulación" || ft === "Talento / Postulacion") {
+        const job = payload.jobTitle || "vacante sin especificar";
+        const who = payload.fullname || "postulante";
+        return `Nueva postulacion: ${job} — ${who}`.slice(0, 120);
+    }
+    if (ft === "Libro de Reclamaciones") {
+        const t = payload.disconformityType || "Reclamo";
+        const who = payload.fullname || "consumidor";
+        const doc = payload.documentNumber ? ` (${payload.documentNumber})` : "";
+        return `Libro de Reclamaciones [${t}] — ${who}${doc}`.slice(0, 120);
+    }
+    // Default: contact/cotizacion
+    const motive = payload.motive || "consulta general";
+    return `Nueva consulta web DCA — ${motive}`.slice(0, 120);
+}
+
+function buildRows(payload) {
+    // Render every payload key (in insertion order) except hidden/empty bookkeeping
+    const skipKeys = new Set([...HIDDEN_KEYS]);
+    const entries = Object.entries(payload).filter(([k, v]) => {
+        if (skipKeys.has(k)) return false;
+        if (v === undefined) return false;
+        return true;
+    });
+
+    return entries
         .map(
-            ([label, value]) => `
+            ([k, v]) => `
             <tr>
-                <td style="padding:8px 12px;background:#f5f7fb;border:1px solid #e3e7ef;font-size:13px;color:#4b5566;white-space:nowrap;">${escapeHtml(label)}</td>
-                <td style="padding:8px 12px;border:1px solid #e3e7ef;font-size:14px;color:#1B316E;">${escapeHtml(value)}</td>
+                <td style="padding:8px 12px;background:#f5f7fb;border:1px solid #e3e7ef;font-size:13px;color:#4b5566;white-space:nowrap;vertical-align:top;">${escapeHtml(humanizeKey(k))}</td>
+                <td style="padding:8px 12px;border:1px solid #e3e7ef;font-size:14px;color:#1B316E;word-break:break-word;">${escapeHtml(formatValue(v))}</td>
             </tr>`,
         )
         .join("");
+}
 
-    const messageBlock = payload.message
-        ? `
-        <h3 style="margin:24px 0 8px;font-family:Arial,Helvetica,sans-serif;color:#1B316E;font-size:15px;">Mensaje</h3>
-        <div style="padding:14px 16px;background:#f5f7fb;border:1px solid #e3e7ef;border-radius:6px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#3a4252;line-height:1.55;white-space:pre-wrap;">${escapeHtml(payload.message)}</div>`
-        : "";
-
+function buildHtml(payload, headerLabel) {
+    const rows = buildRows(payload);
     return `<!doctype html>
 <html lang="es"><body style="margin:0;padding:24px;background:#eef1f7;font-family:Arial,Helvetica,sans-serif;">
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;margin:0 auto;background:#ffffff;border-radius:8px;overflow:hidden;border:1px solid #e3e7ef;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:680px;margin:0 auto;background:#ffffff;border-radius:8px;overflow:hidden;border:1px solid #e3e7ef;">
         <tr>
             <td style="padding:20px 24px;background:#1B316E;color:#ffffff;">
                 <p style="margin:0;font-size:12px;letter-spacing:1px;text-transform:uppercase;opacity:0.8;">DCA Ingenieros</p>
-                <h1 style="margin:6px 0 0;font-size:20px;font-weight:700;">Nuevo lead desde la web</h1>
+                <h1 style="margin:6px 0 0;font-size:20px;font-weight:700;">${escapeHtml(headerLabel)}</h1>
             </td>
         </tr>
         <tr>
@@ -81,7 +146,6 @@ function buildHtml(payload) {
                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;">
                     ${rows}
                 </table>
-                ${messageBlock}
                 <p style="margin:24px 0 0;font-size:12px;color:#7a8294;line-height:1.5;">
                     Responde directo a este correo para contestarle al lead — el reply-to apunta a su email.
                 </p>
@@ -91,22 +155,35 @@ function buildHtml(payload) {
 </body></html>`;
 }
 
-function buildText(payload) {
+function buildText(payload, headerLabel) {
+    const lines = [`DCA Ingenieros — ${headerLabel}`, ""];
+    for (const [k, v] of Object.entries(payload)) {
+        if (HIDDEN_KEYS.has(k) || v === undefined) continue;
+        lines.push(`${humanizeKey(k)}: ${formatValue(v)}`);
+    }
+    return lines.join("\n");
+}
+
+function pickHeaderLabel(formType) {
+    if (formType === "Talento / Postulación" || formType === "Talento / Postulacion") return "Nueva postulacion de Talento";
+    if (formType === "Libro de Reclamaciones") return "Libro de Reclamaciones — registro";
+    return "Nuevo lead desde la web";
+}
+
+// Parse a data URL ("data:application/pdf;base64,XXXX") into mime + base64.
+function parseDataUrl(dataUrl) {
+    if (typeof dataUrl !== "string") return null;
+    const m = dataUrl.match(/^data:([^;]+);base64,(.+)$/);
+    if (!m) return null;
+    return { mime: m[1], base64: m[2] };
+}
+
+function isAllowedCvMime(mime) {
     return [
-        "DCA Ingenieros — Nuevo lead desde la web",
-        "",
-        `Nombre: ${payload.fullname}`,
-        `Email: ${payload.email}`,
-        `Telefono: ${payload.phone}`,
-        `Empresa: ${payload.company || "(no indicada)"}`,
-        `Asunto: ${payload.motive}`,
-        `Origen: ${payload.source || "General"}`,
-        `Tipo de form: ${payload.formType || "Contacto / Cotizacion"}`,
-        `Enviado: ${payload.submittedAt}`,
-        "",
-        "Mensaje:",
-        payload.message || "(sin mensaje adicional)",
-    ].join("\n");
+        "application/pdf",
+        "application/msword",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    ].includes(mime);
 }
 
 export default async function handler(req, res) {
@@ -127,41 +204,66 @@ export default async function handler(req, res) {
         return res.status(500).json({ ok: false, error: "missing_api_key" });
     }
 
-    // Parse body (Vercel Node functions parse JSON automatically when Content-Type matches)
     const body = typeof req.body === "string" ? safeJsonParse(req.body) : req.body || {};
 
-    // Honeypot: bots fill all fields. Real users never see this field.
+    // Honeypot: bots fill phone_alt; humans never see it
     if (typeof body.phone_alt === "string" && body.phone_alt.trim() !== "") {
-        // Soft success so the bot thinks it worked, but send nothing.
         return res.status(200).json({ ok: true, swallowed: true });
     }
 
-    const payload = {
-        fullname: sanitize(body.fullname, MAX_LEN.fullname),
-        email: sanitize(body.email, MAX_LEN.email),
-        phone: sanitize(body.phone, MAX_LEN.phone),
-        company: sanitize(body.company, MAX_LEN.company),
-        motive: sanitize(body.motive, MAX_LEN.motive),
-        message: sanitize(body.message, MAX_LEN.message),
-        source: sanitize(body.source, MAX_LEN.source),
-        formType: sanitize(body.formType, MAX_LEN.formType),
-        submittedAt: new Date().toISOString(),
-    };
+    // Build a sanitized payload preserving original key order
+    const sanitized = {};
+    let attachment = null;
 
-    if (!payload.fullname || payload.fullname.length < 2) {
+    for (const [k, v] of Object.entries(body)) {
+        if (k === "cvData") {
+            const parsed = parseDataUrl(v);
+            if (!parsed) continue;
+            if (!isAllowedCvMime(parsed.mime)) {
+                return res.status(400).json({ ok: false, error: "invalid_cv_mime" });
+            }
+            const approxBytes = Math.floor((parsed.base64.length * 3) / 4);
+            if (approxBytes > CAPS.fileBytes) {
+                return res.status(413).json({ ok: false, error: "cv_too_large" });
+            }
+            const safeName = cleanString(body.cvName || "cv.pdf", 120).replace(/[\/\\]/g, "_") || "cv.pdf";
+            attachment = { filename: safeName, content: parsed.base64 };
+            continue;
+        }
+        if (k === "phone_alt") continue;
+        if (typeof v === "boolean" || v === null) {
+            sanitized[k] = v;
+            continue;
+        }
+        const cap = k === "message" || k === "claimDetail" || k === "claimRequest" ? CAPS.message : CAPS.string;
+        sanitized[k] = cleanString(v, cap);
+    }
+
+    // Always ensure submittedAt and formType are present
+    if (!sanitized.formType) sanitized.formType = "Lead web";
+    sanitized.submittedAt = new Date().toISOString();
+
+    // Minimum validation: need a name + valid email for reply_to
+    const fullname = sanitized.fullname || "";
+    if (!fullname || fullname.length < 2) {
         return res.status(400).json({ ok: false, error: "invalid_fullname" });
     }
-    if (!isValidEmail(payload.email)) {
+    if (!isValidEmail(sanitized.email)) {
         return res.status(400).json({ ok: false, error: "invalid_email" });
     }
-    if (!payload.phone || payload.phone.length < 6) {
-        return res.status(400).json({ ok: false, error: "invalid_phone" });
-    }
-    if (!payload.motive || payload.motive.length < 3) {
-        return res.status(400).json({ ok: false, error: "invalid_motive" });
-    }
 
-    const subject = `Nueva consulta web DCA — ${payload.motive.slice(0, 80)}`;
+    const subject = buildSubject(sanitized);
+    const headerLabel = pickHeaderLabel(sanitized.formType);
+
+    const payloadOut = {
+        from: FROM,
+        to: [TEAM_INBOX],
+        reply_to: sanitized.email,
+        subject,
+        html: buildHtml(sanitized, headerLabel),
+        text: buildText(sanitized, headerLabel),
+    };
+    if (attachment) payloadOut.attachments = [attachment];
 
     try {
         const resendRes = await fetch(RESEND_ENDPOINT, {
@@ -169,16 +271,9 @@ export default async function handler(req, res) {
             headers: {
                 Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
                 "Content-Type": "application/json",
-                "User-Agent": "dca-ingenieros-contact/1.0",
+                "User-Agent": "dca-ingenieros-contact/1.1",
             },
-            body: JSON.stringify({
-                from: FROM,
-                to: [TEAM_INBOX],
-                reply_to: payload.email,
-                subject,
-                html: buildHtml(payload),
-                text: buildText(payload),
-            }),
+            body: JSON.stringify(payloadOut),
         });
 
         if (!resendRes.ok) {

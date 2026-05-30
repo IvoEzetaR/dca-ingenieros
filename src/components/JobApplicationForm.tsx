@@ -35,6 +35,7 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
             docNumber: "",
             message: "",
             terms: false,
+            phone_alt: "", // honeypot
         }
     });
 
@@ -42,6 +43,11 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
     const selectedDocType = watch("docType");
 
     const onSubmit = async (data: any) => {
+        if (!fileBase64) {
+            toast.error("Sube tu CV antes de enviar la postulación");
+            return;
+        }
+
         setIsSubmitting(true);
         try {
             const payload = {
@@ -53,7 +59,7 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
                 submittedAt: new Date().toISOString(),
             };
 
-            const response = await fetch("https://n8n-n8n.pje9qc.easypanel.host/webhook/form-DCA", {
+            const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -61,7 +67,10 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
                 body: JSON.stringify(payload),
             });
 
-            if (!response.ok) throw new Error("Error en el servidor");
+            const json = await response.json().catch(() => ({}));
+            if (!response.ok || json.ok === false) {
+                throw new Error(json.error || `HTTP ${response.status}`);
+            }
 
             toast.success("Postulación enviada correctamente");
             setShowSuccess(true);
@@ -105,9 +114,20 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
         );
     }
 
+    const MAX_CV_BYTES = 3_500_000; // 3.5 MB raw (base64 ~ 4.6 MB, dentro del limite Vercel)
+
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.files && e.target.files[0]) {
             const file = e.target.files[0];
+            if (file.size > MAX_CV_BYTES) {
+                toast.error("El CV supera el limite de 3.5 MB", {
+                    description: "Comprime el archivo o sube una version mas liviana (PDF idealmente).",
+                });
+                e.target.value = "";
+                setFileName(null);
+                setFileBase64(null);
+                return;
+            }
             setFileName(file.name);
 
             const reader = new FileReader();
@@ -201,7 +221,7 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
                         >
                             <Upload className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
                             <span className="text-muted-foreground group-hover:text-primary transition-colors">
-                                {fileName || "Subir PDF o Word (Máx. 10MB)"}
+                                {fileName || "Subir PDF o Word (Máx. 3.5MB)"}
                             </span>
                         </Label>
                     </div>
@@ -226,6 +246,16 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
                     Acepto los términos y condiciones y la política de privacidad de Grupo DCA.
                 </label>
             </div>
+
+            {/* Honeypot anti-bot */}
+            <input
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                {...register("phone_alt")}
+                style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }}
+            />
 
             <Button
                 type="submit"

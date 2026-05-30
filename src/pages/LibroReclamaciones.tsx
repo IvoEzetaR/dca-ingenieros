@@ -35,6 +35,7 @@ interface LibroFormValues {
     claimDetail: string;
     claimRequest: string;
     privacyAccepted: boolean;
+    phone_alt?: string; // honeypot
 }
 
 const LibroReclamaciones = () => {
@@ -66,7 +67,7 @@ const LibroReclamaciones = () => {
                 submittedAt: new Date().toISOString(),
             };
 
-            const response = await fetch("https://n8n-n8n.pje9qc.easypanel.host/webhook/form-DCA", {
+            const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -74,7 +75,10 @@ const LibroReclamaciones = () => {
                 body: JSON.stringify(payload),
             });
 
-            if (!response.ok) throw new Error("Error al enviar la reclamación");
+            const json = await response.json().catch(() => ({}));
+            if (!response.ok || json.ok === false) {
+                throw new Error(json.error || `HTTP ${response.status}`);
+            }
 
             toast.success("Reclamación enviada con éxito");
             setShowSuccess(true);
@@ -334,6 +338,16 @@ const LibroReclamaciones = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            {/* Honeypot anti-bot */}
+                            <input
+                                type="text"
+                                tabIndex={-1}
+                                autoComplete="off"
+                                aria-hidden="true"
+                                {...register("phone_alt")}
+                                style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }}
+                            />
 
                             <Button
                                 type="submit"
