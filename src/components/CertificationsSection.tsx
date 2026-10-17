@@ -1,9 +1,13 @@
 import { Shield, CheckCircle, ExternalLink } from "lucide-react";
 import { RevealOnScroll } from "./RevealOnScroll";
 import logoCertificaciones from "../assets/logo certificaciones.png";
-import iso9001Pdf from "../assets/UAF Americo-ISO 9001-DCA INGENIEROS S.A.C. (1) (1) (1).pdf";
-import iso14001Pdf from "../assets/UAF Americo-ISO 14001-DCA INGENIEROS S.A.C. (1) (1).pdf";
-import iso45001Pdf from "../assets/UAF Americo-ISO 45001-DCA INGENIEROS S.A.C. (1) (1).pdf";
+
+// Los certificados viven en /public/certificados con nombre limpio y estable
+// (el título del PDF está en sus metadatos). Las URLs viejas con hash se
+// redirigen en vercel.json.
+const iso9001Pdf = "/certificados/iso-9001-dca-ingenieros.pdf";
+const iso14001Pdf = "/certificados/iso-14001-dca-ingenieros.pdf";
+const iso45001Pdf = "/certificados/iso-45001-dca-ingenieros.pdf";
 
 const certifications = [
   {
@@ -56,7 +60,7 @@ export const CertificationsSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block h-full cursor-pointer group"
-                title="Ver Certificado"
+                title={`Certificado ${cert.title} de DCA Ingenieros (PDF)`}
               >
                 <div
                   className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-8 text-center hover:bg-primary-foreground/15 hover:border-accent transition-all duration-300 border border-primary-foreground/20 h-full flex flex-col items-center"
@@ -64,7 +68,7 @@ export const CertificationsSection = () => {
                   <div className="w-24 h-24 bg-accent/20 rounded-2xl mb-6 group-hover:scale-105 transition-transform overflow-hidden flex items-center justify-center">
                     <img
                       src={logoCertificaciones}
-                      alt="Certificación Logo"
+                      alt=""
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -77,7 +81,10 @@ export const CertificationsSection = () => {
                   <p className="text-primary-foreground/70 mb-6">{cert.description}</p>
 
                   <div className="mt-auto flex items-center justify-center gap-2 text-accent-light font-semibold bg-accent/10 px-4 py-2 rounded-lg group-hover:bg-accent/20 transition-colors">
-                    <span>Ver certificado</span>
+                    <span>
+                      Ver certificado {cert.title}
+                      <span className="sr-only"> de DCA Ingenieros (PDF)</span>
+                    </span>
                     <ExternalLink className="h-4 w-4" />
                   </div>
                 </div>

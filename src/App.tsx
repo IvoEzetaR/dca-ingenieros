@@ -19,6 +19,7 @@ import Terminos from "./pages/Terminos";
 import Politica from "./pages/Politica";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import { RouteSeo } from "./components/RouteSeo";
 
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -31,6 +32,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <RouteSeo />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/proyectos" element={<Proyectos />} />
