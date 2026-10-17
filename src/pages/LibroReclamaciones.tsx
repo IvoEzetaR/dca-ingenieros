@@ -181,7 +181,7 @@ const LibroReclamaciones = () => {
 
                                 <div className="space-y-2">
                                     <Label htmlFor="address">Domicilio *</Label>
-                                    <Input id="address" placeholder="Av. Los Olivos 123, Urb. Villa Azul" {...register("address", { required: true })} />
+                                    <Input id="address" placeholder="Dirección, distrito y ciudad" {...register("address", { required: true })} />
                                     {errors.address && <span className="text-xs text-destructive">Este campo es obligatorio</span>}
                                 </div>
 
@@ -207,7 +207,7 @@ const LibroReclamaciones = () => {
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="phone">Teléfono / Celular *</Label>
-                                        <Input id="phone" type="tel" placeholder="987654321" {...register("phone", { required: true })} />
+                                        <Input id="phone" type="tel" placeholder="Número de celular" {...register("phone", { required: true })} />
                                         {errors.phone && <span className="text-xs text-destructive">Este campo es obligatorio</span>}
                                     </div>
                                 </div>

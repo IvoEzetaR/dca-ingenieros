@@ -166,7 +166,7 @@ export const JobApplicationForm = ({ jobTitle, onSuccess }: JobApplicationFormPr
                     <Input
                         id="phone"
                         type="tel"
-                        placeholder="+51 987 654 321"
+                        placeholder="Tu número de celular"
                         {...register("phone", { required: true })}
                     />
                 </div>

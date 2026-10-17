@@ -1,7 +1,30 @@
 {
+    "redirects": [
+        {
+            "source": "/assets/:file(UAF.*ISO.*9001.*\\.pdf)",
+            "destination": "/certificados/iso-9001-dca-ingenieros.pdf",
+            "permanent": true
+        },
+        {
+            "source": "/assets/:file(UAF.*ISO.*14001.*\\.pdf)",
+            "destination": "/certificados/iso-14001-dca-ingenieros.pdf",
+            "permanent": true
+        },
+        {
+            "source": "/assets/:file(UAF.*ISO.*45001.*\\.pdf)",
+            "destination": "/certificados/iso-45001-dca-ingenieros.pdf",
+            "permanent": true
+        }
+    ],
+    "headers": [
+        {
+            "source": "/sitemap.xml",
+            "headers": [{ "key": "Content-Type", "value": "application/xml; charset=utf-8" }]
+        }
+    ],
     "rewrites": [
         {
-            "source": "/((?!api/).*)",
+            "source": "/((?!api/|sitemap\\.xml$|robots\\.txt$|certificados/).*)",
             "destination": "/index.html"
         }
     ]
