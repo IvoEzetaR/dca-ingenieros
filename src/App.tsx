@@ -11,7 +11,6 @@ import FerreteriaIntegral from "./pages/servicios/FerreteriaIntegral";
 import AlquilerMaquinarias from "./pages/servicios/AlquilerMaquinarias";
 import Importacion from "./pages/servicios/Importacion";
 import GestionProyectos from "./pages/servicios/GestionProyectos";
-import Noticias from "./pages/Noticias";
 import Talento from "./pages/Talento";
 import ProyectoCategoria from "./pages/ProyectoCategoria";
 import LibroReclamaciones from "./pages/LibroReclamaciones";
@@ -42,7 +41,6 @@ const App = () => (
           <Route path="/servicios/alquiler-maquinarias" element={<AlquilerMaquinarias />} />
           <Route path="/servicios/importacion" element={<Importacion />} />
           <Route path="/servicios/gestion-proyectos" element={<GestionProyectos />} />
-          <Route path="/noticias" element={<Noticias />} />
           <Route path="/talento" element={<Talento />} />
           <Route path="/proyectos/:category" element={<ProyectoCategoria />} />
           <Route path="/libro-de-reclamaciones" element={<LibroReclamaciones />} />

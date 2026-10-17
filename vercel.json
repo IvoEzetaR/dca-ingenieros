@@ -1,6 +1,11 @@
 {
     "redirects": [
         {
+            "source": "/noticias",
+            "destination": "/",
+            "permanent": true
+        },
+        {
             "source": "/assets/:file(UAF.*ISO.*9001.*\\.pdf)",
             "destination": "/certificados/iso-9001-dca-ingenieros.pdf",
             "permanent": true

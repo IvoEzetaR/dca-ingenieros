@@ -69,11 +69,6 @@ export const ROUTE_SEO: Record<string, RouteSeo> = {
     description:
       "Gerencia y dirección de proyectos para cumplir alcance, plazo, costo, calidad y seguridad, con buenas prácticas del PMI. Cotiza con DCA Ingenieros.",
   },
-  "/noticias": {
-    title: "Noticias | DCA Ingenieros",
-    description:
-      "Novedades, proyectos y certificaciones de DCA Ingenieros, constructora en Los Olivos, Lima.",
-  },
   "/talento": {
     title: "Trabaja con nosotros | DCA Ingenieros",
     description:

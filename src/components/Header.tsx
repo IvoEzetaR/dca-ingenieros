@@ -82,7 +82,6 @@ const navItems = [
       },
     ],
   },
-  { label: "Noticias", href: "/noticias", isRoute: true },
   { label: "Talento", href: "/talento", isRoute: true },
 ];
 

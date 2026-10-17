@@ -5,7 +5,6 @@ import logoDCA from "@/assets/LOGO-DCA-BLANCO-POSITIVO.png";
 const quickLinks = [
   { label: "Grupo DCA", href: "/" },
   { label: "Servicios", href: "/#servicios" },
-  { label: "Noticias", href: "/noticias" },
   { label: "Talento", href: "/talento" },
 ];
 
